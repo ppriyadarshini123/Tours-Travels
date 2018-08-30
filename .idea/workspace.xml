@@ -9,7 +9,9 @@
     <bookmark url="file://$PROJECT_DIR$/dist/js/scriptbook.js" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d3924a3-4d5f-4f19-b93b-e0d0529eb61b" name="Default Changelist" comment="" />
+    <list default="true" id="3d3924a3-4d5f-4f19-b93b-e0d0529eb61b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -117,7 +119,7 @@
           <entry key="586" value="1" />
           <entry key="946" value="1" />
           <entry key="css" value="15" />
-          <entry key="html" value="37" />
+          <entry key="html" value="38" />
           <entry key="js" value="28" />
           <entry key="rnc" value="2" />
           <entry key="ts" value="1" />
@@ -126,7 +128,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="15" />
-          <entry key="HTML" value="37" />
+          <entry key="HTML" value="38" />
           <entry key="JavaScript" value="61" />
           <entry key="RNG Compact" value="2" />
           <entry key="TypeScript" value="1" />
@@ -139,7 +141,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -149,6 +151,13 @@
                 <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://C:/Program Files/Git/mingw64/share/doc/git-doc/git-push.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2313" />
           </provider>
         </entry>
       </file>
@@ -317,12 +326,12 @@
       <workItem from="1534872051150" duration="39540000" />
       <workItem from="1535131529547" duration="18437000" />
       <workItem from="1535229047796" duration="72071000" />
-      <workItem from="1535631059020" duration="2072000" />
+      <workItem from="1535631059020" duration="3951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185525000" />
+    <option name="totallyTimeSpent" value="187404000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -348,7 +357,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.67266774" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.88216037" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" weight="0.22258593" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -635,6 +644,11 @@
             <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Git/mingw64/share/doc/git-doc/git-push.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2313" />
       </provider>
     </entry>
   </component>
