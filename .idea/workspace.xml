@@ -320,12 +320,12 @@
       <workItem from="1534872051150" duration="39540000" />
       <workItem from="1535131529547" duration="18437000" />
       <workItem from="1535229047796" duration="72071000" />
-      <workItem from="1535631059020" duration="9608000" />
+      <workItem from="1535631059020" duration="10344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193061000" />
+    <option name="totallyTimeSpent" value="193797000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -351,7 +351,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5302782" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.86743045" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50074404" side_tool="true" weight="0.22258593" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
