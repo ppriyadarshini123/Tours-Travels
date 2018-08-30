@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking form</title>
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="headerImage"><img src="dist/images/header.png"></div><!--Header Image-->
+    </header>
+    <main>
+        <div>
+            <section class="demo">
+                <dl class="list nigiri">
+                    <dt>Menu</dt>
+                    <dd><a href="index.html">Home</a></dd>
+                    <dd><a href="#">Holidays</a></dd>
+                    <dd><a href="#">Visas</a></dd>
+                    <dd><a href="#">Things To Do</a></dd>
+                    <dd><a href="#">Last minute Deals</a></dd>
+                </dl>
+                <a href="#" class="toggle">Toggle the menu</a>
+            </section>
+        </div><!--Menu-->
+
+
+        <div class="container">
+            <p class="head">Booking form</p>
+
+            <div class="head">
+                <label>First name :</label>
+                <input title = "fn" type="text" id="fname">
+                <label id="lblFname"></label>
+            </div><!--First name section-->
+
+            <div class="head">
+                <span>Mobile :</span>
+                <input title = "mob" type="text" id="mobile">
+                <span id="lblMobile"></span>
+            </div><!--Mobile number-->
+
+            <div class="head">Enter a date:
+                <input id="datepicker" size="30" title="startdate" type="text" name="startdate">
+            </div><!--DatePicker-->
+
+            <input id="bookf" type="submit" value="Book now" >
+        </div><!--Container-->
+    </main>
+    <footer>
+    </footer>
+</div><!--wrapper-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="dist/js/makisu.js"></script>
+<script>
+    // The `enabled` flag will be `false` if CSS 3D isn't available
+    if ( $.fn.makisu.enabled ) {
+        var $nigiri = $( '.nigiri' );
+
+        // Create Makisus
+        $nigiri.makisu({
+            selector: 'dd',
+            overlap: 0.85,
+            speed: 1.7
+        });
+
+        // Open all
+        $( '.list' ).makisu( 'open' );
+
+        // Toggle on click
+        $( '.toggle' ).on( 'click', function() {
+            $( '.list' ).makisu( 'toggle' );
+        });
+    } else {
+
+        $( '.warning' ).show();
+    }
+
+</script>
+<script>
+    //DatePicker
+    $(document).ready(function() {
+        $( "#datepicker" ).datepicker();
+    } );
+</script>
+<script src="dist/js/scriptbook.js"></script>
+</body>
+</html>

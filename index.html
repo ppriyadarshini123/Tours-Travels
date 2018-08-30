@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
+</head>
+<body>
+<div class="headerImage"><img src="dist/images/header.png"></div><!--Header Image-->
+<section class="demo">
+    <dl class="list nigiri">
+        <dt>Menu</dt>
+        <dd><a href="#">Home</a></dd>
+        <dd><a href="#">Holidays</a></dd>
+        <dd><a href="#">Visas</a></dd>
+        <dd><a href="#">Things To Do</a></dd>
+        <dd><a href="#">Last minute Deals</a></dd>
+    </dl>
+    <a href="#" class="toggle">Toggle the menu</a>
+</section>
+
+<div class="slideshow">
+    <a href="estimateform.html?id=1" class="position">
+        <img src="dist/images/amsterdam.jpg" alt="amsterdam" width="960" height="400"/>Visit Amsterdam
+    </a>
+    <a href="estimateform.html?id=2" class="position">
+        <img src="dist/images/brussels.jpg" alt="brussels" width="960" height="400"/>Visit Brussels
+    </a>
+    <a href="estimateform.html?id=3" class="position">
+        <img src="dist/images/portugal.jpg" alt="portugal" width="960" height="400"/>Visit Portugal
+    </a>
+    <a href="estimateform.html?id=4" class="position">
+        <img src="dist/images/ptague.jpg" alt="prague" width="960" height="400"/>Visit Prague
+    </a>
+    <a href="estimateform.html?id=5" class="position">
+        <img src="dist/images/sagrada.jpg" alt="barcelona" width="960" height="400"/>Visit Barcelona
+    </a>
+    <a href="estimateform.html?id=6" class="position">
+        <img src="dist/images/vienna.jpg" alt="vienna" width="960" height="400"/>Visit Vienna
+    </a>
+</div><!--Slideshow of destinations-->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="dist/js/makisu.js"></script>
+<script src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<script>
+    // The `enabled` flag will be `false` if CSS 3D isn't available
+    if ( $.fn.makisu.enabled ) {
+
+        var $nigiri = $( '.nigiri' );
+
+        // Create Makisus
+        $nigiri.makisu({
+            selector: 'dd',
+            overlap: 0.85,
+            speed: 1.7
+        });
+
+        // Open all
+        $( '.list' ).makisu( 'open' );
+
+        // Toggle on click
+        $( '.toggle' ).on( 'click', function() {
+            $( '.list' ).makisu( 'toggle' );
+        });
+
+    } else {
+        $( '.warning' ).show();
+    }
+</script>
+<script>
+    $(document).ready(function(){
+        $('.slideshow').cycle({
+            fx:'fade' //choose your transition type fade, scrollUp, shuffle etc
+        });
+    });
+</script>
+
+</body>
+</html>

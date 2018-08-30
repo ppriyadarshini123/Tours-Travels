@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight & Hotel estimate form</title>
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="headerImage"><img src="dist/images/header.png"></div><!--Header Image-->
+    </header>
+
+    <main>
+        <div>
+            <section class="demo">
+                <dl class="list nigiri">
+                    <dt>Menu</dt>
+                    <dd><a href="index.html">Home</a></dd>
+                    <dd><a href="#">Holidays</a></dd>
+                    <dd><a href="#">Visas</a></dd>
+                    <dd><a href="#">Things To Do</a></dd>
+                    <dd><a href="#">Last minute Deals</a></dd>
+                </dl>
+                <a href="#" class="toggle">Toggle the menu</a>
+            </section>
+        </div><!--Menu-->
+
+        <div class="container">
+            <p class="head">Flight & Hotel estimation grid</p>
+            <div class="border">
+                <div class="head">
+                    <p class="head">Flight booking :</p>
+                    <label>Origin :</label>
+                    <select title="origin" id="orig" name="odd">
+                        <option value="london" selected="selected" disabled>London
+                        </option>
+                    </select>
+
+                    <label>Destination :</label>
+                    <select id="dest" title="dest" name="dropdown">
+                        <option value="amsterdam">Amsterdam</option>
+                        <option value="brussels">Brussels</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="prague">Prague</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="vienna">Vienna</option>
+                    </select>
+                </div><!--Origin & destination of flight-->
+                <div class="head">
+                    <input id="oneway" class= "normal" title="oneway" name="one" type="radio" value="oneway">One way
+                    <input id="return" class = "normal" title="return" name="one" type="radio" value="return">Return
+                </div><!--one way/return flight-->
+
+                <p class = "head">Enter a date:
+                    <input id="datepicker" size="10" title="startdate" type="text" name="startdate">
+                </p><!--Date Picker-->
+
+
+                <div class="head">
+                    <label>Hotel booking: </label>
+                    <input id="singleroom" class="normal" title="singleroom" type="radio" name="single"  value="Single">Single bedroom
+                    <input id="doubleroom" class="normal" title="double" type="radio" name="single" value="Double">Double bedroom
+                </div><!--single/double room-->
+            </div><!--Draw border around this content-->
+
+            <div class="head">Estimate for your booking to <span id="destD"></span>&amp;</div><!--Display estimate-->
+            <div class="head" id="flightBookingFee"></div><!--Display Booking fee-->
+            <div class="head" id="oneWayReturn"></div><!--Display one way or return-->
+            <div class="head" id="hotelBookingFee"></div><!--Display hotel booking fee-->
+            <div class="head" id="singleDouble"></div><!--For display single/double room-->
+            <div class="head" id="total"></div><!--Display total-->
+            <input id="book" type="button" value="Book now" >
+        </div><!--container-->
+    </main>
+    <footer>
+
+
+    </footer>
+</div><!--wrapper-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="dist/js/makisu.js"></script>
+<script>
+    // The `enabled` flag will be `false` if CSS 3D isn't available
+    if ( $.fn.makisu.enabled ) {
+        var $nigiri = $( '.nigiri' );
+
+        // Create Makisus
+        $nigiri.makisu({
+            selector: 'dd',
+            overlap: 0.85,
+            speed: 1.7
+        });
+
+
+        // Open all
+        $( '.list' ).makisu( 'open' );
+
+        // Toggle on click
+        $( '.toggle' ).on( 'click', function() {
+            $( '.list' ).makisu( 'toggle' );
+        });
+
+    } else {
+
+        $( '.warning' ).show();
+    }
+</script>
+<script>
+    //Show DatePicker
+    $(document).ready( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+</script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>
