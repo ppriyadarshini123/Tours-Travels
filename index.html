@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,155 +8,313 @@
     <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
 </head>
 <body>
-<div class="headerImage"><img src="dist/images/header.png"></div><!--Header Image-->
-<section class="demo">
-    <dl class="list nigiri">
-        <dt>Menu</dt>
-        <dd><a href="#">Home</a></dd>
-        <dd><a href="#">Holidays</a></dd>
-        <dd><a href="#">Visas</a></dd>
-        <dd><a href="#">Things To Do</a></dd>
-        <dd><a href="#">Last minute Deals</a></dd>
-    </dl>
-    <a href="#" class="toggle">Toggle the menu</a>
-</section>
+<header id="top">
+    <div class="headerImage">
+        <img src="dist/images/headernew.png" alt="Header Background Image">
+        <div class="wrapper">
+            <div>
+                <a href="#" class="zIn">
+                    <img src="dist/images/logonew.png" class="logo" alt="Logo"/>
+                </a>
+            </div><!--logo-->
+            <div>
+                <img src="./dist/images/telephone.png" class="phone" alt="Telephone">
+                <p class="phDisp">+44 7549231859</p>
+                <p class="phTime">24 hrs a day / 7 days a week</p>
+            </div><!--Phone number-->
+        </div><!--adding logo and phone to wrapper-->
+    </div><!--Header Image-->
+</header>
 
-<div class="slideshow">
-    <a href="estimateform.html?id=1" class="position">
-        <img src="dist/images/amsterdam.jpg" alt="amsterdam" width="960" height="400"/>Visit Amsterdam
-    </a>
-    <a href="estimateform.html?id=2" class="position">
-        <img src="dist/images/brussels.jpg" alt="brussels" width="960" height="400"/>Visit Brussels
-    </a>
-    <a href="estimateform.html?id=3" class="position">
-        <img src="dist/images/portugal.jpg" alt="portugal" width="960" height="400"/>Visit Portugal
-    </a>
-    <a href="estimateform.html?id=4" class="position">
-        <img src="dist/images/ptague.jpg" alt="prague" width="960" height="400"/>Visit Prague
-    </a>
-    <a href="estimateform.html?id=5" class="position">
-        <img src="dist/images/sagrada.jpg" alt="barcelona" width="960" height="400"/>Visit Barcelona
-    </a>
-    <a href="estimateform.html?id=6" class="position">
-        <img src="dist/images/vienna.jpg" alt="vienna" width="960" height="400"/>Visit Vienna
-    </a>
-</div><!--Slideshow of destinations-->
+<div class="wrapper padding">
+    <section class="demo">
+        <dl class="list nigiri">
+            <dt>Menu</dt>
+            <dd><a href="#">Home</a></dd>
+            <dd><a href="#">Holidays</a></dd>
+            <dd><a href="#">Visas</a></dd>
+            <dd><a href="#">Things To Do</a></dd>
+            <dd><a href="#">Last minute Deals</a></dd>
+        </dl>
+        <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
+    </section>
+    <main>
+        <div class="slideshow">
+            <a href="estimateform.html?id=1">
+                <img src="dist/images/newlayout/amsterdam.jpeg" alt="amsterdam" title="Click to visit Amsterdam"  width="680"/>
+                <div class="text-block">
+                    <h4>Visit Amsterdam</h4>
+                    <p>Amsterdam 3 days from only £250</p>
+                </div><!--Text block Amsterdam-->
+            </a>
+            <a href="estimateform.html?id=2">
+                <img src="dist/images/newlayout/brussels.jpg" alt="brussels" title="Click to visit Brussels" width="680" />
+                <div class="text-block">
+                    <h4>Visit Brussels</h4>
+                    <p>Brussels day trip from £150</p>
+                </div><!--Text block Brussels-->
+            </a>
+            <a href="estimateform.html?id=3">
+                <img src="dist/images/newlayout/portugal.jpg" alt="portugal" title="Click to visit Portugal" width="680"/>
+                <div class="text-block">
+                    <h4>Visit Portugal</h4>
+                    <p>Portugal 4 days from £360</p>
+                </div><!--Text block Portugal-->
+            </a>
+            <a href="estimateform.html?id=4">
+                <img src="dist/images/newlayout/prague.jpg" alt="prague" title="Click to visit Prague" width="680"/>
+                <div class="text-block">
+                    <h4>Visit Prague</h4>
+                    <p>Prague 4 days from £300</p>
+                </div><!--Text block Prague-->
+            </a>
+            <a href="estimateform.html?id=5">
+                <img src="dist/images/newlayout/barcelona.jpg" alt="barcelona" title="Click to visit Barcelona" width="680"/>
+                <div class="text-block">
+                    <h4>Visit Barcelona</h4>
+                    <p>Barcelona 2 days from £200</p>
+                </div><!--Text block Barcelone-->
+            </a>
+            <a href="estimateform.html?id=6">
+                <img src="dist/images/newlayout/vienna.jpg" alt="vienna" title="Click to visit Vienna" width="680"/>
+                <div class="text-block">
+                    <h4>Visit Vienna</h4>
+                    <p>Vienna 4 days from £450</p>
+                </div><!--Text block Vienna-->
+            </a>
+        </div><!--Slideshow of destinations-->
+    </main>
+</div><!--Adding slideshow to wrapper class-->
 
+
+<div class="menu-wrapper">
+    <h1 class="heading">Why choose us ?</h1>
+    <ul class="menu">
+        <li class="item">
+            <img src="./dist/images/Carousel/destination.jpg" alt="Amazing Destinations"/>
+            <p>Amazing Destinations</p>
+        </li>
+        <li class="item">
+            <img src="./dist/images/Carousel/food1.png" alt="Food on Tours"/>
+            <p>Yummy Food on Tours!</p>
+        </li>
+        <li class="item">
+            <img src="./dist/images/Carousel/hotel.png" alt="Refundable Hotel Booking"/>
+            <p>Refundable Hotel Booking</p>
+        </li>
+        <li class="item">
+            <img src="./dist/images/Carousel/luggage.png" alt="Convenient Baggage Service">
+            <p>Convenient Baggage Service</p>
+        </li>
+        <li class="item">
+            <img src="./dist/images/Carousel/bus.jpg" alt="Confortable Bus Tours"/>
+            <p>Comfortable Bus Tours</p>
+        </li>
+        <li class="item">
+            <img src="./dist/images/Carousel/car.jpg" alt="24/7 Car Pickup/Drop off"/>
+            <p>24/7 Car Pickup/Drop off</p>
+        </li>
+    </ul>
+
+    <div class="paddles">
+        <button class="left-paddle paddle hidden">
+            &lt;
+        </button>
+        <button class="right-paddle paddle">
+            >
+        </button>
+    </div><!--Next/Previous buttons-->
+</div><!--Carousel-->
+
+
+<div class="color">
+    <h1 class="heading">Top Deals</h1>
+    <div class="wrapper moreDest">
+        <div class="dest">
+            <img src="dist/images/newlayout/florence.jpg" alt="Florence">
+            <p class="package">4 Day tour to Florence</p>
+            <p class="price">£150 p.p</p>
+            <a href="#" title="Florence" class="book">Book Now</a>
+        </div><!--Florence-->
+
+        <div class="dest">
+            <img src="dist/images/newlayout/budapest.jpg" alt="Budapest">
+            <p class="package">2 Day trip to Budapest</p>
+            <p class="price">£200 p.p</p>
+            <a href="#" title="Budapest" class="book">Book Now</a>
+        </div><!--Budapest-->
+
+        <div class="dest">
+            <img src="dist/images/newlayout/warsaw.jpg" alt="Warsaw">
+            <p class="package">3 day Tour to Poland</p>
+            <p class="price">£250 p.p</p>
+            <a href="#" title="Warsaw" class="book">Book Now</a>
+        </div><!--Warsaw-->
+    </div><!--Destinations-->
+</div><!--Top deals section-->
+
+<footer class="footer">
+    <div class="rowSiteMap">
+        <div class="siteSocial">
+            <div class="colSiteMap">
+                <p class="title">Sitemap</p>
+                <div class="sitemap">
+                    <div class="widSiteMap">
+                        <ul>
+                            <li><a class="link" href="#">Home</a></li>
+                            <li><a class="link" href="#">Holiday Packages</a></li>
+                            <li><a class="link" href="#">Weekend Getaways</a></li>
+                            <li><a class="link" href="#">Visas</a></li>
+                        </ul>
+                    </div><!--Sitemap first column-->
+                    <div class="widSiteMap">
+                        <ul>
+                            <li><a class="link" href="#">Things to do</a></li>
+                            <li><a class="link" href="#">Last minute deals</a></li>
+                            <li><a class="link" href="#">UK Holidays</a></li>
+                            <li><a class="link" href="#">European Holidays</a></li>
+                        </ul>
+                    </div><!--sitemap second column-->
+                </div><!--sitemap columns-->
+            </div><!--Sitemap-->
+
+            <div class="colSocialMedia">
+                <div class="goToTop">
+                    <div class="widSiteMap">
+                        <h3 class="title">Find us here:</h3>
+                        <a href="#"><img src="./dist/images/facebook.png" title="Find us on Facebook" alt="Facebook" width="30" height="30"></a>
+                        <a href="#"><img src="./dist/images/twitter.png" title="Find us on Twitter" alt="Twitter" width="30" height="30"></a>
+                        <a href="#"><img src="./dist/images/youtube.png" title="Find us on YouTube" alt="YouTube" width="30" height="30"></a>
+                    </div><!--Social media icons-->
+                    <div class="widSiteMap">
+                        <a href="#top" class="link" >Go to top</a>
+                    </div><!--go to top-->
+                </div><!--Social media icons and go to top-->
+            </div><!--Social media icons and go to top border-->
+        </div><!--siteSocial-->
+    </div><!-- Footer row-->
+    <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--copyright-->
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="dist/js/makisu.js"></script>
 <script src="http://malsup.github.com/jquery.cycle.all.js"></script>
 <script>
-    // The `enabled` flag will be `false` if CSS 3D isn't available
-    if ( $.fn.makisu.enabled ) {
-
-        var $nigiri = $( '.nigiri' );
-
-        // Create Makisus
-        $nigiri.makisu({
-            selector: 'dd',
-            overlap: 0.85,
-            speed: 1.7
-        });
-
-        // Open all
-        $( '.list' ).makisu( 'open' );
-
-        // Toggle on click
-        $( '.toggle' ).on( 'click', function() {
-            $( '.list' ).makisu( 'toggle' );
-        });
-
-    } else {
-        $( '.warning' ).show();
-    }
-</script>
-<script>
+    /*Slideshow of destinations*/
     $(document).ready(function(){
         $('.slideshow').cycle({
-            fx:'fade' //choose your transition type fade, scrollUp, shuffle etc
+            fx:'fade' //transition type fade, scrollUp, shuffle etc
         });
     });
-</script>
-
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen"/>
-</head>
-<body>
-
-<section class="demo">
-    <dl class="list nigiri">
-      <dt>Menu</dt>
-        <dd><a href="#">Home</a></dd>
-        <dd><a href="#">Holidays</a></dd>
-        <dd><a href="#">Visas</a></dd>
-        <dd><a href="#">Things To Do</a></dd>
-        <dd><a href="#">Last minute Deals</a></dd>
-    </dl>
-        <a href="#" class="toggle">Toggle</a>
-        <div style="text-align:center">
-        </div>
-</section>
-
-<div class="warning">
-    <div class="message">
-        <h1>CSS 3D Not Detected :(</h1>
-        <p>I couldn't detect your browser's CSS 3D capabilities. </p>
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-<script src="dist/js/makisu.js"></script>
-<script>
-
-    // The `enabled` flag will be `false` if CSS 3D isn't available
-    if ( $.fn.makisu.enabled ) {
-
-        var $nigiri = $( '.nigiri' );
-
-        // Create Makisus
-
-        $nigiri.makisu({
-            selector: 'dd',
-            overlap: 0.85,
-            speed: 1.7
-        });
-
-
-        // Open all
-
-        $( '.list' ).makisu( 'open' );
-
-        // Toggle on click
-
-        $( '.toggle' ).on( 'click', function() {
-            $( '.list' ).makisu( 'toggle' );
-        });
-
-        // Disable all links
-
-        $( '.demo a' ).click( function( event ) {
-            event.preventDefault();
-        });
-
-    } else {
-        alert(2);
-        $( '.warning' ).show();
+    /* Open homepage when 'home' button is clicked*/
+    function showHome()
+    {
+        window.open("index.html", "_self");
     }
+</script>
+<script>
+    /* 'Why choose us' section, implementing the scroll*/
+    //Code taken from https://codepen.io/mahish/pen/RajmQw
+    // duration of scroll animation
+    var scrollDuration = 1500;
 
+    // paddles
+    var leftPaddle = document.getElementsByClassName('left-paddle');
+    var rightPaddle = document.getElementsByClassName('right-paddle');
 
+    // get items dimensions
+    var itemsLength = $('.item').length;
+    var itemSize = $('.item').outerWidth(true);
+
+    // get some relevant size for the paddle triggering point
+    var paddleMargin = 20;
+
+    // get wrapper width
+    var getMenuWrapperSize = function() {
+        return $('.menu-wrapper').outerWidth();
+    }
+    var menuWrapperSize = getMenuWrapperSize();
+
+    // the wrapper is responsive
+    $(window).on('resize', function() {
+        menuWrapperSize = getMenuWrapperSize();
+    });
+
+    // size of the visible part of the menu is equal as the wrapper size
+    var menuVisibleSize = menuWrapperSize;
+
+    // get total width of all menu items
+    var getMenuSize = function() {
+        return itemsLength * itemSize;
+    };
+
+    var menuSize = getMenuSize() + 45;
+
+    // get how much of menu is invisible
+    var menuInvisibleSize = menuSize - menuWrapperSize;
+
+    // get how much have we scrolled to the left
+    var getMenuPosition = function() {
+        return $('.menu').scrollLeft();
+    };
+
+    // finally, what happens when we are actually scrolling the menu
+    $('.menu').on('scroll', function() {
+
+        // get how much of menu is invisible
+        menuInvisibleSize = menuSize - menuWrapperSize;
+        // get how much have we scrolled so far
+        var menuPosition = getMenuPosition();
+
+        var menuEndOffset = menuInvisibleSize - paddleMargin;
+
+        // show & hide the paddles
+        // depending on scroll position
+        if (menuPosition <= paddleMargin) {
+            $(leftPaddle).addClass('hidden');
+            $(rightPaddle).removeClass('hidden');
+        } else if (menuPosition < menuEndOffset) {
+            // show both paddles in the middle
+            $(leftPaddle).removeClass('hidden');
+            $(rightPaddle).removeClass('hidden');
+        } else if (menuPosition >= menuEndOffset) {
+            $(leftPaddle).removeClass('hidden');
+            $(rightPaddle).addClass('hidden');
+        }
+    });
+
+    // scroll to left
+    $(rightPaddle).on('click', function() {
+        $('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+    });
+
+    // scroll to right
+    $(leftPaddle).on('click', function() {
+        $('.menu').animate( { scrollLeft: '0' }, scrollDuration);
+    });
 
 </script>
+<script>
+    /* THE LEFT MENU*/
+    /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
+    var $nigiri = $( '.nigiri' );
 
-<p align="center"><a href="http://www.jqueryscript.net/"></a></p>
+    // Create Makisus
+    $nigiri.makisu({
+        selector: 'dd',
+        overlap: 0.85,
+        speed: 1.7
+    });
+
+    // Open all
+    $( '.list' ).makisu( 'open' );
+
+    // Toggle on click
+    $( '.toggle' ).on( 'click', function() {
+        $( '.list' ).makisu( 'toggle' );
+    });
+
+</script>
 </body>
->>>>>>> 1e9c072d19d743480ab0c78beb52cb502cd8e3a4
 </html>

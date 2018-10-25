@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Feedback/Survey</title>
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/survey.css" media="screen"/>
 </head>
 <body>
-<header>
-    <div class="headerImage"><img src="dist/images/header.png"></div><!--Header Image-->
+<header id="top">
+
 </header>
 <main>
     <div class="container">
@@ -25,10 +25,11 @@
             <input type="button" id="ok" title="ok" value="OK" >
         </div><!--button OK-->
 
-        <div id="dispThanks"></div><!--Display Thanks for feedback-->
+        <div id="dispThanks" class="head"></div><!--Display Thanks for feedback-->
+
+        <div id="plane" class="plane"></div><!--Image of Plane-->
     </div><!--Container-->
 
-    <div id="plane" class="img"></div><!--Image of Plane-->
 </main>
 <footer>
 
@@ -43,12 +44,11 @@
             $("#plane").animate({
                 marginLeft: '+=1300px',
                 marginTop:'-=500px',
-                speed: '100',
+                speed: '50',
                 easing: 'linear'
-            }).toggle('fade',50);
+            }).fadeToggle('slow','linear');
         });
     });
 </script>
-
 </body>
 </html>

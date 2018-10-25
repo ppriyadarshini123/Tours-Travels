@@ -1,4 +1,6 @@
 
+/* estimateform.html*/
+
 /* CSS RESET SECTION
 ------------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
@@ -19,26 +21,27 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 table { border-collapse: collapse; border-spacing: 0; }
 html, body{width:100%; height: 100%;}
 
+
+
 /* GENERAL SECTION*/
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #EBEEF2;*/
-    background-color: lightgray;
+    background-color: #a3bddd;
 }
+
 .wrapper
 {
     margin: 0 auto;
     width:960px;
 }
 
+
 /*HEADER SECTION*/
 .headerImage
 {
     background-repeat: no-repeat;
     padding-bottom: 20px;
-
 }
-
 .logo
 {
     margin-top: -145px;
@@ -52,7 +55,6 @@ html, body {
     cursor: pointer;
     position: relative;
 }
-
 .phone
 {
     margin-top: -120px;
@@ -82,166 +84,66 @@ html, body {
     text-shadow: 2px 2px 4px #000000;
 }
 
-
-/*MENU & SLIDESHOW SECTION*/
-.padding
+/* MAIN SECTION*/
+.container
 {
-    padding-bottom: 20px;
-}
-
-.slideshow
-{
-    margin-left: 240px;
-    margin-top: -320px;
-    z-index: 40;
-}
-
-.text-block {
-    position: absolute;
-    color: white;
-    padding: 20px;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    font-weight: lighter;
-    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-    right:0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    text-shadow: 2px 2px 4px #000000;
-}
-
-/* WHY CHOOSE US - CAROUSEL SECTION*/
-
-.menu-wrapper {
     position: relative;
-    max-width: 970px;
-    height: 250px;
-    margin: 0 auto;
-    border: 1px solid black;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding-right: 10px;
-}
-
-.menu {
-    height: 250px;
-    width:975px;
-    background: #ffffff;
-    box-sizing: border-box;
-    white-space: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.item {
-    display: inline-block;
-    height: 100%;
-    width: 310px;
-    outline: 1px dotted gray;
-    padding:10px;
-    box-sizing: border-box;
-}
-
-.item img
-{
-    padding-bottom: 20px;
-}
-.item p
-{
-    font-size: 14px;
-    text-align: center;
-}
-
-.paddles {
-}
-.paddle {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 3em;
-}
-.left-paddle {
-    left: 0;
-}
-.right-paddle {
-    right: 0;
-}
-.hidden {
-    display: none;
-}
-
-
-/*
-    Top DEALS SECTION
-*/
-.color
-{
-    background-color: lightgray;
-    margin-top: 20px;
-}
-.heading
-{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.moreDest
-{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
-    width:960px;
-}
-
-.dest{
-    background-color: white;
-    margin-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
     z-index: 40;
-}
-.dest img
-{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.package
-{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    color: darkgray;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-.price
-{
-    padding-left: 20px;
-    padding-bottom: 10px;
-    color: darkgray;
-    font-size: 15px;
-    letter-spacing: 2px;
+    padding: 15px;
+    margin: -320px auto 0 175px;
+    width: 900px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 10px 10px #b1c7e2;
 }
 
+.head
+{
+    padding-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.subHead
+{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #414A46;
+}
+
+.border
+{
+    padding: 20px 20px 20px 20px;
+    border: dotted grey 1px;
+    width:500px;
+}
+
+/* DISPLAY ESTIMATE SECTION*/
+.display
+{
+    margin-left: 570px;
+    margin-top: -270px;
+}
+
+.city
+{
+    color: #D31B46;
+}
 .book
 {
     color: #ffffff;
     background-color: #86A8D2;
-    font-size: 12px;
-    margin-left: 90px;
-    display: block;
-    width:80px;
-    padding: 20px;
-    letter-spacing: 1px;
     text-shadow: 2px 2px 4px #000000;
+    padding: 10px;
 }
 
 .book:hover
 {
     background-color: darkgray;
 }
-
 
 /*FOOTER SECTION*/
 .footer
@@ -343,4 +245,3 @@ html, body {
     padding-top: 10px;
     letter-spacing: 2px;
 }
-

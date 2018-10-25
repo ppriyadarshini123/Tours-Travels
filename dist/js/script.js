@@ -15,7 +15,7 @@
     const destDd = document.getElementById("dest");
     const startD = document.getElementById("datepicker");
     const oneWay = document.getElementsByName("one");
-    const Room = document.getElementsByName("single");
+    const room = document.getElementsByName("single");
     const bookNow = document.getElementById("book");
     const btnOK = document.getElementById("ok");
 
@@ -63,9 +63,9 @@
             }
         }
         //Reading radio buttons from collection for single/double room and assigning to function
-        if(Room != null) {
-            for (let j = 0; j < Room.length; j++) {
-                Room[j].onclick = single;
+        if(room != null) {
+            for (let j = 0; j < room.length; j++) {
+                room[j].onclick = single;
             }
         }
 
@@ -94,7 +94,6 @@
             dispDestd.innerHTML = "Barcelona";
         else if(id == 6)
             dispDestd.innerHTML = "Vienna";
-
     }
 
     /*
@@ -158,9 +157,9 @@
         {
             if(oneWay[i].checked) oneWay[i].checked = false;
         }
-        for(let j = 0; j< Room.length; j++)
+        for(let j = 0; j< room.length; j++)
         {
-            if(Room[j].checked) Room[j].checked = false;
+            if(room[j].checked) room[j].checked = false;
         }
         dispOne.innerHTML = "";
         dispHotelBook.innerHTML = "";
@@ -298,7 +297,7 @@
     */
     function single()
     {
-        if($(Room[0]).prop('checked')) {
+        if($(room[0]).prop('checked')) {
             if (id == 1) {
                 dispHotelBook.innerHTML = "Your Hotel booking fee: £20";
                 dispSingleDouble.innerHTML = "Single room in Amsterdam will cost £150.";

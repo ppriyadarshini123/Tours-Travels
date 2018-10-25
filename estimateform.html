@@ -5,17 +5,31 @@
     <title>Flight & Hotel estimate form</title>
     <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/estForm.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
 </head>
 <body>
 <div id="wrapper">
-    <header>
-        <div class="headerImage"><img src="dist/images/header.png"></div><!--Header Image-->
+    <header id="top">
+        <div class="headerImage">
+            <img src="dist/images/headernew.png" alt="Background header">
+            <div class="wrapper">
+                <div>
+                    <a href="index.html" class="zIn">
+                        <img src="dist/images/logonew.png" class="logo" alt="Logo"/>
+                    </a>
+                </div><!--logo-->
+                <div>
+                    <img src="./dist/images/telephone.png" class="phone" alt="Phone">
+                    <p class="phDisp">+44 7549231859</p>
+                    <p class="phTime">24 hrs a day / 7 days a week</p>
+                </div><!--phone-->
+            </div><!--logo and phone-->
+        </div><!--Header Image-->
     </header>
 
     <main>
-        <div>
+        <div class="wrapper padding">
             <section class="demo">
                 <dl class="list nigiri">
                     <dt>Menu</dt>
@@ -25,93 +39,127 @@
                     <dd><a href="#">Things To Do</a></dd>
                     <dd><a href="#">Last minute Deals</a></dd>
                 </dl>
-                <a href="#" class="toggle">Toggle the menu</a>
+                <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle-->
             </section>
-        </div><!--Menu-->
 
-        <div class="container">
-            <p class="head">Flight & Hotel estimation grid</p>
-            <div class="border">
-                <div class="head">
-                    <p class="head">Flight booking :</p>
-                    <label>Origin :</label>
-                    <select title="origin" id="orig" name="odd">
-                        <option value="london" selected="selected" disabled>London
-                        </option>
-                    </select>
+            <div class="container">
+                <p class="head">Flight & Hotel estimation grid</p>
+                <div class="border">
+                    <div>
+                        <p class="head">Flight booking :</p>
+                        <label class="subHead">Origin :</label>
+                        <select title="origin" id="orig" name="odd">
+                            <option value="london" selected="selected" disabled>London
+                            </option>
+                        </select>
 
-                    <label>Destination :</label>
-                    <select id="dest" title="dest" name="dropdown">
-                        <option value="amsterdam">Amsterdam</option>
-                        <option value="brussels">Brussels</option>
-                        <option value="portugal">Portugal</option>
-                        <option value="prague">Prague</option>
-                        <option value="barcelona">Barcelona</option>
-                        <option value="vienna">Vienna</option>
-                    </select>
-                </div><!--Origin & destination of flight-->
-                <div class="head">
-                    <input id="oneway" class= "normal" title="oneway" name="one" type="radio" value="oneway">One way
-                    <input id="return" class = "normal" title="return" name="one" type="radio" value="return">Return
-                </div><!--one way/return flight-->
+                        <label class="subHead">Destination :</label>
+                        <select id="dest" title="dest" name="dropdown">
+                            <option value="amsterdam">Amsterdam</option>
+                            <option value="brussels">Brussels</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="prague">Prague</option>
+                            <option value="barcelona">Barcelona</option>
+                            <option value="vienna">Vienna</option>
+                        </select>
+                    </div><!--Origin & destination of flight-->
+                    <div class="subHead">
+                        <input id="oneway" title="oneway" name="one" type="radio" value="oneway">One way
+                        <input id="return" title="return" name="one" type="radio" value="return">Return
+                    </div><!--one way/return flight-->
 
-                <p class = "head">Enter a date:
-                    <input id="datepicker" size="10" title="startdate" type="text" name="startdate">
-                </p><!--Date Picker-->
+                    <p class = "subHead">Enter a date:
+                        <input id="datepicker" size="10" title="startdate" type="text" name="startdate">
+                    </p><!--Date Picker-->
 
-
-                <div class="head">
-                    <label>Hotel booking: </label>
-                    <input id="singleroom" class="normal" title="singleroom" type="radio" name="single"  value="Single">Single bedroom
-                    <input id="doubleroom" class="normal" title="double" type="radio" name="single" value="Double">Double bedroom
-                </div><!--single/double room-->
-            </div><!--Draw border around this content-->
-
-            <div class="head">Estimate for your booking to <span id="destD"></span>&amp;</div><!--Display estimate-->
-            <div class="head" id="flightBookingFee"></div><!--Display Booking fee-->
-            <div class="head" id="oneWayReturn"></div><!--Display one way or return-->
-            <div class="head" id="hotelBookingFee"></div><!--Display hotel booking fee-->
-            <div class="head" id="singleDouble"></div><!--For display single/double room-->
-            <div class="head" id="total"></div><!--Display total-->
-            <input id="book" type="button" value="Book now" >
-        </div><!--container-->
+                    <label class="head">Hotel booking: </label>
+                    <div class="subHead">
+                        <input id="singleroom"  title="singleroom" type="radio" name="single"  value="Single">Single bedroom
+                        <input id="doubleroom"  title="double" type="radio" name="single" value="Double">Double bedroom
+                    </div><!--single/double room-->
+                </div><!--Draw border around this content-->
+                <div class="display">
+                    <div class="subHead">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
+                    <div class="subHead" id="flightBookingFee"></div><!--Display Booking fee-->
+                    <div class="subHead" id="oneWayReturn"></div><!--Display one way or return-->
+                    <div class="subHead" id="hotelBookingFee"></div><!--Display hotel booking fee-->
+                    <div class="subHead" id="singleDouble"></div><!--For display single/double room-->
+                    <div class="head" id="total"></div><!--Display total-->
+                    <input id="book" type="button" value="Book now" class="book">
+                </div><!--Display Estimate-->
+            </div><!--Container-->
+        </div><!--Wrapper-->
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="rowSiteMap">
+            <div class="siteSocial">
+                <div class="colSiteMap">
+                    <p class="title">Sitemap</p>
+                    <div class="sitemap">
+                        <div class="widSiteMap">
+                            <ul>
+                                <li><a class="link" href="index.html">Home</a></li>
+                                <li><a class="link" href="#">Holiday Packages</a></li>
+                                <li><a class="link" href="#">Weekend Getaways</a></li>
+                                <li><a class="link" href="#">Visas</a></li>
+                            </ul>
+                        </div><!--sitemap first column-->
+                        <div class="widSiteMap">
+                            <ul>
+                                <li><a class="link" href="#">Things to do</a></li>
+                                <li><a class="link" href="#">Last minute deals</a></li>
+                                <li><a class="link" href="#">UK Holidays</a></li>
+                                <li><a class="link" href="#">European Holidays</a></li>
+                            </ul>
+                        </div><!--sitemap second column-->
+                    </div><!--sitemap columns-->
+                </div><!--Sitemap-->
 
-
+                <div class="colSocialMedia">
+                    <div class="goToTop">
+                        <div class="widSiteMap">
+                            <h3 class="title">Find us here:</h3>
+                            <a href="#"><img src="./dist/images/facebook.png" title="Find us on Facebook" alt="Facebook" width="32" height="32"></a>
+                            <a href="#"><img src="./dist/images/twitter.png" title="Find us on Twitter" alt="Twitter" width="30" height="30"></a>
+                            <a href="#"><img src="./dist/images/youtube.png" title="Find us on YouTube" alt="YouTube" width="30" height="30"></a>
+                        </div><!--Social media icons-->
+                        <div class="widSiteMap">
+                            <a href="#top" class="link" >Go to top</a>
+                        </div><!--go to top-->
+                    </div><!--Social media icons and go to top-->
+                </div><!--Social media icons and go to top border-->
+            </div><!--siteSocial-->
+        </div><!-- Footer row-->
+        <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--Copyright-->
     </footer>
 </div><!--wrapper-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="dist/js/makisu.js"></script>
 <script>
-    // The `enabled` flag will be `false` if CSS 3D isn't available
-    if ( $.fn.makisu.enabled ) {
-        var $nigiri = $( '.nigiri' );
+    /* THE LEFT MENU*/
+    /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
+    var $nigiri = $( '.nigiri' );
 
-        // Create Makisus
-        $nigiri.makisu({
-            selector: 'dd',
-            overlap: 0.85,
-            speed: 1.7
-        });
+    // Create Makisus
+    $nigiri.makisu({
+        selector: 'dd',
+        overlap: 0.85,
+        speed: 1.7
+    });
 
 
-        // Open all
-        $( '.list' ).makisu( 'open' );
+    // Open all
+    $( '.list' ).makisu( 'open' );
 
-        // Toggle on click
-        $( '.toggle' ).on( 'click', function() {
-            $( '.list' ).makisu( 'toggle' );
-        });
+    // Toggle on click
+    $( '.toggle' ).on( 'click', function() {
+        $( '.list' ).makisu( 'toggle' );
+    });
 
-    } else {
 
-        $( '.warning' ).show();
-    }
 </script>
 <script>
     //Show DatePicker
