@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <div class="wrapper padding">
+        <div class="wrapper paddRight">
             <section class="demo">
                 <dl class="list nigiri">
                     <dt>Menu</dt>
@@ -45,15 +45,15 @@
             <div class="container">
                 <p class="head">Flight & Hotel estimation grid</p>
                 <div class="border">
-                    <div>
+                    <div class="text paddBottom">
                         <p class="head">Flight booking :</p>
-                        <label class="subHead">Origin :</label>
+                        <label class="paddRightMore">From :</label>
                         <select title="origin" id="orig" name="odd">
                             <option value="london" selected="selected" disabled>London
                             </option>
                         </select>
 
-                        <label class="subHead">Destination :</label>
+                        <label class="paddRightMore paddLeft">To :</label>
                         <select id="dest" title="dest" name="dropdown">
                             <option value="amsterdam">Amsterdam</option>
                             <option value="brussels">Brussels</option>
@@ -62,28 +62,32 @@
                             <option value="barcelona">Barcelona</option>
                             <option value="vienna">Vienna</option>
                         </select>
-                    </div><!--Origin & destination of flight-->
-                    <div class="subHead">
+                    </div><!--origin & destination of flight-->
+
+                    <div class="text borderRadio">
                         <input id="oneway" title="oneway" name="one" type="radio" value="oneway">One way
                         <input id="return" title="return" name="one" type="radio" value="return">Return
                     </div><!--one way/return flight-->
-
-                    <p class = "subHead">Enter a date:
-                        <input id="datepicker" size="10" title="startdate" type="text" name="startdate">
-                    </p><!--Date Picker-->
-
-                    <label class="head">Hotel booking: </label>
-                    <div class="subHead">
-                        <input id="singleroom"  title="singleroom" type="radio" name="single"  value="Single">Single bedroom
-                        <input id="doubleroom"  title="double" type="radio" name="single" value="Double">Double bedroom
-                    </div><!--single/double room-->
+                    <div class="borderTop">
+                        <label class="head">Hotel booking: </label>
+                        <div class="borderRadio">
+                            <div class="text">
+                                <input id="singleroom"  title="singleroom" type="radio" name="single"  value="Single">Single room
+                            </div>
+                            <div class="text">
+                                <input id="doubleroom"  title="double" type="radio" name="single" value="Double">Double room
+                            </div><!--single/double room-->
+                        </div><!--border radio buttons-->
+                    </div><!--Hotel booking-->
                 </div><!--Draw border around this content-->
+
+
                 <div class="display">
-                    <div class="subHead">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
-                    <div class="subHead" id="flightBookingFee"></div><!--Display Booking fee-->
-                    <div class="subHead" id="oneWayReturn"></div><!--Display one way or return-->
-                    <div class="subHead" id="hotelBookingFee"></div><!--Display hotel booking fee-->
-                    <div class="subHead" id="singleDouble"></div><!--For display single/double room-->
+                    <div class="text paddBottomMore">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
+                    <div class="text paddBottomMore" id="flightBookingFee"></div><!--Display Booking fee-->
+                    <div class="text paddBottomMore" id="oneWayReturn"></div><!--Display one way or return-->
+                    <div class="text paddBottomMore" id="hotelBookingFee"></div><!--Display hotel booking fee-->
+                    <div class="text paddBottomMore" id="singleDouble"></div><!--For display single/double room-->
                     <div class="head" id="total"></div><!--Display total-->
                     <input id="book" type="button" value="Book now" class="book">
                 </div><!--Display Estimate-->
@@ -138,36 +142,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script><!--datepicker-->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--datepicker-->
 <script src="dist/js/makisu.js"></script><!--left navigation-->
+<script src="dist/js/estimateform.js"></script>
 
-<script>
-    /* THE LEFT MENU*/
-    /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
-    var $nigiri = $( '.nigiri' );
-
-    // Create Makisus
-    $nigiri.makisu({
-        selector: 'dd',
-        overlap: 0.85,
-        speed: 1.7
-    });
-
-
-    // Open all
-    $( '.list' ).makisu( 'open' );
-
-    // Toggle on click
-    $( '.toggle' ).on( 'click', function() {
-        $( '.list' ).makisu( 'toggle' );
-    });
-
-
-</script>
-<script>
-    //Show DatePicker
-    $(document).ready( function() {
-        $( "#datepicker" ).datepicker();
-    } );
-</script>
-<script src="dist/js/script.js"></script>
 </body>
 </html>

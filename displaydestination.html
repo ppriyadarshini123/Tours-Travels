@@ -119,48 +119,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script><!--Tabs-->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--Tabs-->
 <script src="dist/js/makisu.js"></script><!--left navigation-->
-<script src="dist/js/script.js"></script>
-<script>
+<script src="dist/js/displaydestination.js"></script><!--displaydestination.js-->
 
-    /* THE LEFT MENU*/
-    /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
-    var $nigiri = $( '.nigiri' );
-
-    // Create Makisus
-    $nigiri.makisu({
-        selector: 'dd',
-        overlap: 0.85,
-        speed: 1.7
-    });
-
-    // Open all
-    $( '.list' ).makisu( 'open' );
-
-    // Toggle on click
-    $( '.toggle' ).on( 'click', function() {
-        $( '.list' ).makisu( 'toggle' );
-    });
-
-
-</script>
-<script>
-    //Fire mouseover event on Tabs
-    $( function() {
-        $( "#tabs" ).tabs({
-            event: "mouseover"
-        });
-    } );
-</script>
-<script>
-    //When the user leaves the tab area, fire mouse leave event and open the survey page.
-    $(document).ready(function() {
-        $("#tDisp").mouseleave(function (e) {
-            /* window.open('survey.html','_self');*/
-            window.open("survey.html","", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
-            e.preventDefault();
-        });
-    });
-
-</script>
 </body>
 </html>

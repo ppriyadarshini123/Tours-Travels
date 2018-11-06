@@ -6,6 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="dist/css/style.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
 </head>
 <body>
 <header id="top">
@@ -200,121 +201,7 @@
 <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--for slideshow-->
 <script src="dist/js/makisu.js"></script><!--Navigation-->
 <script src="http://malsup.github.com/jquery.cycle.all.js"></script><!--for slideshow-->
-<script>
-    /*Slideshow of destinations*/
-    $(document).ready(function(){
-        $('.slideshow').cycle({
-            fx:'fade' //transition type fade, scrollUp, shuffle etc
-        });
-    });
-    /* Open homepage when 'home' button is clicked*/
-    function showHome()
-    {
-        window.open("index.html", "_self");
-    }
-</script>
-<script>
-    /* 'Why choose us' section, implementing the scroll*/
-    //Code taken from https://codepen.io/mahish/pen/RajmQw
-    // duration of scroll animation
-    var scrollDuration = 1500;
+<script src="dist/js/index.js"> </script>
 
-    // paddles
-    var leftPaddle = document.getElementsByClassName('left-paddle');
-    var rightPaddle = document.getElementsByClassName('right-paddle');
-
-    // get items dimensions
-    var itemsLength = $('.item').length;
-    var itemSize = $('.item').outerWidth(true);
-
-    // get some relevant size for the paddle triggering point
-    var paddleMargin = 20;
-
-    // get wrapper width
-    var getMenuWrapperSize = function() {
-        return $('.menu-wrapper').outerWidth();
-    }
-    var menuWrapperSize = getMenuWrapperSize();
-
-    // the wrapper is responsive
-    $(window).on('resize', function() {
-        menuWrapperSize = getMenuWrapperSize();
-    });
-
-    // size of the visible part of the menu is equal as the wrapper size
-    var menuVisibleSize = menuWrapperSize;
-
-    // get total width of all menu items
-    var getMenuSize = function() {
-        return itemsLength * itemSize;
-    };
-
-    var menuSize = getMenuSize() + 45;
-
-    // get how much of menu is invisible
-    var menuInvisibleSize = menuSize - menuWrapperSize;
-
-    // get how much have we scrolled to the left
-    var getMenuPosition = function() {
-        return $('.menu').scrollLeft();
-    };
-
-    // finally, what happens when we are actually scrolling the menu
-    $('.menu').on('scroll', function() {
-
-        // get how much of menu is invisible
-        menuInvisibleSize = menuSize - menuWrapperSize;
-        // get how much have we scrolled so far
-        var menuPosition = getMenuPosition();
-
-        var menuEndOffset = menuInvisibleSize - paddleMargin;
-
-        // show & hide the paddles
-        // depending on scroll position
-        if (menuPosition <= paddleMargin) {
-            $(leftPaddle).addClass('hidden');
-            $(rightPaddle).removeClass('hidden');
-        } else if (menuPosition < menuEndOffset) {
-            // show both paddles in the middle
-            $(leftPaddle).removeClass('hidden');
-            $(rightPaddle).removeClass('hidden');
-        } else if (menuPosition >= menuEndOffset) {
-            $(leftPaddle).removeClass('hidden');
-            $(rightPaddle).addClass('hidden');
-        }
-    });
-
-    // scroll to left
-    $(rightPaddle).on('click', function() {
-        $('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
-    });
-
-    // scroll to right
-    $(leftPaddle).on('click', function() {
-        $('.menu').animate( { scrollLeft: '0' }, scrollDuration);
-    });
-
-</script>
-<script>
-    /* THE LEFT MENU*/
-    /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
-    var $nigiri = $( '.nigiri' );
-
-    // Create Makisus
-    $nigiri.makisu({
-        selector: 'dd',
-        overlap: 0.85,
-        speed: 1.7
-    });
-
-    // Open all
-    $( '.list' ).makisu( 'open' );
-
-    // Toggle on click
-    $( '.toggle' ).on( 'click', function() {
-        $( '.list' ).makisu( 'toggle' );
-    });
-
-</script>
 </body>
 </html>

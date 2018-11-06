@@ -1,5 +1,5 @@
 
-/* estimateform.html*/
+/* estForm.css*/
 
 /* CSS RESET SECTION
 ------------------------------------------- */
@@ -89,12 +89,19 @@ html, body {
 {
     position: relative;
     z-index: 40;
-    padding: 15px;
+    padding: 20px;
     margin: -320px auto 0 175px;
-    width: 900px;
-    height: 350px;
+    width: 760px;
+    height: 280px;
     background-color: white;
     box-shadow: 10px 10px #b1c7e2;
+}
+.border
+{
+    padding: 20px 20px 20px 20px;
+    border: dotted grey 1px;
+    width:370px;
+    height:210px;
 }
 
 .head
@@ -105,27 +112,75 @@ html, body {
     color: black;
 }
 
-.subHead
+.mar
 {
-    padding-top: 10px;
+    margin-left: 30px;
+}
+
+.borderRadio
+{
+    margin-top: 10px;
+    padding: 7px 0 7px 7px;
+    border: dotted grey 1px;
+    width: 186px;
+    border-radius: 10px;
+}
+input[type=radio],
+input.radio {
+
+    clear: none;
+    margin: 2px 5px 0 12px;
+}
+.borderTop
+{
+    border-top: dotted grey 1px;
     padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.text
+{
     font-size: 12px;
     letter-spacing: 1px;
-    color: #414A46;
+    color: #414A46
 }
-
-.border
+/*Padding classes */
+.paddRight
+ {
+     padding-right: 30px;
+ }
+.paddRightMore
 {
-    padding: 20px 20px 20px 20px;
-    border: dotted grey 1px;
-    width:500px;
+    padding-right: 10px;
+}
+.paddTop
+{
+    padding-top: 10px;
+
+}
+.paddBottom
+{
+    padding-bottom: 10px;
+}
+.paddBottomMore
+{
+    padding-bottom: 20px;
+}
+.paddLeft
+{
+    padding-left: 30px;
 }
 
+#dest option
+{
+    width: 250px;
+}
 /* DISPLAY ESTIMATE SECTION*/
+
 .display
 {
-    margin-left: 570px;
-    margin-top: -270px;
+    margin-left: 430px;
+    margin-top: -244px;
 }
 
 .city

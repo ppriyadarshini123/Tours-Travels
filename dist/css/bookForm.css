@@ -84,24 +84,16 @@ html, body {
 }
 
 /* MAIN SECTION*/
-.padding
-{
-    padding-bottom: 40px;
-}
-
 .container
 {
     margin: -320px auto 0 175px;
-  /*  margin-left: 370px;
-    margin-top: -360px;*/
     position: relative;
     z-index: 40;
-    width: 650px;
-    height: 350px;
+    width: 760px;
+    height: 280px;
     background-color: white;
     box-shadow: 10px 10px #b1c7e2;
     text-align: justify;
-
 }
 
 .head
@@ -116,21 +108,40 @@ html, body {
 
 .subHead
 {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 40px;
+    padding: 15px 15px 15px 25px;
     font-size: 12px;
     letter-spacing: 1px;
     color: #414A46;;
 }
 
+.paddRightMore
+{
+    padding-right:40px;
+}
+.paddRight
+{
+    padding-right: 72px;
+}
+.paddBottom
+{
+    padding-bottom: 40px;
+}
+#datepicker
+{
+    margin-left: 13px;
+}
+#datepicker2
+{
+    margin-left: 36px;
+}
 .book
 {
     color: #ffffff;
     background-color: #86A8D2;
     text-shadow: 2px 2px 4px #000000;
     padding: 10px;
-    margin-left: 40px;
+    margin-left: 400px;
+    margin-top: -350px;
 }
 
 .book:hover
@@ -138,9 +149,23 @@ html, body {
     background-color: darkgray;
 }
 
+.dispDest
+{
+    margin-top: 20px;
+    margin-left: -120px;
+}
+
 .validator
 {
     color: red;
+}
+.confirmMessage
+{
+    padding-left: 18px;
+    margin-right: 20px;
+    color:red;
+    text-wrap: normal;
+    font-size: 12px;
 }
 
 /*FOOTER SECTION*/
