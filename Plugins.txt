@@ -1,0 +1,23 @@
+
+
+Makisu left navigation – Sushi-Inspired CSS 3D Navigation for jQuery : https://www.noupe.com/development/makisu-sushi-inspired-css-3d-navigation-for-jquery-73103.html
+
+1. index.html
+
+a. Slideshow: http://jquery.malsup.com/cycle/begin.html
+
+2. estimateform.html
+
+a. Datepicker: https://www.formget.com/jquery-datepicker/#
+
+3. bookingform.html
+
+a. Datepicker :https://www.formget.com/jquery-datepicker/#
+
+4. DisplayDestination.html
+
+a. Tabs : https://jqueryui.com/tabs/
+
+
+
+
