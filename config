@@ -4,4 +4,4 @@
 	bare = true
 	symlinks = false
 	ignorecase = true
-	url=ssh://git@github.com/ppriyadarshini123/Tours-Travels/Tours-Travels.git
+
