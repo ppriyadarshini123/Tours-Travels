@@ -1,0 +1,362 @@
+
+/* estForm.css*/
+
+/* CSS RESET SECTION
+------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main, video { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+html, body{width:100%; height: 100%;}
+
+
+
+/* GENERAL SECTION*/
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a3bddd;
+}
+
+.wrapper
+{
+    margin: 0 auto;
+    width:960px;
+}
+
+
+/*HEADER SECTION*/
+.headerImage
+{
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+.logo
+{
+    margin-top: -145px;
+    margin-left: -150px;
+}
+
+.zIn
+{
+    z-index: 1000;
+    width:400px;
+    height:145px;
+    cursor: pointer;
+    position: relative;
+}
+
+.phone
+{
+    margin-top: -120px;
+    margin-left: 550px;
+    width: 32px;
+    height: 32px;
+}
+
+.phDisp
+{
+    margin-top: -140px;
+    margin-left: 570px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-left: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.phTime
+{
+    margin-top: 5px;
+    margin-left: 570px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-left: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* MAIN SECTION*/
+.container
+{
+    position: relative;
+    z-index: 50;
+    padding: 20px;
+    margin: -270px auto 0 175px;
+    /*width: 760px;*/
+    height: 320px;
+    background-color: white;
+    box-shadow: 10px 10px #b1c7e2;
+}
+.border
+{
+    padding: 20px 20px 20px 20px;
+    border: dotted grey 1px;
+    width:360px;
+    height:240px;
+}
+
+.head
+{
+    padding-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.mar
+{
+    margin-left: 30px;
+}
+
+
+.borderTop
+{
+    border-top: dotted grey 1px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.borderBottom
+{
+    border-bottom: dotted #0c7abf 1px;
+}
+.text
+{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #414A46
+}
+/* Customizing the dropdown menu*/
+select
+{
+    border: 1px dotted #999;
+    border-radius: 0;
+    height: 20px;
+    -webkit-appearance: none;
+    padding-left: 10px;
+}
+option
+{
+    color: #0c7abf;
+}
+/* Customizing radio buttons*/
+/* This code is taken from http://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/*/
+input[type=radio   ]:not(old){
+    /*width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;*/
+    opacity   : 0;
+}
+
+input[type=radio   ]:not(old) + label{
+    display      : inline-block;
+    margin-left  : -2em;
+    line-height  : 1.5em;
+}
+
+input[type=radio   ]:not(old) + label > span{
+    display          : inline-block;
+   /* width            : 0.875em;
+    height           : 0.875em;*/
+    width            : 12px;
+    height           : 12px;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 0.0625em solid rgb(192,192,192);
+    border-radius    : 0.25em;
+    background: rgb(224, 224, 224) linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+    vertical-align   : bottom;
+}
+
+input[type=radio   ]:not(old):checked + label > span{
+     background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+
+input[type=radio]:not(old):checked +  label > span > span{
+    display          : block;
+ /*   width            : 0.5em;
+    height           : 0.5em;*/
+    width            : 7px;
+    height           : 7px;
+    margin           : 0.125em;
+    border           : 0.0625em solid #0c7abf;
+    border-radius    : 0.125em;
+    background: #0c7abf linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+}
+
+/*Padding classes */
+.paddRight
+ {
+     padding-right: 22px;
+ }
+.paddRightMore
+{
+    padding-right: 10px;
+}
+.paddTop
+{
+    padding-top: 10px;
+
+}
+.paddBottom
+{
+    padding-bottom: 10px;
+}
+.paddBottomMore
+{
+    padding-bottom: 20px;
+}
+.paddLeft
+{
+    padding-left: 30px;
+}
+
+
+/* DISPLAY ESTIMATE SECTION*/
+
+.display
+{
+    margin-left: 430px;
+    margin-top: -274px;
+}
+
+.city
+{
+    color: #A4031F;
+}
+.book
+{
+    color: #ffffff;
+    background-color: #86A8D2;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 10px;
+}
+
+.book:hover
+{
+    background-color: darkgray;
+}
+
+#dest
+{
+    width: 358px;
+    border-bottom: solid 3px #86A8D2;
+}
+#orig
+{
+    width: 358px;
+    border-bottom: solid 3px #86A8D2;
+}
+
+/*FOOTER SECTION*/
+.footer
+{
+    padding-top: 40px;
+}
+.rowSiteMap
+{
+    background-color: #86A8D2;
+    padding-top: 20px;
+    z-index: 10000;
+}
+.siteSocial
+{
+    margin: 0 auto;
+    width: 920px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.colSiteMap ul
+{
+    padding-top: 20px;
+}
+
+.colSiteMap ul li
+{
+    padding-bottom: 20px;
+    width:250px;
+}
+
+.title
+{
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.sitemap
+{
+    display:flex;
+}
+
+.widSiteMap
+{
+    z-index: 40;
+}
+.link
+{
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.link:hover
+{
+    text-decoration: underline;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+
+/* SOCIAL MEDIA SECTION*/
+/*index.html section*/
+.colSocialMedia ul li a
+{
+    text-decoration: none;
+}
+
+.colSocialMedia ul li a:hover
+{
+    text-decoration: underline;
+    color:#40444B;
+}
+
+.goToTop
+{
+    display:flex;
+    justify-content: space-between;
+}
+.goToTop div a
+{
+    padding-left: 10px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+.base
+{
+    background-color: black;
+    height: 50px;
+    color:#ffffff;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
