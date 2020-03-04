@@ -17,6 +17,28 @@
 
 (function(){
 
+<<<<<<< HEAD
+=======
+    /**
+     * @desc onload initilizer
+     * @type {init}
+     */
+    window.onload = init;
+
+    /**
+     * @name init
+     * @desc calls other functions, controls the flow
+     *
+     */
+    function init() {
+        slideShow();
+        whyChooseUsScroll();
+        menu();
+
+    }//end init
+
+
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     /* FUNCTIONS*/
 
     /**
@@ -147,6 +169,7 @@
 
     }/* end MENU*/
 
+<<<<<<< HEAD
     /**
      * @name init
      * @desc calls other functions, controls the flow
@@ -166,5 +189,7 @@
     window.onload = init;
 
 
+=======
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 })();/*end iffy*/
 

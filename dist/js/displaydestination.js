@@ -15,6 +15,7 @@
 
 (function(){
 
+<<<<<<< HEAD
     /**
      * @name getParameterByName
      * @desc The value of id from querystring is extracted using regular expression
@@ -38,6 +39,24 @@
     /* Display fields*/
     let dispDest = document.getElementById("dispDest");
 
+=======
+    //onload initialiser
+    window.onload = init;
+
+    /**
+     * @name init
+     * @desc initialising function
+     */
+    function init() {
+        menu();
+        openTabs();
+        openSurvey();
+
+    }//end init
+
+
+    //Functions
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 
     /**
      * @name menu
@@ -82,17 +101,27 @@
      * @desc When the user closes the tab area, or presses back button, open the survey page.
      */
     function openSurvey() {
+<<<<<<< HEAD
         /* $(document).ready(function () {
              $("#tDisp").mouseleave(function (e) {
                  window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
                  e.preventDefault();
              });
          });*/
+=======
+       /* $(document).ready(function () {
+            $("#tDisp").mouseleave(function (e) {
+                window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
+                e.preventDefault();
+            });
+        });*/
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
         $(window).unload( function () {
             window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
             e.preventDefault();} );
     }/* end openSurvey*/
 
+<<<<<<< HEAD
     /**
      * @name init
      * @desc initialising function
@@ -106,5 +135,7 @@
     //onload initialiser
     window.onload = init;
 
+=======
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 })();/*end iffy*/
 

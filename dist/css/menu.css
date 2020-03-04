@@ -54,7 +54,10 @@ a {
     position: relative;
     margin-left: 120px;
     margin-top: 70px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 }
 
 .list a {
@@ -76,7 +79,11 @@ a {
     height: 25px;
     width: 120px;
     color: #fff;
+<<<<<<< HEAD
     z-index: 50;
+=======
+    z-index: 40;
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 
 }
 
@@ -113,33 +120,53 @@ a {
     color: #fff;
     padding: 5px;
     position: relative;
+<<<<<<< HEAD
     z-index: 50;
 }
 
 .toggle:hover {
     background: #A4031F;
+=======
+}
+
+.toggle:hover {
+    background: #86A8D2;
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     text-indent: 10px;
 }
 
 .toggPos
 {
+<<<<<<< HEAD
    /* margin-left: 70px;
     margin-top: 110px;*/
     margin-left: 2px;
     margin-top: 30px;
     width:70px;
 
+=======
+    margin-left: 70px;
+    margin-top: 110px;
+    width:70px;
+    z-index: 40;
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 }
 
 /* Individual styles */
 /* Original background color:#E32551 */
 /* Original menu hover color:#d31b46*/
+<<<<<<< HEAD
 .nigiri dt, .nigiri dd, .nigiri a { /*background: #86A8D2 ;*/ background: #A4031F;}
 .nigiri a:hover { background: #86A8D2; }
+=======
+.nigiri dt, .nigiri dd, .nigiri a { background: #86A8D2 ; }
+.nigiri a:hover { background: darkgrey; }
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 
 
 .nigiri {
     transform: perspective(1200px) rotateY(40deg) !important;
+<<<<<<< HEAD
     /*transform-origin: 110% 25%;*/
     transform-origin: 70% 10%;
     left: -18%;
@@ -147,4 +174,8 @@ a {
     z-index: 50;
 
 
+=======
+    transform-origin: 110% 25%;
+    left: 20%;
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 }

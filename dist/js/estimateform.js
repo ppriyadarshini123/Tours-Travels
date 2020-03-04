@@ -15,7 +15,10 @@
 */
 
 (function(){
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     /* Initializing variable*/
     let total = 0;
     let x = 0, y = 0;
@@ -35,6 +38,7 @@
     let dispSingleDouble = document.getElementById("singleDouble");
     let dispTotal = document.getElementById("total");
 
+<<<<<<< HEAD
     /**
      * @name getParameterByName
      * @desc The value of id from querystring is extracted using regular expression
@@ -55,6 +59,113 @@
 
     /* Getting the querystring*/
     let id = getParameterByName('id');
+=======
+    /* Getting the querystring*/
+    let id = getParameterByName('id');
+
+    //onload initialiser
+    window.onload = init;
+
+    /**
+     * @name init
+     * @desc initialising function
+     */
+    function init() {
+        bindBtns();
+        menu();
+        if(destDd != null)destChanged();
+        if(dispDestD != null)destDisp();
+    }//end init
+
+    /**
+     *  @name bindBtns
+     *  @desc Bind fields to event handler
+     */
+    function bindBtns() {
+        //Checking if button exists on page and then add eventhandler
+        if(destDd != null)destDd.addEventListener("change", initialize);
+        if(destDd != null)destDd.selectedIndex = id-1;
+        if(bookNow != null)bookNow.addEventListener("click", book);
+
+        //Reading radio buttons from collection for oneway/return and assigning to function
+        if(oneWay != null) {
+            for (let i = 0; i < oneWay.length; i++) {
+                oneWay[i].onclick = journey;
+            }
+        }
+        //Reading radio buttons from collection for single/double room and assigning to function
+        if(room != null) {
+            for (let j = 0; j < room.length; j++) {
+                room[j].onclick = single;
+            }
+        }
+
+    }// end bindBtns
+
+    /* FUNCTIONS*/
+
+    /**
+     * @name menu
+     * @desc creates the left menu and implements toggle
+     */
+    function menu()
+    {
+        /* THE LEFT MENU*/
+        /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
+        let $nigiri = $( '.nigiri' );
+
+        // Create Makisus
+        $nigiri.makisu({
+            selector: 'dd',
+            overlap: 0.85,
+            speed: 1.7
+        });
+
+        // Open all
+        $( '.list' ).makisu( 'open' );
+
+        // Toggle on click
+        $( '.toggle' ).on( 'click', function() {
+            $( '.list' ).makisu( 'toggle' );
+        });
+
+    }/* end menu*/
+
+    /**
+     * @name destDisp
+     * @desc displays the chosen destination in the dispDestD field
+     */
+    function destDisp()
+    {
+        for(let j=0; j< destinations.length - 1; j++)
+        {
+            if(id == j+1)
+                dispDestD.innerHTML = destinations[j];
+        }
+
+    }/*end destDisp*/
+
+    /**
+     * @name destChanged
+     * @desc To display the flight booking fee and the total when destination in
+     *  dropdown is changed
+     */
+    function destChanged()
+    {
+        let flightBookFee = [40, 50, 60, 30, 60,70];
+
+        for(let j=0; j< destinations.length - 1; j++)
+        {
+            if(id == j+1) {
+                dispDestD.innerHTML = destinations[j];
+                dispFliBook.innerHTML = "Your flight booking fee: £ " + flightBookFee[j];
+                total = total + flightBookFee[j];
+                dispTotal.innerHTML = "Your Total is:£ " + total;
+            }
+        }
+
+    }/* end destChanged*/
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 
     /**
      * @name initialize
@@ -83,7 +194,10 @@
         destChanged();
     }/*end initialize*/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     /**
      * @name journey
      * @desc Checking the radio button which is selected and displaying the estimate
@@ -126,7 +240,10 @@
         }
     }/* end journey*/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     /**
      * @name single
      * @desc Checking the radio button which is checked and displaying the
@@ -173,6 +290,7 @@
     }/*end single*/
 
     /**
+<<<<<<< HEAD
      * @name book
      * @desc When 'Book Now' button is clicked, open page bookingForm.html in the same tab.
      *
@@ -286,5 +404,34 @@
 
     //onload initialiser
     window.onload = init;
+=======
+     * @name getParameterByName
+     * @desc The value of id from querystring is extracted using regular expression
+     * @param: name, url
+     */
+    function getParameterByName(name,url)
+    {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+
+    }/* end getParameterByName*/
+
+
+    /**
+     * @name book
+     * @desc When 'Book Now' button is clicked, open page bookingForm.html in the same tab.
+     *
+     */
+    function book()
+    {
+        window.open("bookingForm.html?id="+ id, "_self");
+
+    } /* end book*/
+>>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
 })();/*end iffy*/
 
