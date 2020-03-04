@@ -15,10 +15,10 @@
 */
 
 (function(){
-<<<<<<< HEAD
 
-=======
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
+
+
     /* Initializing variable*/
     let total = 0;
     let x = 0, y = 0;
@@ -38,7 +38,7 @@
     let dispSingleDouble = document.getElementById("singleDouble");
     let dispTotal = document.getElementById("total");
 
-<<<<<<< HEAD
+
     /**
      * @name getParameterByName
      * @desc The value of id from querystring is extracted using regular expression
@@ -59,7 +59,7 @@
 
     /* Getting the querystring*/
     let id = getParameterByName('id');
-=======
+
     /* Getting the querystring*/
     let id = getParameterByName('id');
 
@@ -165,7 +165,7 @@
         }
 
     }/* end destChanged*/
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 
     /**
      * @name initialize
@@ -194,10 +194,10 @@
         destChanged();
     }/*end initialize*/
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
+
+
     /**
      * @name journey
      * @desc Checking the radio button which is selected and displaying the estimate
@@ -240,10 +240,10 @@
         }
     }/* end journey*/
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
+
+
     /**
      * @name single
      * @desc Checking the radio button which is checked and displaying the
@@ -290,7 +290,7 @@
     }/*end single*/
 
     /**
-<<<<<<< HEAD
+
      * @name book
      * @desc When 'Book Now' button is clicked, open page bookingForm.html in the same tab.
      *
@@ -404,7 +404,7 @@
 
     //onload initialiser
     window.onload = init;
-=======
+
      * @name getParameterByName
      * @desc The value of id from querystring is extracted using regular expression
      * @param: name, url
@@ -432,6 +432,6 @@
         window.open("bookingForm.html?id="+ id, "_self");
 
     } /* end book*/
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 })();/*end iffy*/
 

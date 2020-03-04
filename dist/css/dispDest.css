@@ -39,17 +39,17 @@ html, body {
     background-repeat: no-repeat;
     padding-bottom: 20px;
 }
-<<<<<<< HEAD
-.logo
-{
+
+.logo {
     margin-top: -145px;
     margin-left: -150px;
-=======
+}
+
 
 .logo
 {
     margin-top: -145px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 }
 
 
@@ -64,11 +64,11 @@ html, body {
 .phone
 {
     margin-top: -120px;
-<<<<<<< HEAD
+
     margin-left: 550px;
-=======
+
     margin-left: 600px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
     width: 32px;
     height: 32px;
 }
@@ -76,11 +76,11 @@ html, body {
 .phDisp
 {
     margin-top: -140px;
-<<<<<<< HEAD
+
     margin-left: 570px;
-=======
+
     margin-left: 620px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
@@ -90,11 +90,11 @@ html, body {
 .phTime
 {
     margin-top: 5px;
-<<<<<<< HEAD
+
     margin-left: 570px;
-=======
+
     margin-left: 620px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
     color: white;
     letter-spacing: 1px;
     font-size: 14px;
@@ -112,16 +112,16 @@ html, body {
     background-position: top;
 }
 
-<<<<<<< HEAD
 
-.tabPosition{
+
+.tabPosition {
     margin-left: 172px;
     margin-top: -270px;
-=======
+}
 .tabPosition{
     margin-left: 172px;
     margin-top: -345px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
     padding-bottom: 20px;
 }
 .dest
@@ -146,7 +146,7 @@ html, body {
     line-height: 16px;
 }
 
-<<<<<<< HEAD
+
 #tabs
 {
    z-index: 50;
@@ -155,8 +155,8 @@ html, body {
 {
     background-color: #86A8D2;
 }
-=======
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
+
 /*FOOTER SECTION*/
 .footer
 {
@@ -171,11 +171,11 @@ html, body {
 .siteSocial
 {
     margin: 0 auto;
-<<<<<<< HEAD
+
     width: 920px;
-=======
+
     width: 960px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
     display:flex;
     justify-content: space-between;
 }

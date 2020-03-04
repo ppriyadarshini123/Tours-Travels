@@ -17,16 +17,16 @@
 
     /* Store the html element in a constant*/
     const btnOK = document.getElementById("ok");
-<<<<<<< HEAD
-    let txtComments = document.getElementById("comment");
-=======
 
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+    let txtComments = document.getElementById("comment");
+
+
+
     /*Display field*/
     let dispThanks1 = document.getElementById("dispThanks");
 
 
-<<<<<<< HEAD
+
     //Functions
 
     /**
@@ -45,7 +45,7 @@
                 dispThanks1.innerHTML = "Please enter your comments. Thanks";
         }
     }/* end okClicked*/
-=======
+
     //onload initialiser
     window.onload = init;
 
@@ -60,7 +60,7 @@
 
 
     //Functions
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 
     /**
      *  @name bindBtns
@@ -78,7 +78,7 @@
      */
     function plane()
     {
-<<<<<<< HEAD
+
         //Old code
         /*  $(document).ready(function () {
               $("#ok").click(function () {
@@ -121,7 +121,7 @@
 
     //onload initialiser
     window.onload = init;
-=======
+
         $(document).ready(function(){
             $("#ok").click(function(){
                 $("#plane").animate({
@@ -143,7 +143,7 @@
     {
         dispThanks1.innerHTML = "Thanks for your feedback. Have a great trip !";
     }/* end okClicked*/
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 
 })();/*end iffy*/
 

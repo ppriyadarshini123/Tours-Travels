@@ -43,10 +43,10 @@ html, body {
 .logo
 {
     margin-top: -145px;
-<<<<<<< HEAD
+
     margin-left: -150px;
-=======
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
+
 }
 
 .zIn
@@ -61,11 +61,7 @@ html, body {
 .phone
 {
     margin-top: -120px;
-<<<<<<< HEAD
     margin-left: 550px;
-=======
-    margin-left: 600px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     width: 32px;
     height: 32px;
 }
@@ -73,11 +69,7 @@ html, body {
 .phDisp
 {
     margin-top: -140px;
-<<<<<<< HEAD
     margin-left: 570px;
-=======
-    margin-left: 620px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
@@ -87,11 +79,7 @@ html, body {
 .phTime
 {
     margin-top: 5px;
-<<<<<<< HEAD
     margin-left: 570px;
-=======
-    margin-left: 620px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
     color: white;
     letter-spacing: 1px;
     font-size: 14px;
@@ -102,7 +90,7 @@ html, body {
 /* MAIN SECTION*/
 .container
 {
-<<<<<<< HEAD
+
     margin: -270px auto 0 175px;
     position: relative;
     z-index: 50;
@@ -110,16 +98,10 @@ html, body {
     box-shadow: 10px 10px #b1c7e2;
     text-align: justify;
     padding: 20px;
-=======
-    margin: -320px auto 0 175px;
-    position: relative;
-    z-index: 40;
     width: 760px;
     height: 280px;
-    background-color: white;
-    box-shadow: 10px 10px #b1c7e2;
-    text-align: justify;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
+
 }
 
 .head
@@ -140,7 +122,7 @@ html, body {
     color: #414A46;;
 }
 
-<<<<<<< HEAD
+
 input[type=text]
 {
     border: 1px dotted #999;
@@ -150,8 +132,8 @@ input[type=text]
 }
 
 /*!**!Padding classes*/
-=======
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
+
 .paddRightMore
 {
     padding-right:40px;
@@ -164,7 +146,7 @@ input[type=text]
 {
     padding-bottom: 40px;
 }
-<<<<<<< HEAD
+
 .paddTop
 {
     padding-top: 10px;
@@ -193,11 +175,11 @@ input[type=text]
     padding-left: 5px;
     border-bottom: solid 3px #86A8D2;
 }
-.btns
-{
+.btns {
     margin-left: 320px;
-    display:flex;
-=======
+    display: flex;
+}
+
 #datepicker
 {
     margin-left: 13px;
@@ -205,7 +187,7 @@ input[type=text]
 #datepicker2
 {
     margin-left: 36px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 }
 .book
 {
@@ -213,12 +195,12 @@ input[type=text]
     background-color: #86A8D2;
     text-shadow: 2px 2px 4px #000000;
     padding: 10px;
-<<<<<<< HEAD
+
     letter-spacing: 1px;
-=======
+
     margin-left: 400px;
     margin-top: -350px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 }
 
 .book:hover
@@ -226,12 +208,12 @@ input[type=text]
     background-color: darkgray;
 }
 
-<<<<<<< HEAD
 
-.validator
-{
+
+.validator {
     color: #A4031F;
-=======
+}
+
 .dispDest
 {
     margin-top: 20px;
@@ -241,22 +223,22 @@ input[type=text]
 .validator
 {
     color: red;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 }
 .confirmMessage
 {
     padding-left: 18px;
     margin-right: 20px;
-<<<<<<< HEAD
+
     color: #A4031F;
     font-size: 12px;
     line-height: 1.4;
     letter-spacing: 1px;
-=======
+
     color:red;
     text-wrap: normal;
     font-size: 12px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 }
 
 /*FOOTER SECTION*/
@@ -273,11 +255,11 @@ input[type=text]
 .siteSocial
 {
     margin: 0 auto;
-<<<<<<< HEAD
+
     width: 920px;
-=======
+
     width: 960px;
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
     display:flex;
     justify-content: space-between;
 }

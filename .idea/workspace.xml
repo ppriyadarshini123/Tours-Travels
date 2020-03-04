@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="" />
+    <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency-350x141.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tours-Travels" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookingForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookingForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/displaydestination.html" beforeDir="false" afterPath="$PROJECT_DIR$/displaydestination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bookForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/bookForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/dispDest.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/dispDest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/estForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/estForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency.ai" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency.ai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/phone_files/prebid-analytics-1.24.2.js.download" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/phone_files/prebid-analytics-1.24.2.js.download" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bookingform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/bookingform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/displaydestination.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/displaydestination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/estimateform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/estimateform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/makisu.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/makisu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/survey.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/survey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estimateform.html" beforeDir="false" afterPath="$PROJECT_DIR$/estimateform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/survey.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -25,5 +57,29 @@
   </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

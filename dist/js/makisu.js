@@ -24,7 +24,7 @@
 (function($) {
 
     // Global initialisation flag
-<<<<<<< HEAD
+
     let initialized = false;
 
     // For detecting browser prefix and capabilities
@@ -41,7 +41,7 @@
 
     // Public API
     let api = {
-=======
+
     var initialized = false;
 
     // For detecting browser prefix and capabilities
@@ -58,7 +58,7 @@
 
     // Public API
     var api = {
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 
         // Toggle open / closed
         toggle: function() {
@@ -165,11 +165,11 @@
     };
 
     // Utils
-<<<<<<< HEAD
+
     let utils = {
-=======
+
     var utils = {
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 
         // Resolves argument values to defaults
         resolve: function( $el, key, val ) {
@@ -179,11 +179,11 @@
         // Prefixes a hash of styles with the current vendor
         prefix: function( style ) {
             
-<<<<<<< HEAD
+
             for ( let key in style ) {
-=======
+
             for ( var key in style ) {
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
                 style[ prefix + key ] = style[ key ];
             }
 
@@ -195,11 +195,11 @@
 
             try {
 
-<<<<<<< HEAD
+
                 let style = document.createElement( 'style' );
-=======
+
                 var style = document.createElement( 'style' );
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
                 style.innerHTML = rule;
                 document.getElementsByTagName( 'head' )[0].appendChild( style );
 
@@ -208,11 +208,11 @@
     };
 
     // Element templates
-<<<<<<< HEAD
+
     let markup = {
-=======
+
     var markup = {
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
         node: '<span class="node"/>',
         back: '<span class="face back"/>',
         over: '<span class="face over"/>'
@@ -224,11 +224,11 @@
         // Notify if 3D isn't available
         if ( !canRun ) {
 
-<<<<<<< HEAD
+
             let message = 'Failed to detect CSS 3D support';
-=======
+
             var message = 'Failed to detect CSS 3D support';
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 
             if( console && console.warn ) {
                 
@@ -334,17 +334,17 @@
         }
 
         // Merge options & defaults
-<<<<<<< HEAD
+
         let opts = $.extend( {}, $.fn.makisu.defaults, options );
 
         // Extract api method arguments
         let args = Array.prototype.slice.call( arguments, 1 );
-=======
+
         var opts = $.extend( {}, $.fn.makisu.defaults, options );
 
         // Extract api method arguments
         var args = Array.prototype.slice.call( arguments, 1 );
->>>>>>> 59e8e8ae18e4a2beeb4666ae82df5fd1dc08e32b
+
 
         // Main plugin loop
         return this.each( function () {
