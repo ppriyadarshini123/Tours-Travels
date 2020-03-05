@@ -27,7 +27,7 @@ html, body {
 .wrapper
 {
     margin: 0 auto;
-    width:960px;
+    /*width:960px;*/
 }
 
 /*HEADER SECTION*/
@@ -36,40 +36,40 @@ html, body {
     background-repeat: no-repeat;
     padding-bottom: 20px;
     width: 100%;
-}
-
-.headerBackground
-{
-    background-color: #47DEFF;
+    background-color: #178EE8;
+    height: 4.6vw;
+    position: relative;
 }
 
 .logo
 {
-    margin-top: -145px;
-    margin-left: -150px;
+
 }
 
 .zIn
 {
-    z-index: 1000;
-    width:400px;
-    height:145px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    left: 10%;
+}
+
+
+.phonePosition
+{
+    display: flex;
+    position: absolute;
+    left: 67%;
+    top: 34%;
 }
 
 .phone
 {
-    margin-top: -120px;
-    margin-left: 550px;
     width: 32px;
     height: 32px;
 }
 
 .phDisp
 {
-    margin-top: -140px;
-    margin-left: 570px;
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
@@ -79,8 +79,7 @@ html, body {
 
 .phTime
 {
-    margin-top: 5px;
-    margin-left: 570px;
+    padding-top: 10px;
     color: white;
     letter-spacing: 1px;
     font-size: 14px;
@@ -90,43 +89,38 @@ html, body {
 
 
 /*MENU & SLIDESHOW SECTION*/
-.padding
-{
-    padding-bottom: 20px;
-}
-
 .slideshow
 {
-    margin-left: -195px;
-    margin-top: -290px;
     z-index: 40;
     cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+
 }
-
-/*    margin-left: 240px;
-    margin-top: -320px;
-    z-index: 40;
-}*/
-
 
 .text-block {
     position: absolute;
     color: white;
     padding: 20px;
-    line-height: 1.4;
+    line-height: 2;
     letter-spacing: 1px;
     font-weight: lighter;
+    font-size: large;
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     right:0;
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     text-shadow: 2px 2px 4px #000000;
+    width: 280px;
+    height: 100px;
+    text-align: center;
 }
 
 /* WHY CHOOSE US - CAROUSEL SECTION*/
 
 .menu-wrapper {
-    position: relative;
+
    /*max-width: 970px;*/
     max-width: 920px;
     height: 250px;
@@ -136,11 +130,14 @@ html, body {
     overflow-y: hidden;
     padding-right: 10px;
     padding-left: 1px;
+    z-index: 40;
+   /* position: absolute;
+    top: 95%;
+    left: 34%;*/
 }
 
 .menu {
     height: 250px;
-    /*width:975px;*/
     width: 925px;
     background: #ffffff;
     box-sizing: border-box;
@@ -152,10 +149,8 @@ html, body {
 .item {
     display: inline-block;
     height: 100%;
-    /*width: 310px;*/
     width: 300px;
     outline: 1px dotted gray;
-   /* padding:10px;*/
     padding-right: 20px;
     box-sizing: border-box;
 }
@@ -176,10 +171,9 @@ html, body {
     position: absolute;
     top: 0;
     bottom: 0;
-   /* width: 3em;*/
     width: 2em;
-
 }
+
 .left-paddle {
     left: 0;
 }
@@ -197,7 +191,9 @@ html, body {
 .color
 {
     background-color: lightgray;
-    margin-top: 20px;
+   /* position: absolute;
+    bottom: -54%;
+    left: 34%;*/
 }
 .heading
 {
