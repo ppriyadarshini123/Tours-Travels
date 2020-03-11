@@ -27,6 +27,7 @@ html, body {
 .wrapper
 {
     margin: 0 auto;
+    position: relative;/*Added to place the Makisu menu in position, otherwise it becomes sticky*/
     /*width:960px;*/
 }
 
@@ -36,7 +37,7 @@ html, body {
     background-repeat: no-repeat;
     padding-bottom: 20px;
     width: 100%;
-    background-color: #178EE8;
+    background-color: #0A4069;
     height: 4.6vw;
     position: relative;
 }
@@ -59,7 +60,7 @@ html, body {
     display: flex;
     position: absolute;
     left: 67%;
-    top: 34%;
+    padding: 45px;
 }
 
 .phone
@@ -109,34 +110,43 @@ html, body {
     font-size: large;
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     right:0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    text-shadow: 2px 2px 4px #000000;
+    /*background: rgb(0, 0, 0); !* Fallback color *!
+    background: rgba(0, 0, 0, 0.5); !* Black background with 0.5 opacity *!
+    text-shadow: 2px 2px 4px #000000;*/
+
+    background: rgb(23, 142, 232); /* Fallback color */
+    /*background: rgba(23, 142, 232, 0.5); !* Black background with 0.5 opacity *!*/
+    /*text-shadow: 2px 2px 4px #178EE8;*/
     width: 280px;
     height: 100px;
     text-align: center;
 }
 
 /* WHY CHOOSE US - CAROUSEL SECTION*/
+.whyChooseUsPosition
+{
+    position: relative;
+    height: 440px;
+}
 
-.menu-wrapper {
-
-   /*max-width: 970px;*/
+.whyChooseUs {
+    margin-top: 15px;
     max-width: 920px;
     height: 250px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid black;
     overflow-x: hidden;
     overflow-y: hidden;
     padding-right: 10px;
     padding-left: 1px;
     z-index: 40;
-   /* position: absolute;
-    top: 95%;
-    left: 34%;*/
+    position: absolute;
+    bottom: 5%;
+    left: 34%;
 }
 
-.menu {
+.reasons {
     height: 250px;
     width: 925px;
     background: #ffffff;
@@ -161,8 +171,9 @@ html, body {
 }
 .item p
 {
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .paddles {
@@ -176,9 +187,14 @@ html, body {
 
 .left-paddle {
     left: 0;
+    color: #ffffff;
+    background-color: #0c7abf;
+
 }
 .right-paddle {
     right: 0;
+    color: #ffffff;
+    background-color: #0c7abf;
 }
 .hidden {
     display: none;
@@ -188,18 +204,19 @@ html, body {
 /*
     Top DEALS SECTION
 */
-.color
+.topDeals
 {
-    background-color: lightgray;
-   /* position: absolute;
-    bottom: -54%;
-    left: 34%;*/
+    position: absolute;
+    bottom: -15%;
+    left: 34%;
+    z-index: 500;
 }
 .heading
 {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 25px;
 }
 .moreDest
 {
@@ -212,47 +229,52 @@ html, body {
 
 .dest{
     background-color: white;
-    /*margin-left: 20px;*/
-    margin-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     cursor: pointer;
     z-index: 40;
+    border-radius: 147px;
+    border-bottom: #000000 1px solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .dest img
 {
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 131px;
 }
 .package
 {
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 10px;
-    color: darkgray;
-    font-size: 15px;
-    letter-spacing: 2px;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 .price
 {
     padding-left: 20px;
     padding-bottom: 10px;
-    color: darkgray;
+    color: #000000;
     font-size: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .book
 {
     color: #ffffff;
-    background-color: #86A8D2;
-    font-size: 12px;
+    background-color: #178EE8;
+    font-size: 15px;
     margin-left: 90px;
     display: block;
     width:80px;
     padding: 20px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px #000000;
+    border-radius: 35px;
 }
 
 .book:hover
@@ -268,7 +290,7 @@ html, body {
 }
 .rowSiteMap
 {
-    background-color: #86A8D2;
+    background-color: #0A4069;
     padding-top: 20px;
     z-index: 10000;
 }
@@ -293,7 +315,7 @@ html, body {
 
 .title
 {
-    font-size: 14px;
+    font-size: 20px;
     color: #ffffff;
     letter-spacing: 1px;
     padding-top: 10px;

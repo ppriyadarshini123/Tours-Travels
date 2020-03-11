@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/Portugal-1920x800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/Portugal-2540x1058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/ams-2540x1058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/barcelona-1920x800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/barcelona-2540x1058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/bruss-2527x949.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/bruss-2540x954.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/brussels-1920x800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/brussels-2540x1058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/port-2540x926.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/prague-2540x1058.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/vienna-1920x800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/vienna-2540x1058.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/Carousel/amazingdestination-300x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/Carousel/baggage-300x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/Carousel/bus-300x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/Carousel/car-300x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/Carousel/food-300x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/Carousel/hotel-300x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/amazingdestination.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/amazingdestination-298x378.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/amazingdestination-300x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-124x50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-350x141.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/telephone-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/telephone-40x40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/telephone-800x800.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/telephone-800x800.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency.ai" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency.ai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/makisu.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/makisu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +72,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583400247202</updated>
-      <workItem from="1583400284577" duration="21205000" />
+      <workItem from="1583400284577" duration="21537000" />
+      <workItem from="1583488232705" duration="1808000" />
+      <workItem from="1583832334054" duration="22120000" />
     </task>
     <servers />
   </component>

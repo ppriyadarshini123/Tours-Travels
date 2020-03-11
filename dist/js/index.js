@@ -17,8 +17,6 @@
 
 (function(){
 
-
-
     /**
      * @desc onload initilizer
      * @type {init}
@@ -34,7 +32,6 @@
         slideShow();
         whyChooseUsScroll();
         menu();
-
     }//end init
 
 
@@ -78,7 +75,7 @@
 
         // get wrapper width
         let getMenuWrapperSize = function() {
-            return $('.menu-wrapper').outerWidth();
+            return $('.whyChooseUs').outerWidth();
         }
         let menuWrapperSize = getMenuWrapperSize();
 
@@ -102,11 +99,11 @@
 
         // get how much have we scrolled to the left
         let getMenuPosition = function() {
-            return $('.menu').scrollLeft();
+            return $('.reasons').scrollLeft();
         };
 
         // finally, what happens when we are actually scrolling the menu
-        $('.menu').on('scroll', function() {
+        $('.reasons').on('scroll', function() {
 
             // get how much of menu is invisible
             menuInvisibleSize = menuSize - menuWrapperSize;
@@ -132,12 +129,12 @@
 
         // scroll to left
         $(rightPaddle).on('click', function() {
-            $('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+            $('.reasons').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
         });
 
         // scroll to right
         $(leftPaddle).on('click', function() {
-            $('.menu').animate( { scrollLeft: '0' }, scrollDuration);
+            $('.reasons').animate( { scrollLeft: '0' }, scrollDuration);
         });
 
     } /* end whychooseusscroll */

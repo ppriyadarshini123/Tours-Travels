@@ -39,26 +39,9 @@
     let $this, $root, $base, $kids, $node, $item, $over, $back;
     let wait, anim, last;
 
+
     // Public API
     let api = {
-
-    var initialized = false;
-
-    // For detecting browser prefix and capabilities
-    var el = document.createElement( 'div' );
-    var re = /^(Moz|(w|W)ebkit|O|ms)(?=[A-Z])/;
-
-    // Establish vendor prefix and CSS 3D support
-    var vendor = (function() { for ( var p in el.style ) if( re.test(p) ) return p.match(re)[0]; })() || '';
-    var canRun = vendor + 'Perspective' in el.style;
-    var prefix = '-' + vendor.toLowerCase() + '-';
-
-    var $this, $root, $base, $kids, $node, $item, $over, $back;
-    var wait, anim, last;
-
-    // Public API
-    var api = {
-
 
         // Toggle open / closed
         toggle: function() {
@@ -168,9 +151,6 @@
 
     let utils = {
 
-    var utils = {
-
-
         // Resolves argument values to defaults
         resolve: function( $el, key, val ) {
             return typeof val === 'undefined' ? $el.data( key ) : val;
@@ -182,8 +162,6 @@
 
             for ( let key in style ) {
 
-            for ( var key in style ) {
-
                 style[ prefix + key ] = style[ key ];
             }
 
@@ -194,11 +172,7 @@
         inject: function( rule ) {
 
             try {
-
-
                 let style = document.createElement( 'style' );
-
-                var style = document.createElement( 'style' );
 
                 style.innerHTML = rule;
                 document.getElementsByTagName( 'head' )[0].appendChild( style );
@@ -210,9 +184,6 @@
     // Element templates
 
     let markup = {
-
-    var markup = {
-
         node: '<span class="node"/>',
         back: '<span class="face back"/>',
         over: '<span class="face over"/>'
@@ -223,12 +194,7 @@
 
         // Notify if 3D isn't available
         if ( !canRun ) {
-
-
             let message = 'Failed to detect CSS 3D support';
-
-            var message = 'Failed to detect CSS 3D support';
-
 
             if( console && console.warn ) {
                 
@@ -240,7 +206,6 @@
                     $( this ).trigger( 'error', message );
                 });
             }
-
             return;
         }
 
@@ -339,11 +304,6 @@
 
         // Extract api method arguments
         let args = Array.prototype.slice.call( arguments, 1 );
-
-        var opts = $.extend( {}, $.fn.makisu.defaults, options );
-
-        // Extract api method arguments
-        var args = Array.prototype.slice.call( arguments, 1 );
 
 
         // Main plugin loop
