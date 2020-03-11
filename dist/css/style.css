@@ -113,8 +113,8 @@ html, body {
     /*background: rgb(0, 0, 0); !* Fallback color *!
     background: rgba(0, 0, 0, 0.5); !* Black background with 0.5 opacity *!
     text-shadow: 2px 2px 4px #000000;*/
-
-    background: rgb(23, 142, 232); /* Fallback color */
+    background-color: #1167A8;
+    /*background: rgb(23, 142, 232); !* Fallback color *!*/
     /*background: rgba(23, 142, 232, 0.5); !* Black background with 0.5 opacity *!*/
     /*text-shadow: 2px 2px 4px #178EE8;*/
     width: 280px;
@@ -135,7 +135,7 @@ html, body {
     height: 250px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     overflow-x: hidden;
     overflow-y: hidden;
     padding-right: 10px;
@@ -144,6 +144,7 @@ html, body {
     position: absolute;
     bottom: 5%;
     left: 34%;
+    border-radius: 60px;
 }
 
 .reasons {
@@ -188,13 +189,13 @@ html, body {
 .left-paddle {
     left: 0;
     color: #ffffff;
-    background-color: #0c7abf;
+    background-color: #1167A8;
 
 }
 .right-paddle {
     right: 0;
     color: #ffffff;
-    background-color: #0c7abf;
+    background-color:#1167A8;
 }
 .hidden {
     display: none;
@@ -266,7 +267,7 @@ html, body {
 .book
 {
     color: #ffffff;
-    background-color: #178EE8;
+    background-color: #1167A8;
     font-size: 15px;
     margin-left: 90px;
     display: block;
@@ -279,7 +280,8 @@ html, body {
 
 .book:hover
 {
-    background-color: darkgray;
+    background-color: #1895F5;
+    text-decoration: underline;
 }
 
 
