@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ppriyadarshini123/Tours-Travels#readme",
   "dependencies": {
-    "jquery": "3.3.1",
+    "jquery": "3.4.0",
     "jquery-datepicker": "1.12.3",
     "jquery-ui": "1.12.1",
     "makisu": "0.0.0"
