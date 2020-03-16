@@ -3,191 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <title>Flight & Hotel estimate form</title>
-    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><!--datepicker-->
+  <!--  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">&lt;!&ndash;datepicker&ndash;&gt;-->
     <link rel="stylesheet" type="text/css" href="dist/css/estForm.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
 </head>
 <body>
-<div id="wrapper">
-    <header id="top">
-        <div class="headerImage">
-            <img src="dist/images/headernew.png" alt="Background header">
-            <div class="wrapper">
+
+<header id="top">
+    <div class="headerImage">
+        <div class="wrapper">
+            <div  class="zIn">
+                <a href="#">
+                    <img src="dist/images/optimized/logo_initial_with_transparency-350x141.png" class="logo" alt="Logo"/>
+                </a>
+            </div><!--logo-->
+            <div class="phonePosition">
+                <div><img src="./dist/images/optimized/telephone-40x40.png" class="phone" alt="Telephone"></div>
                 <div>
-                    <a href="index.html" class="zIn">
-                        <img src="dist/images/logonew.png" class="logo" alt="Logo"/>
-                    </a>
-                </div><!--logo-->
-                <div>
-                    <img src="./dist/images/telephone.png" class="phone" alt="Phone">
-                    <p class="phDisp">+44 7549231859</p>
+                    <p class="phDisp">+44 5555555555</p>
                     <p class="phTime">24 hrs a day / 7 days a week</p>
-                </div><!--phone-->
-            </div><!--logo and phone-->
-        </div><!--Header Image-->
-    </header>
+                </div>
+            </div><!--Phone number-->
+        </div><!--adding logo and phone to wrapper-->
+    </div><!--Header Image-->
+</header>
+
+<div class="wrapper">
+    <section class="demo">
+        <dl class="list nigiri">
+            <dt>Menu</dt>
+            <dd><a href="index.html">Home</a></dd>
+            <dd><a href="#">Get an estimate</a></dd>
+            <dd><a href="#">Book a flight</a></dd>
+            <dd><a href="#">Holidays</a></dd>
+            <dd><a href="#">Things to do</a></dd>
+            <dd><a href="#">Last minute Deals</a></dd>
+        </dl>
+        <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
+    </section>
 
     <main>
-
-        <div class="wrapper">
-
-        <div class="wrapper paddRight">
-
-            <section class="demo">
-                <dl class="list nigiri">
-                    <dt>Menu</dt>
-                    <dd><a href="index.html">Home</a></dd>
-                    <dd><a href="#">Holidays</a></dd>
-                    <dd><a href="#">Visas</a></dd>
-                    <dd><a href="#">Things To Do</a></dd>
-                    <dd><a href="#">Last minute Deals</a></dd>
-                </dl>
-                <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle-->
-            </section>
-
-            <div class="container">
-                <p class="head">Flight & Hotel estimation grid</p>
-                <div class="border">
-                    <div class="text paddBottom">
-
-                        <p class="head">Flight booking </p>
-
-                        <label class="paddRightMore">From </label>
-                        <div class="paddTop paddBottom">
-                            <select title="origin" id="orig" name="odd" class="borderBottom">
-                                <option value="london" selected="selected" disabled>London
-                                </option>
-                            </select>
-                        </div><!--origin dropdown-->
-
-                        <label class="paddRightMore">To :</label>
-                        <div class="paddTop paddBottom">
-                            <select id="dest"  title="dest" name="dropdown" class="borderBottom">
-                                <option value="amsterdam">Amsterdam</option>
-                                <option value="brussels">Brussels</option>
-                                <option value="portugal">Portugal</option>
-                                <option value="prague">Prague</option>
-                                <option value="barcelona">Barcelona</option>
-                                <option value="vienna">Vienna</option>
-                            </select>
-                        </div><!--destination dropdown-->
-                    </div><!--origin & destination of flight-->
-
-                    <div class="">
-                        <input id="oneway" type="radio" name="one" value="oneway">
-                        <label for="oneway" class="text paddRight"><span><span></span></span>One way</label>
-                        <input id="return" type="radio" name="one" value="return">
-                        <label for="return" class="text"><span><span></span></span>Return</label>
-                    </div><!--one way/return-->
-
-                    <div class="borderTop">
-                        <label class="head">Hotel booking: </label>
-                        <div class="paddTop">
-                            <input id="single"   title="singleroom" type="radio" name="single"  value="single">
-                            <label for="single" class="text"><span><span></span></span>Single room</label>
-                            <input id="double"  title="double" type="radio" name="single" value="double">
-                            <label for="double" class="text padRight"><span><span></span></span>Double room</label>
-                        </div><!--single/double radio buttons-->
-
-                        <p class="head">Flight booking :</p>
-                        <label class="paddRightMore">From :</label>
-                        <select title="origin" id="orig" name="odd">
-                            <option value="london" selected="selected" disabled>London
-                            </option>
-                        </select>
-
-                        <label class="paddRightMore paddLeft">To :</label>
-                        <select id="dest" title="dest" name="dropdown">
-                            <option value="amsterdam">Amsterdam</option>
-                            <option value="brussels">Brussels</option>
-                            <option value="portugal">Portugal</option>
-                            <option value="prague">Prague</option>
-                            <option value="barcelona">Barcelona</option>
-                            <option value="vienna">Vienna</option>
-                        </select>
-                    </div><!--origin & destination of flight-->
-
-                    <div class="text borderRadio">
-                        <input id="oneway" title="oneway" name="one" type="radio" value="oneway">One way
-                        <input id="return" title="return" name="one" type="radio" value="return">Return
-                    </div><!--one way/return flight-->
-                    <div class="borderTop">
-                        <label class="head">Hotel booking: </label>
-                        <div class="borderRadio">
-                            <div class="text">
-                                <input id="singleroom"  title="singleroom" type="radio" name="single"  value="Single">Single room
-                            </div>
-                            <div class="text">
-                                <input id="doubleroom"  title="double" type="radio" name="single" value="Double">Double room
-                            </div><!--single/double room-->
-                        </div><!--border radio buttons-->
-
-                    </div><!--Hotel booking-->
-                </div><!--Draw border around this content-->
-
-
-                <div class="display">
-                    <div class="text paddBottomMore">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
-                    <div class="text paddBottomMore" id="flightBookingFee"></div><!--Display Booking fee-->
-                    <div class="text paddBottomMore" id="oneWayReturn"></div><!--Display one way or return-->
-                    <div class="text paddBottomMore" id="hotelBookingFee"></div><!--Display hotel booking fee-->
-                    <div class="text paddBottomMore" id="singleDouble"></div><!--For display single/double room-->
-                    <div class="head" id="total"></div><!--Display total-->
-                    <input id="book" type="button" value="Book now" class="book">
-                </div><!--Display Estimate-->
-            </div><!--Container-->
-        </div><!--Wrapper-->
+        <div class="container">
+            <p class="head">Flight & Hotel estimation grid</p>
+            <div class="fontSpacing">
+                <p class="title">Flight booking </p>
+                <label>From : </label>
+                <select title="origin" id="orig" name="odd" class="borderBottom">
+                    <option value="london" selected="selected" disabled>London
+                    </option>
+                </select>
+                <div class="fontSpacing">
+                    <label class="">To :</label>
+                    <select id="dest"  title="dest" name="dropdown" class="borderBottom">
+                        <option value="amsterdam">Amsterdam</option>
+                        <option value="brussels">Brussels</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="prague">Prague</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="vienna">Vienna</option>
+                    </select>
+                </div><!--fontSpacing-->
+                <div class="fontSpacing">
+                    <input id="oneway" type="radio" name="one" value="oneway">
+                    <label for="oneway" class=""><span><span></span></span>One way</label>
+                    <input id="return" type="radio" name="one" value="return">
+                    <label for="return" class=""><span><span></span></span>Return</label>
+                </div><!--one way/return-->
+            </div><!--flightBooking-->
+            <div class="fontSpacing">
+                <label class="title">Hotel booking: </label>
+                <div class="fontSpacing">
+                    <input id="single"   title="singleroom" type="radio" name="single"  value="single">
+                    <label for="single" class="text"><span><span></span></span>Single room</label>
+                    <input id="double"  title="double" type="radio" name="single" value="double">
+                    <label for="double" class="text padRight"><span><span></span></span>Double room</label>
+                </div><!--fontSpacing-->
+            </div><!--fontSpacing-->
+            <div class="display">
+                <div class="fontSpacing">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
+                <div class="fontSpacing" id="flightBookingFee"></div><!--Display Booking fee-->
+                <div class="fontSpacing" id="oneWayReturn"></div><!--Display one way or return-->
+                <div class="fontSpacing" id="hotelBookingFee"></div><!--Display hotel booking fee-->
+                <div class="fontSpacing" id="singleDouble"></div><!--For display single/double room-->
+                <div class="fontSpacing" id="total"></div><!--Display total-->
+            </div><!--Display Estimate-->
+            <input id="book" type="button" value="Book now" class="book">
+        </div><!--Container-->
     </main>
-    <footer class="footer">
-        <div class="rowSiteMap">
-            <div class="siteSocial">
-                <div class="colSiteMap">
-                    <p class="title">Sitemap</p>
-                    <div class="sitemap">
-                        <div class="widSiteMap">
-                            <ul>
-                                <li><a class="link" href="index.html">Home</a></li>
-                                <li><a class="link" href="#">Holiday Packages</a></li>
-                                <li><a class="link" href="#">Weekend Getaways</a></li>
-                                <li><a class="link" href="#">Visas</a></li>
-                            </ul>
-                        </div><!--sitemap first column-->
-                        <div class="widSiteMap">
-                            <ul>
-                                <li><a class="link" href="#">Things to do</a></li>
-                                <li><a class="link" href="#">Last minute deals</a></li>
-                                <li><a class="link" href="#">UK Holidays</a></li>
-                                <li><a class="link" href="#">European Holidays</a></li>
-                            </ul>
-                        </div><!--sitemap second column-->
-                    </div><!--sitemap columns-->
-                </div><!--Sitemap-->
 
-                <div class="colSocialMedia">
-                    <div class="goToTop">
-                        <div class="widSiteMap">
-                            <h3 class="title">Find us here:</h3>
-                            <a href="#"><img src="./dist/images/facebook.png" title="Find us on Facebook" alt="Facebook" width="32" height="32"></a>
-                            <a href="#"><img src="./dist/images/twitter.png" title="Find us on Twitter" alt="Twitter" width="30" height="30"></a>
-                            <a href="#"><img src="./dist/images/youtube.png" title="Find us on YouTube" alt="YouTube" width="30" height="30"></a>
-                        </div><!--Social media icons-->
-                        <div class="widSiteMap">
-                            <a href="#top" class="link" >Go to top</a>
-                        </div><!--go to top-->
-                    </div><!--Social media icons and go to top-->
-                </div><!--Social media icons and go to top border-->
-            </div><!--siteSocial-->
-        </div><!-- Footer row-->
-        <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--Copyright-->
-    </footer>
-</div><!--wrapper-->
+</div><!--Wrapper-->
+<footer class="footer">
+    <div class="rowSiteMap">
+        <div class="siteSocial">
+            <div class="colSiteMap">
+                <p class="title">Sitemap</p>
+                <div class="sitemap">
+                    <div class="widSiteMap">
+                        <ul>
+                            <li><a class="link" href="#">Home</a></li>
+                            <li><a class="link" href="#">Get an estimate</a></li>
+                            <li><a class="link" href="#">Book a flight</a></li>
+                            <li><a class="link" href="#">Holidays</a></li>
+                        </ul>
+                    </div><!--Sitemap first column-->
+                    <div class="widSiteMap">
+                        <ul>
+                            <li><a class="link" href="#">Things to do</a></li>
+                            <li><a class="link" href="#">Last minute deals</a></li>
+                        </ul>
+                    </div><!--sitemap second column-->
+                </div><!--sitemap columns-->
+            </div><!--Sitemap-->
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script><!--navigation-->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script><!--datepicker-->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--datepicker-->
-<script src="dist/js/makisu.js"></script><!--left navigation-->
-<script src="dist/js/estimateform.js"></script>
+            <div class="colSocialMedia">
+                <div class="goToTop">
+                    <div class="widSiteMap">
+                        <h3 class="title">Find us here:</h3>
+                        <a href="#"><img src="./dist/images/optimized/fb-30x30.png" title="Find us on Facebook" alt="Facebook"></a>
+                        <a href="#"><img src="./dist/images/optimized/twitterWhite-30x30.png" title="Find us on Twitter" alt="Twitter"></a>
+                    </div><!--Social media icons-->
+                    <div class="widSiteMap">
+                        <a href="#top" class="link" >Go to top</a>
+                    </div><!--go to top-->
+                </div><!--Social media icons and go to top-->
+            </div><!--Social media icons and go to top border-->
+        </div><!--siteSocial-->
+    </div><!-- Footer row-->
+    <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--copyright-->
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script><!--menu-->
+<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--for slideshow-->
+<script src="dist/js/makisu.js"></script><!--Navigation-->
+<script src="http://malsup.github.com/jquery.cycle.all.js"></script><!--for slideshow-->
+<script src="dist/js/index.js"> </script>
+<script src="dist/js/estimateform.js"> </script>
 
 </body>
 </html>

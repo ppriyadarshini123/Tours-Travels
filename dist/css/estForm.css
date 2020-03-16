@@ -22,80 +22,68 @@ table { border-collapse: collapse; border-spacing: 0; }
 html, body{width:100%; height: 100%;}
 
 
-
 /* GENERAL SECTION*/
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #a3bddd;
+    background-color: lightgray;
 }
-
 .wrapper
 {
     margin: 0 auto;
-    width:960px;
+    position: relative;/*Added to place the Makisu menu in position, otherwise it becomes sticky*/
+    /*width:960px;*/
 }
-
 
 /*HEADER SECTION*/
 .headerImage
 {
     background-repeat: no-repeat;
     padding-bottom: 20px;
+    width: 100%;
+    background-color: #0A4069;
+    height: 4.6vw;
+    position: relative;
 }
+
 .logo
 {
-    margin-top: -145px;
-
-    margin-left: -150px;
-
 
 }
 
 .zIn
 {
-    z-index: 1000;
-    width:400px;
-    height:145px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    left: 10%;
 }
 
 
-.phone {
-    margin-top: -120px;
-    margin-left: 550px;
+.phonePosition
+{
+    display: flex;
+    position: absolute;
+    left: 67%;
+    padding: 45px;
 }
+
 .phone
 {
-    margin-top: -120px;
-    margin-left: 600px;
-
     width: 32px;
     height: 32px;
 }
 
 .phDisp
 {
-    margin-top: -140px;
-
-    margin-left: 570px;
-
-    margin-left: 620px;
-
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
     padding-left: 20px;
     text-shadow: 2px 2px 4px #000000;
 }
+
 .phTime
 {
-    margin-top: 5px;
-
-    margin-left: 570px;
-
-    margin-left: 620px;
-
+    padding-top: 10px;
     color: white;
     letter-spacing: 1px;
     font-size: 14px;
@@ -103,54 +91,51 @@ html, body {
     text-shadow: 2px 2px 4px #000000;
 }
 
+
 /* MAIN SECTION*/
+main
+{
+    /*width: 300px;*/
+}
 .container
 {
-    position: relative;
-
     z-index: 50;
-    padding: 20px;
-    margin: -270px auto 0 175px;
-    /*width: 760px;*/
-    height: 320px;
-
-    z-index: 40;
-    padding: 20px;
-    margin: -320px auto 0 175px;
-    width: 760px;
-    height: 280px;
-
     background-color: white;
-    box-shadow: 10px 10px #b1c7e2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 1058px;/*this height is to keep the menu in place, at the same height as the home page*/
+    text-align: center;
 }
-.border
-{
-    padding: 20px 20px 20px 20px;
-    border: dotted grey 1px;
 
-    width:360px;
-    height:240px;
-
-    width:370px;
-    height:210px;
-
-}
 
 .head
 {
     padding-bottom: 20px;
-    font-size: 14px;
+    padding-top: 20px;
+    font-size: 25px;
     letter-spacing: 1px;
     color: black;
+    font-weight: bold;
+
+}
+
+.title
+{
+    font-size: 20px;
+}
+.fontSpacing
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .mar
 {
     margin-left: 30px;
 }
-
-
-
 
 .borderRadio
 {
@@ -167,35 +152,25 @@ input.radio {
     margin: 2px 5px 0 12px;
 }
 
-.borderTop
-{
-    border-top: dotted grey 1px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    margin-top: 20px;
-}
 
 .borderBottom
 {
     border-bottom: dotted #0c7abf 1px;
 }
 
-
-.text
+.block
 {
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: #414A46
+    display: block;
 }
-
 /* Customizing the dropdown menu*/
 select
 {
     border: 1px dotted #999;
     border-radius: 0;
-    height: 20px;
+    height: 46px;
     -webkit-appearance: none;
     padding-left: 10px;
+    width: 354px;
 }
 option
 {
@@ -247,41 +222,6 @@ input[type=radio]:not(old):checked +  label > span > span{
     background: #0c7abf linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
 }
 
-/*Padding classes */
-.paddRight {
-    padding-right: 22px;
-}
-/*Padding classes */
-.paddRight
- {
-     padding-right: 30px;
-
- }
-.paddRightMore
-{
-    padding-right: 10px;
-}
-.paddTop
-{
-    padding-top: 10px;
-
-}
-.paddBottom
-{
-    padding-bottom: 10px;
-}
-.paddBottomMore
-{
-    padding-bottom: 20px;
-}
-.paddLeft
-{
-    padding-left: 30px;
-}
-
-
-
-
 #dest option
 {
     width: 250px;
@@ -291,72 +231,60 @@ input[type=radio]:not(old):checked +  label > span > span{
 
 .display
 {
-    margin-left: 430px;
-
-    margin-top: -274px;
-
-    margin-top: -244px;
-
+    height: 200px;
 }
 
 .city
 {
-
     color: #A4031F;
-
-    color: #D31B46;
-
 }
+
 .book
 {
     color: #ffffff;
-    background-color: #86A8D2;
+    background-color: #1167A8;
+    font-size: 15px;
+    margin-left: 90px;
+    width:114px;
+    padding: 20px;
+    letter-spacing: 1px;
     text-shadow: 2px 2px 4px #000000;
-    padding: 10px;
+    border-radius: 35px;
 }
 
 .book:hover
 {
-    background-color: darkgray;
+    background-color: #1895F5;
+    text-decoration: underline;
 }
 
 
 #dest
 {
-    width: 358px;
+   /* width: 358px;*/
     border-bottom: solid 3px #86A8D2;
 }
 #orig
 {
-    width: 358px;
+    /*width: 358px;*/
     border-bottom: solid 3px #86A8D2;
 }
-
-/*FOOTER SECTION*/
-.footer
-{
-    padding-top: 40px;
 
 /*FOOTER SECTION*/
 .footer
 {
     padding-top: 20px;
-
 }
 .rowSiteMap
 {
-    background-color: #86A8D2;
+    background-color: #0A4069;
     padding-top: 20px;
     z-index: 10000;
 }
 .siteSocial
 {
     margin: 0 auto;
-
     width: 920px;
-
-    width: 960px;
-
     display:flex;
     justify-content: space-between;
 }
@@ -374,12 +302,12 @@ input[type=radio]:not(old):checked +  label > span > span{
 
 .title
 {
-    font-size: 14px;
-    color: #ffffff;
+    font-size: 20px;
+    color: #000000;
     letter-spacing: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-shadow: 2px 2px 4px #000000;
+
 }
 
 .sitemap
@@ -442,3 +370,4 @@ input[type=radio]:not(old):checked +  label > span > span{
     padding-top: 10px;
     letter-spacing: 2px;
 }
+
