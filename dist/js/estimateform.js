@@ -35,6 +35,11 @@
     let dispSingleDouble = document.getElementById("singleDouble");
     let dispTotal = document.getElementById("total");
 
+    /* Getting the querystring*/
+    let id = getParameterByName('id');
+
+
+    /* FUNCTIONS*/
 
     /**
      * @name getParameterByName
@@ -43,6 +48,7 @@
      */
     function getParameterByName(name,url)
     {
+        console.log("getParameterByName");
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');
         const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -54,57 +60,209 @@
     }/* end getParameterByName*/
 
 
-    /* Getting the querystring*/
-    let id = getParameterByName('id');
-
-
-    //onload initialiser
-    window.onload = init;
 
     /**
-     * @name init
-     * @desc initialising function
+     * @name destDisp
+     * @desc displays the chosen destination in the dispDestD field
      */
-    function init() {
-        bindBtns();
-        menu();
-        if(destDd != null)destChanged();
-        if(dispDestD != null)destDisp();
-    }//end init
+    function destDisp()
+    {
+        console.log("destDisp");
+        for(let j=0; j< destinations.length - 1; j++)
+        {
+            if(id == j+1)
+                dispDestD.innerHTML = destinations[j];
+        }
+
+    }/*end destDisp*/
 
     /**
-     *  @name bindBtns
-     *  @desc Bind fields to event handler
+     * @name initialize
+     * @desc When the destination dropdown on estimateform.html page changes,
+     * the radio buttons and displays are set to null, dest() function is called,
+     * to recalculate flight booking fee of chosen destination.
      */
-    function bindBtns() {
-        //Checking if button exists on page and then add eventhandler
-        if(destDd != null)destDd.addEventListener("change", initialize);
-        if(destDd != null)destDd.selectedIndex = id-1;
-        if(bookNow != null)bookNow.addEventListener("click", book);
+    function initialize()
+    {
+        console.log("initialize");
 
-        //Reading radio buttons from collection for oneway/return and assigning to function
-        if(oneWay != null) {
-            for (let i = 0; i < oneWay.length; i++) {
-                oneWay[i].onclick = journey;
+        id = destDd.selectedIndex + 1;
+        for(let i = 0; i< oneWay.length; i++)
+        {
+            if(oneWay[i].checked) oneWay[i].checked = false;
+        }
+        for(let j = 0; j< room.length; j++)
+        {
+            if(room[j].checked) room[j].checked = false;
+        }
+        dispOne.innerHTML = "";
+        dispHotelBook.innerHTML = "";
+        dispSingleDouble.innerHTML = "";
+
+        total = 0;
+        x = 0;
+        y = 0;
+        destChanged();
+    }/*end initialize*/
+
+    /**
+     * @name journey
+     * @desc Checking the radio button which is selected and displaying the estimate
+     * of one way/return flight to the selected destination.
+     */
+    function journey()
+    {
+        console.log("journey");
+        if($(oneWay[0]).prop('checked')){
+
+            let oneWayFee = [200, 300, 250, 350, 260, 210];
+
+            for(let j=0; j< destinations.length - 1; j++)
+            {
+                if(id == j+1) {
+                    dispDestD.innerHTML = destinations[j];
+                    dispOne.innerHTML = "One way to " + destinations[j] + " will cost £ " + oneWayFee[j];
+                    total = total - y;
+                    y = oneWayFee[j];
+                    total = total + y;
+                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                }
+            }
+
+        }
+        else
+        {
+            let returnFee = [400, 600, 500, 700, 520, 420];
+
+            for(let j=0; j< destinations.length - 1; j++)
+            {
+                if(id == j+1) {
+                    dispOne.innerHTML = "Return flight to " + destinations[j] + " will cost £ " + returnFee[j];
+                    total = total - y;
+                    y = returnFee[j];
+                    total = total + y;
+                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                }
+            }
+
+        }
+    }/* end journey*/
+
+    /**
+     * @name single
+     * @desc Checking the radio button which is checked and displaying the
+     * hotel booking fee & single/double room cost of selected destination.
+     */
+    function single()
+    {
+        console.log("single");
+        let hotelBookFee = [20, 25, 25, 30, 15, 45];
+        if($(room[0]).prop('checked')) {
+
+            let singleRoomFee = [150, 120, 210, 140, 220,170];
+
+            for(let j=0; j< destinations.length - 1; j++)
+            {
+                if(id == j+1) {
+                    dispHotelBook.innerHTML = "Your Hotel booking fee is : £ " + hotelBookFee[j];
+                    dispSingleDouble.innerHTML = "Single room in "+ destinations[j]+" will cost £ "+ singleRoomFee[j];
+                    /* Incase the user changes his preference for single/double room, the x value stores the old value of single/double room, hence it is subtracted from the total*/
+                    total = total - x;
+                    x = singleRoomFee[j] + hotelBookFee[j];
+                    total = total + x;
+                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                }
             }
         }
-        //Reading radio buttons from collection for single/double room and assigning to function
-        if(room != null) {
-            for (let j = 0; j < room.length; j++) {
-                room[j].onclick = single;
+        else {
+
+            let doubleRoomFee = [250, 220, 310, 220, 320,270];
+
+            for(let j=0; j< destinations.length - 1; j++)
+            {
+                if(id == j+1) {
+                    dispHotelBook.innerHTML = "Your Hotel booking fee is : £ " + hotelBookFee[j];
+                    dispSingleDouble.innerHTML = "Double room in "+ destinations[j]+ " will cost £ "+ doubleRoomFee[j];
+                    /* Incase the user changes his preference for single/double room, the x value stores the old value of single/double room, hence it is subtracted from the total*/
+                    total = total - x;
+                    x = doubleRoomFee[j] + hotelBookFee[j];
+                    total = total + x;
+                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                }
+            }
+
+        }
+    }/*end single*/
+
+    /**
+
+     * @name book
+     * @desc When 'Book Now' button is clicked, open page bookingForm.html in the same tab.
+     *
+     */
+    function book()
+    {
+        console.log("book");
+        window.open("bookingForm.html?id="+ id, "_self");
+
+    } /* end book*/
+
+    /**
+     * @name destChanged
+     * @desc To display the flight booking fee and the total when destination in
+     *  dropdown is changed
+     */
+    function destChanged()
+    {
+        console.log("destChanged");
+        let flightBookFee = [40, 50, 60, 30, 60,70];
+        console.log("total="+total);
+        for(let j=0; j< destinations.length - 1; j++)
+        {
+            /*This error should not be removed*/
+            if(id == j+1) {
+                dispDestD.innerHTML = destinations[j];
+                dispFliBook.innerHTML = "Your flight booking fee: £ " + flightBookFee[j];
+                total = total + flightBookFee[j];
+                dispTotal.innerHTML = "Your Total is:£ " + total;
             }
         }
+    }/* end destChanged*/
 
-    }// end bindBtns
+    /**
+     * @name initializeDestChanged
+     * @desc When the destination dropdown on estimateform.html page changes,
+     * the radio buttons and displays are set to null, dest() function is called,
+     * to recalculate flight booking fee of chosen destination.
+     */
+    function initializeDestChanged()
+    {
+        console.log("initializeDestChanged");
+        id = destDd.selectedIndex + 1;
+        for(let i = 0; i< oneWay.length; i++)
+        {
+            if(oneWay[i].checked) oneWay[i].checked = false;
+        }
+        for(let j = 0; j< room.length; j++)
+        {
+            if(room[j].checked) room[j].checked = false;
+        }
+        dispOne.innerHTML = "";
+        dispHotelBook.innerHTML = "";
+        dispSingleDouble.innerHTML = "";
 
-    /* FUNCTIONS*/
-
+        total = 0;
+        x = 0;
+        y = 0;
+        destChanged();
+    }/*end initializeDestchanged*/
     /**
      * @name menu
      * @desc creates the left menu and implements toggle
      */
     function menu()
     {
+        console.log("menu");
         /* THE LEFT MENU*/
         /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
         let $nigiri = $( '.nigiri' );
@@ -127,174 +285,45 @@
     }/* end menu*/
 
     /**
-     * @name destDisp
-     * @desc displays the chosen destination in the dispDestD field
+     *  @name bindBtns
+     *  @desc Bind fields to event handler
      */
-    function destDisp()
-    {
-        for(let j=0; j< destinations.length - 1; j++)
-        {
-            if(id === j+1)
-                dispDestD.innerHTML = destinations[j];
-        }
+    function bindBtns() {
+        console.log("bindBtns");
+        //Checking if button exists on page and then add eventhandler
+        if(destDd != null)destDd.addEventListener("change", initializeDestChanged);
+        if(destDd != null)destDd.selectedIndex = id-1;
+        if(bookNow != null)bookNow.addEventListener("click", book);
 
-    }/*end destDisp*/
-
-    /**
-     * @name destChanged
-     * @desc To display the flight booking fee and the total when destination in
-     *  dropdown is changed
-     */
-    function destChanged()
-    {
-        let flightBookFee = [40, 50, 60, 30, 60,70];
-
-        for(let j=0; j< destinations.length - 1; j++)
-        {
-            if(id === j+1) {
-                dispDestD.innerHTML = destinations[j];
-                dispFliBook.innerHTML = "Your flight booking fee: £ " + flightBookFee[j];
-                total = total + flightBookFee[j];
-                dispTotal.innerHTML = "Your Total is:£ " + total;
+        //Reading radio buttons from collection for oneway/return and assigning to function
+        if(oneWay != null) {
+            for (let i = 0; i < oneWay.length; i++) {
+                oneWay[i].onclick = journey;
             }
         }
-
-    }/* end destChanged*/
-
-
-    /**
-     * @name initialize
-     * @desc When the destination dropdown on estimateform.html page changes,
-     * the radio buttons and displays are set to null, dest() function is called,
-     * to recalculate flight booking fee of chosen destination.
-     */
-    function initialize()
-    {
-        id = destDd.selectedIndex + 1;
-        for(let i = 0; i< oneWay.length; i++)
-        {
-            if(oneWay[i].checked) oneWay[i].checked = false;
-        }
-        for(let j = 0; j< room.length; j++)
-        {
-            if(room[j].checked) room[j].checked = false;
-        }
-        dispOne.innerHTML = "";
-        dispHotelBook.innerHTML = "";
-        dispSingleDouble.innerHTML = "";
-
-        total = 0;
-        x = 0;
-        y = 0;
-        destChanged();
-    }/*end initialize*/
-
-
-
-
-
-    /**
-     * @name journey
-     * @desc Checking the radio button which is selected and displaying the estimate
-     * of one way/return flight to the selected destination.
-     */
-    function journey()
-    {
-        if($(oneWay[0]).prop('checked')){
-
-            let oneWayFee = [200, 300, 250, 350, 260, 210];
-
-            for(let j=0; j< destinations.length - 1; j++)
-            {
-                if(id === j+1) {
-                    dispDestD.innerHTML = destinations[j];
-                    dispOne.innerHTML = "One way to " + destinations[j] + " will cost £ " + oneWayFee[j];
-                    total = total - y;
-                    y = oneWayFee[j];
-                    total = total + y;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
-                }
-            }
-
-        }
-        else
-        {
-            let returnFee = [400, 600, 500, 700, 520, 420];
-
-            for(let j=0; j< destinations.length - 1; j++)
-            {
-                if(id === j+1) {
-                    dispOne.innerHTML = "Return flight to " + destinations[j] + " will cost £ " + returnFee[j];
-                    total = total - y;
-                    y = returnFee[j];
-                    total = total + y;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
-                }
-            }
-
-        }
-    }/* end journey*/
-
-
-
-
-
-    /**
-     * @name single
-     * @desc Checking the radio button which is checked and displaying the
-     * hotel booking fee & single/double room cost of selected destination.
-     */
-    function single()
-    {
-        let hotelBookFee = [20, 25, 25, 30, 15, 45];
-        if($(room[0]).prop('checked')) {
-
-            let singleRoomFee = [150, 120, 210, 140, 220,170];
-
-            for(let j=0; j< destinations.length - 1; j++)
-            {
-                if(id === j+1) {
-                    dispHotelBook.innerHTML = "Your Hotel booking fee is : £ " + hotelBookFee[j];
-                    dispSingleDouble.innerHTML = "Single room in "+ destinations[j]+" will cost £ "+ singleRoomFee[j];
-                    /* Incase the user changes his preference for single/double room, the x value stores the old value of single/double room, hence it is subtracted from the total*/
-                    total = total - x;
-                    x = singleRoomFee[j] + hotelBookFee[j];
-                    total = total + x;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
-                }
+        //Reading radio buttons from collection for single/double room and assigning to function
+        if(room != null) {
+            for (let j = 0; j < room.length; j++) {
+                room[j].onclick = single;
             }
         }
-        else {
-
-            let doubleRoomFee = [250, 220, 310, 220, 320,270];
-
-            for(let j=0; j< destinations.length - 1; j++)
-            {
-                if(id === j+1) {
-                    dispHotelBook.innerHTML = "Your Hotel booking fee is : £ " + hotelBookFee[j];
-                    dispSingleDouble.innerHTML = "Double room in "+ destinations[j]+ " will cost £ "+ doubleRoomFee[j];
-                    /* Incase the user changes his preference for single/double room, the x value stores the old value of single/double room, hence it is subtracted from the total*/
-                    total = total - x;
-                    x = doubleRoomFee[j] + hotelBookFee[j];
-                    total = total + x;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
-                }
-            }
-
-        }
-    }/*end single*/
+    }// end bindBtns
 
     /**
-
-     * @name book
-     * @desc When 'Book Now' button is clicked, open page bookingForm.html in the same tab.
-     *
+     * @name init
+     * @desc initialising function
      */
-    function book()
-    {
-        window.open("bookingForm.html?id="+ id, "_self");
+    function init() {
+        console.log("init");
+        bindBtns();
+        menu();
+        if(destDd != null)destChanged();
+        if(dispDestD != null)destDisp();
+    }//end init
 
-    } /* end book*/
+
+    //onload initialiser
+    window.onload = init;
 
 })();/*end iffy*/
 

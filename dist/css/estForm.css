@@ -95,8 +95,9 @@ html, body {
 /* MAIN SECTION*/
 main
 {
-    /*width: 300px;*/
+    height: 1058px;/*this height is to keep the menu in place, at the same height as the home page*/
 }
+
 .container
 {
     z-index: 50;
@@ -104,7 +105,6 @@ main
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    height: 1058px;/*this height is to keep the menu in place, at the same height as the home page*/
     text-align: center;
 }
 
@@ -119,17 +119,35 @@ main
     font-weight: bold;
 
 }
-
+.flex
+{
+    display: flex;
+    justify-content: center;
+    background-color: #157ECF;
+}
 .title
 {
     font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .fontSpacing
 {
     font-size: 15px;
     letter-spacing: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.width
+{
+    width: 47px;
+    display: inline-block;
+    color: #ffffff;
 }
 
 .mar
@@ -231,7 +249,17 @@ input[type=radio]:not(old):checked +  label > span > span{
 
 .display
 {
-    height: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+.disp
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #000000;
 }
 
 .city
@@ -300,14 +328,15 @@ input[type=radio]:not(old):checked +  label > span > span{
     width:250px;
 }
 
-.title
+
+.titleFooter
 {
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     letter-spacing: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .sitemap
