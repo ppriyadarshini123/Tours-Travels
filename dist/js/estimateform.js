@@ -29,11 +29,17 @@
 
     /* Display fields*/
     let dispDestD = document.getElementById("destD");
+
     let dispFliBook = document.getElementById("flightBookingFee");
+    let dispFliBookVal = document.getElementById("flightBookingFeeVal");
     let dispOne = document.getElementById("oneWayReturn");
+    let dispOneVal = document.getElementById("oneWayReturnVal");
     let dispHotelBook = document.getElementById("hotelBookingFee");
+    let dispHotelBookVal = document.getElementById("hotelBookingFeeVal");
     let dispSingleDouble = document.getElementById("singleDouble");
+    let dispSingleDoubleVal = document.getElementById("singleDoubleVal");
     let dispTotal = document.getElementById("total");
+    let dispTotalVal = document.getElementById("totalVal");
 
     /* Getting the querystring*/
     let id = getParameterByName('id');
@@ -121,11 +127,13 @@
             {
                 if(id == j+1) {
                     dispDestD.innerHTML = destinations[j];
-                    dispOne.innerHTML = "One way to " + destinations[j] + " will cost £ " + oneWayFee[j];
+                    dispOne.innerHTML = "One way to " + destinations[j] + " will cost ";
+                    dispOneVal.innerHTML = "+ £ " + oneWayFee[j];
                     total = total - y;
                     y = oneWayFee[j];
                     total = total + y;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                    dispTotal.innerHTML = "Your Total is: ";
+                    dispTotalVal.innerHTML = "£" + total;
                 }
             }
 
@@ -137,11 +145,13 @@
             for(let j=0; j< destinations.length - 1; j++)
             {
                 if(id == j+1) {
-                    dispOne.innerHTML = "Return flight to " + destinations[j] + " will cost £ " + returnFee[j];
+                    dispOne.innerHTML = "Return flight to " + destinations[j] + " will cost ";
+                    dispOneVal.innerHTML = "+ £" + returnFee[j];
                     total = total - y;
                     y = returnFee[j];
                     total = total + y;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                    dispTotal.innerHTML = "Your Total is: ";
+                    dispTotalVal.innerHTML = "£" + total;
                 }
             }
 
@@ -164,13 +174,16 @@
             for(let j=0; j< destinations.length - 1; j++)
             {
                 if(id == j+1) {
-                    dispHotelBook.innerHTML = "Your Hotel booking fee is : £ " + hotelBookFee[j];
-                    dispSingleDouble.innerHTML = "Single room in "+ destinations[j]+" will cost £ "+ singleRoomFee[j];
+                    dispHotelBook.innerHTML = "Your Hotel booking fee is : ";
+                    dispHotelBookVal.innerHTML = "+ £ " + hotelBookFee[j];
+                    dispSingleDouble.innerHTML = "Single room in "+ destinations[j]+" will cost ";
+                    dispSingleDoubleVal.innerHTML = "+ £" + singleRoomFee[j];
                     /* Incase the user changes his preference for single/double room, the x value stores the old value of single/double room, hence it is subtracted from the total*/
                     total = total - x;
                     x = singleRoomFee[j] + hotelBookFee[j];
                     total = total + x;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                    dispTotal.innerHTML = "Your Total is: ";
+                    dispTotalVal.innerHTML = "£" + total;
                 }
             }
         }
@@ -181,13 +194,16 @@
             for(let j=0; j< destinations.length - 1; j++)
             {
                 if(id == j+1) {
-                    dispHotelBook.innerHTML = "Your Hotel booking fee is : £ " + hotelBookFee[j];
-                    dispSingleDouble.innerHTML = "Double room in "+ destinations[j]+ " will cost £ "+ doubleRoomFee[j];
+                    dispHotelBook.innerHTML = "Your Hotel booking fee is :";
+                    dispHotelBookVal.innerHTML = "+ £ " + hotelBookFee[j];
+                    dispSingleDouble.innerHTML = "Double room in "+ destinations[j]+ " will cost ";
+                    dispSingleDoubleVal.innerHTML = "+ £ " + doubleRoomFee[j];
                     /* Incase the user changes his preference for single/double room, the x value stores the old value of single/double room, hence it is subtracted from the total*/
                     total = total - x;
                     x = doubleRoomFee[j] + hotelBookFee[j];
                     total = total + x;
-                    dispTotal.innerHTML = "Your Total is: £ " + total;
+                    dispTotal.innerHTML = "Your Total is: ";
+                    dispTotalVal.innerHTML = "£" + total;
                 }
             }
 
@@ -215,16 +231,19 @@
     function destChanged()
     {
         console.log("destChanged");
-        let flightBookFee = [40, 50, 60, 30, 60,70];
+        let flightBookFeeVal = [40, 50, 60, 30, 60,70];
         console.log("total="+total);
+
         for(let j=0; j< destinations.length - 1; j++)
         {
             /*This error should not be removed*/
             if(id == j+1) {
                 dispDestD.innerHTML = destinations[j];
-                dispFliBook.innerHTML = "Your flight booking fee: £ " + flightBookFee[j];
-                total = total + flightBookFee[j];
-                dispTotal.innerHTML = "Your Total is:£ " + total;
+                dispFliBook.innerHTML = "Flight booking fee : ";
+                dispFliBookVal.innerHTML = " £ " + flightBookFeeVal[j];
+                total = total + flightBookFeeVal[j];
+                dispTotal.innerHTML = "Your Total is: ";
+                dispTotalVal.innerHTML = "£" + total;
             }
         }
     }/* end destChanged*/

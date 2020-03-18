@@ -84,12 +84,31 @@
         </div><!--Container-->
 
         <div class="display">
-            <div class="disp">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
-            <div class="disp" id="flightBookingFee"></div><!--Display Booking fee-->
-            <div class="disp" id="oneWayReturn"></div><!--Display one way or return-->
-            <div class="disp" id="hotelBookingFee"></div><!--Display hotel booking fee-->
-            <div class="disp" id="singleDouble"></div><!--For display single/double room-->
-            <div class="disp" id="total"></div><!--Display total-->
+            <div class="dispEst">
+                <div class="disp">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
+                <div class="flexFee">
+                    <div class="disp" id="flightBookingFee"></div><!--Display booking fee-->
+                    <div class="dispVal" id="flightBookingFeeVal"></div><!--Display Booking fee value-->
+                </div><!--flightBookingFee-->
+                <div class="flexFee">
+                    <div class="disp" id="oneWayReturn"></div><!--Display one way or return-->
+                    <div class="dispVal" id="oneWayReturnVal"></div><!--Display one way or return value-->
+                </div><!--oneWayReturn-->
+                <div class="flexFee">
+                    <div class="disp" id="hotelBookingFee"></div><!--Display hotel booking fee-->
+                    <div class="dispVal" id="hotelBookingFeeVal"></div><!--Display hotel booking fee value-->
+                </div><!--hotelBooking-->
+                <div class="flexFee">
+                    <div class="disp" id="singleDouble"></div><!--For display single/double room-->
+                    <div class="dispVal" id="singleDoubleVal"></div><!--For display single/double room-->
+                </div><!--singleDouble-->
+                <div class="line" id="line">---------------------------------------------------------------------------------------------------------------------------------------------------------------</div><!--Display total-->
+                <div class="flexFee">
+                    <div class="disp" id="total"></div><!--Display total-->
+                    <div class="dispVal" id="totalVal"></div><!--Display total value-->
+                </div>
+
+            </div>
         </div><!--Display Estimate-->
         <input id="book" type="button" value="Book now" class="book">
     </main>

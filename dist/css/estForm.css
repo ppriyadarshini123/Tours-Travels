@@ -252,6 +252,15 @@ input[type=radio]:not(old):checked +  label > span > span{
     height: 300px;
     text-align: center;
 }
+.dispEst
+{
+    margin-top: 10px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: #2A4D69;
+}
 
 .disp
 {
@@ -259,12 +268,40 @@ input[type=radio]:not(old):checked +  label > span > span{
     letter-spacing: 1px;
     padding: 20px;
     box-sizing: border-box;
-    color: #000000;
+    color: #ffffff;
+}
+
+.dispVal
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-right: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.line
+{
+    color: #ffffff;
+}
+
+
+.flexFee
+{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .city
 {
-    color: #A4031F;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 2px;
+    text-decoration: underline;
 }
 
 .book
