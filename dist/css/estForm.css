@@ -249,11 +249,12 @@ input[type=radio]:not(old):checked +  label > span > span{
 
 .display
 {
-    height: 300px;
+
     text-align: center;
 }
 .dispEst
 {
+    height: 352px;
     margin-top: 10px;
     width: 850px;
     margin-left: auto;
@@ -307,14 +308,14 @@ input[type=radio]:not(old):checked +  label > span > span{
 .book
 {
     color: #ffffff;
-    background-color: #1167A8;
+    background-color: #157ECF;
     font-size: 15px;
-    margin-left: 90px;
     width:114px;
     padding: 20px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px #000000;
     border-radius: 35px;
+    margin-top: 10px;
 }
 
 .book:hover

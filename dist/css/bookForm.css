@@ -1,5 +1,7 @@
 /* bookingform.html*/
 
+/* estForm.css*/
+
 /* CSS RESET SECTION
 ------------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
@@ -20,66 +22,69 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 table { border-collapse: collapse; border-spacing: 0; }
 html, body{width:100%; height: 100%;}
 
+
 /* GENERAL SECTION*/
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #EBEEF2;*/
     background-color: lightgray;
 }
 .wrapper
 {
     margin: 0 auto;
-    width:960px;
+    position: relative;/*Added to place the Makisu menu in position, otherwise it becomes sticky*/
+    /*width:960px;*/
 }
-
 
 /*HEADER SECTION*/
 .headerImage
 {
     background-repeat: no-repeat;
     padding-bottom: 20px;
+    width: 100%;
+    background-color: #0A4069;
+    height: 4.6vw;
+    position: relative;
 }
 
 .logo
 {
-    margin-top: -145px;
-
-    margin-left: -150px;
-
 
 }
 
 .zIn
 {
-    z-index: 1000;
-    width:400px;
-    height:145px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    left: 10%;
+}
+
+
+.phonePosition
+{
+    display: flex;
+    position: absolute;
+    left: 67%;
+    padding: 45px;
 }
 
 .phone
 {
-    margin-top: -120px;
-    margin-left: 550px;
     width: 32px;
     height: 32px;
 }
 
 .phDisp
 {
-    margin-top: -140px;
-    margin-left: 570px;
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
     padding-left: 20px;
     text-shadow: 2px 2px 4px #000000;
 }
+
 .phTime
 {
-    margin-top: 5px;
-    margin-left: 570px;
+    padding-top: 10px;
     color: white;
     letter-spacing: 1px;
     font-size: 14px;
@@ -88,38 +93,59 @@ html, body {
 }
 
 /* MAIN SECTION*/
+main
+{
+    height: 1058px;/*this height is to keep the menu in place, at the same height as the home page*/
+}
+
+
 .container
 {
-
-    margin: -270px auto 0 175px;
-    position: relative;
     z-index: 50;
     background-color: white;
-    box-shadow: 10px 10px #b1c7e2;
-    text-align: justify;
-    padding: 20px;
-    width: 760px;
-    height: 280px;
-
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .head
 {
     padding-bottom: 20px;
-    font-size: 14px;
+    padding-top: 20px;
+    font-size: 25px;
     letter-spacing: 1px;
     color: black;
-    text-align: center;
-    padding-top: 20px;
+    font-weight: bold;
+
 }
 
-.subHead
+.fieldsCollection
 {
-    padding: 15px 15px 15px 25px;
-    font-size: 12px;
+    height: 352px;
+    margin-top: 10px;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: #2A4D69;
+}
+
+.fontSpacing
+{
+    font-size: 15px;
     letter-spacing: 1px;
-    color: #414A46;;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+.width
+{
+    display: block;
+    color: #ffffff;
+    padding-bottom: 5px;
+    box-sizing: border-box;
 }
 
 
@@ -131,88 +157,40 @@ input[type=text]
     -webkit-appearance: none;
 }
 
-/*!**!Padding classes*/
 
-
-.paddRightMore
+.fields
 {
-    padding-right:40px;
-}
-.paddRight
-{
-    padding-right: 72px;
-}
-.paddBottom
-{
-    padding-bottom: 40px;
+    width: 360px;
+    padding-left: 5px;
+    border-bottom: solid 3px #86A8D2;
 }
 
-.paddTop
+.btns
 {
-    padding-top: 10px;
-}
-#fname
-{
-    width: 330px;
-    padding-left: 5px;
-    border-bottom: solid 3px #86A8D2;
-}
-#mobile
-{
-    width: 330px;
-    padding-left: 5px;
-    border-bottom: solid 3px #86A8D2;
-}
-#datepicker
-{
-    width: 330px;
-    padding-left: 5px;
-    border-bottom: solid 3px #86A8D2;
-}
-#datepicker2
-{
-    width: 330px;
-    padding-left: 5px;
-    border-bottom: solid 3px #86A8D2;
-}
-.btns {
-    margin-left: 320px;
     display: flex;
+    justify-content: center;
 }
 
-#datepicker
-{
-    margin-left: 13px;
-}
-#datepicker2
-{
-    margin-left: 36px;
-
-}
 .book
 {
     color: #ffffff;
-    background-color: #86A8D2;
-    text-shadow: 2px 2px 4px #000000;
-    padding: 10px;
-
+    background-color: #157ECF;
+    font-size: 15px;
+    width: 245px;
+    padding: 20px;
     letter-spacing: 1px;
-
-    margin-left: 400px;
-    margin-top: -350px;
-
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .book:hover
 {
-    background-color: darkgray;
+    background-color: #1895F5;
+    text-decoration: underline;
 }
 
-
-
-.validator {
-    color: #A4031F;
-}
 
 .dispDest
 {
@@ -222,23 +200,19 @@ input[type=text]
 
 .validator
 {
-    color: red;
-
+    color: #ffffff;
 }
 .confirmMessage
 {
     padding-left: 18px;
     margin-right: 20px;
-
     color: #A4031F;
     font-size: 12px;
     line-height: 1.4;
     letter-spacing: 1px;
-
     color:red;
     text-wrap: normal;
     font-size: 12px;
-
 }
 
 /*FOOTER SECTION*/
@@ -311,39 +285,45 @@ input[type=text]
     cursor: pointer;
 }
 
-
-/* SOCIAL MEDIA SECTION*/
-/*index.html section*/
-.colSocialMedia ul li a
+/*FOOTER SECTION*/
+.footer
 {
-    text-decoration: none;
+    padding-top: 20px;
 }
-
-.colSocialMedia ul li a:hover
+.rowSiteMap
 {
-    text-decoration: underline;
-    color:#40444B;
+    background-color: #0A4069;
+    padding-top: 20px;
+    z-index: 10000;
 }
-
-.goToTop
+.siteSocial
 {
+    margin: 0 auto;
+    width: 920px;
     display:flex;
     justify-content: space-between;
 }
-.goToTop div a
+
+.colSiteMap ul
 {
-    padding-left: 10px;
-    color: #ffffff;
-    padding-top: 10px;
+    padding-top: 20px;
 }
-.base
+
+.colSiteMap ul li
 {
-    background-color: black;
-    height: 50px;
-    color:#ffffff;
-    text-align: center;
+    padding-bottom: 20px;
+    width:250px;
+}
+
+
+.titleFooter
+{
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
     padding-top: 10px;
-    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .sitemap
@@ -353,7 +333,7 @@ input[type=text]
 
 .widSiteMap
 {
-
+    z-index: 40;
 }
 .link
 {

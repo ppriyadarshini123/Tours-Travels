@@ -3,132 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Booking form</title>
-    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="dist/css/bookForm.css" media="screen"/>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><!--datepicker-->
+    <link rel="stylesheet" type="text/css" href="dist/css/bookForm.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
 </head>
 <body>
 
 <header id="top">
     <div class="headerImage">
-        <img src="dist/images/headernew.png" alt="Header Image">
         <div class="wrapper">
-            <div>
-                <a href="index.html" class="zIn">
-                    <img src="dist/images/logonew.png" class="logo" alt="Logo"/>
+            <div  class="zIn">
+                <a href="#">
+                    <img src="dist/images/optimized/logo_initial_with_transparency-350x141.png" class="logo" alt="Logo"/>
                 </a>
             </div><!--logo-->
-            <div>
-                <img src="./dist/images/telephone.png" class="phone" alt="Phone">
-                <p class="phDisp">+44 7549231859</p>
-                <p class="phTime">24 hrs a day / 7 days a week</p>
+            <div class="phonePosition">
+                <div><img src="./dist/images/optimized/telephone-40x40.png" class="phone" alt="Telephone"></div>
+                <div>
+                    <p class="phDisp">+44 5555555555</p>
+                    <p class="phTime">24 hrs a day / 7 days a week</p>
+                </div><!--phone & time-->
             </div><!--Phone number-->
         </div><!--adding logo and phone to wrapper-->
     </div><!--Header Image-->
 </header>
-<main>
-
-    <div class="wrapper">
-
-    <div class="wrapper paddBottom">
-
-        <section class="demo">
-            <dl class="list nigiri">
-                <dt>Menu</dt>
-                <dd><a href="index.html">Home</a></dd>
-                <dd><a href="#">Holidays</a></dd>
-                <dd><a href="#">Visas</a></dd>
-                <dd><a href="#">Things To Do</a></dd>
-                <dd><a href="#">Last minute Deals</a></dd>
-            </dl>
-            <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
-        </section>
-
+<div class="wrapper">
+    <section class="demo">
+        <dl class="list nigiri">
+            <dt>Menu</dt>
+            <dd><a href="index.html">Home</a></dd>
+            <dd><a href="#">Get an estimate</a></dd>
+            <dd><a href="#">Book a flight</a></dd>
+            <dd><a href="#">Holidays</a></dd>
+            <dd><a href="#">Things to do</a></dd>
+            <dd><a href="#">Last minute Deals</a></dd>
+        </dl>
+        <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
+    </section>
+    <main>
         <div class="container">
             <p class="head">Flight Booking form</p>
-            <div class="subHead">
-                <label class="paddRightMore">First name :</label>
-
-                <div class="paddTop">
-                    <input title = "fn" type="text" id="fname" placeholder="e.g. John">
-                    <label id="lblFname" class="validator"></label>
-                </div><!--Firstname and validator-->
-            </div><!--First name section-->
-            <div class="subHead">
-                <span class="paddRight">Mobile :</span>
-                <div class="paddTop">
-                    <input title = "mob" type="text" id="mobile" placeholder="e.g. 07658342654">
+            <div class="fieldsCollection">
+                <div class="fontSpacing">
+                    <span class="width">First name :</span>
+                    <input title = "fn" type="text" id="fname" class="fields" placeholder="e.g. John">
+                    <span id="lblFname" class="validator"></span>
+                </div><!--First name section-->
+                <div class="fontSpacing">
+                    <span class="width">Mobile :</span>
+                    <input title = "mob" type="text" id="mobile" class="fields" placeholder="e.g. 07658342654">
                     <span id="lblMobile" class="validator"></span>
-                </div><!--Mobile placeholder and validator-->
-            </div><!--Mobile number-->
-
-            <div class="subHead">Departure date:
-                <div class="paddTop">
-                    <input id="datepicker" title="departuredate" type="text" name="departuredate">
+                </div><!--Mobile number-->
+                <div class="fontSpacing">
+                    <span class="width">Departure date:</span>
+                    <input id="datepicker" title="departuredate" class="fields" type="text" name="departuredate">
                     <span id="lblDate" class="validator"></span>
-                </div><!--Departure date-->
-            </div><!--destination DatePicker-->
-            <div class="subHead">Arrival date:
-                <div class="paddTop">
-                    <input id="datepicker2" title="arrivaldate" type="text" name="arrivaldate">
-                </div><!--arrival date-->
-
-                <input title = "fn" type="text" id="fname" placeholder="e.g. John">
-                <label id="lblFname" class="validator"></label>
-            </div><!--First name section-->
-            <div class="subHead">
-                <span class="paddRight">Mobile :</span>
-                <input title = "mob" type="text" id="mobile" placeholder="e.g. 07658342654">
-                <span id="lblMobile" class="validator"></span>
-            </div><!--Mobile number-->
-
-            <div class="subHead">Departure date:
-                <input id="datepicker" size="20" title="departuredate" type="text" name="departuredate">
-                <span id="lblDate" class="validator"></span>
-            </div><!--destination DatePicker-->
-            <div class="subHead">Arrival date:
-                <input id="datepicker2" size="20" title="arrivaldate" type="text" name="arrivaldate">
-
-            </div><!--DatePicker-->
-
+                </div><!--destination DatePicker-->
+                <div class="fontSpacing">
+                    <span class="width">Arrival date:</span>
+                    <input id="datepicker2" title="arrivaldate" class="fields" type="text" name="arrivaldate">
+                </div><!--First name section-->
+            </div><!--fieldsCollection-->
             <div class="confirmMessage">
                 <span id="lblConfirm"></span>
             </div><!--Confirmation message-->
-
             <div class="btns">
                 <input id="bookf" type="submit" value="Book now" class="book">
                 <input id="destDetails" type="submit" value="View Destination Details" class="book">
             </div><!--buttons-->
 
-
-            <input id="bookf" type="submit" value="Book now" class="book">
-            <input id="destDetails" type="submit" value="View Destination Details" class="book dispDest">
-
         </div><!--Container-->
-    </div><!--Wrapper-->
-</main>
+    </main>
+</div><!--Wrapper-->
 
 <footer class="footer">
     <div class="rowSiteMap">
         <div class="siteSocial">
             <div class="colSiteMap">
-                <p class="title">Sitemap</p>
+                <p class="titleFooter">Sitemap</p>
                 <div class="sitemap">
                     <div class="widSiteMap">
                         <ul>
-                            <li><a class="link" href="index.html">Home</a></li>
-                            <li><a class="link" href="#">Holiday Packages</a></li>
-                            <li><a class="link" href="#">Weekend Getaways</a></li>
-                            <li><a class="link" href="#">Visas</a></li>
+                            <li><a class="link" href="#">Home</a></li>
+                            <li><a class="link" href="#">Get an estimate</a></li>
+                            <li><a class="link" href="#">Book a flight</a></li>
+                            <li><a class="link" href="#">Holidays</a></li>
                         </ul>
                     </div><!--Sitemap first column-->
                     <div class="widSiteMap">
                         <ul>
                             <li><a class="link" href="#">Things to do</a></li>
                             <li><a class="link" href="#">Last minute deals</a></li>
-                            <li><a class="link" href="#">UK Holidays</a></li>
-                            <li><a class="link" href="#">European Holidays</a></li>
                         </ul>
                     </div><!--sitemap second column-->
                 </div><!--sitemap columns-->
@@ -137,10 +102,9 @@
             <div class="colSocialMedia">
                 <div class="goToTop">
                     <div class="widSiteMap">
-                        <h3 class="title">Find us here:</h3>
-                        <a href="#"><img src="./dist/images/facebook.png" title="Find us on Facebook" alt="Facebook" width="32" height="32"></a>
-                        <a href="#"><img src="./dist/images/twitter.png" title="Find us on Twitter" alt="Twitter" width="30" height="30"></a>
-                        <a href="#"><img src="./dist/images/youtube.png" title="Find us on YouTube" alt="YouTube" width="30" height="30"></a>
+                        <h3 class="titleFooter">Find us here:</h3>
+                        <a href="#"><img src="./dist/images/optimized/fb-30x30.png" title="Find us on Facebook" alt="Facebook"></a>
+                        <a href="#"><img src="./dist/images/optimized/twitterWhite-30x30.png" title="Find us on Twitter" alt="Twitter"></a>
                     </div><!--Social media icons-->
                     <div class="widSiteMap">
                         <a href="#top" class="link" >Go to top</a>
@@ -152,10 +116,9 @@
     <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--copyright-->
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script><!--navigation-->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script><!--datepicker-->
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--datepicker-->
-<script src="dist/js/makisu.js"></script><!--navigation-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script><!--menu-->
+<script src="dist/js/makisu.js"></script><!--Navigation-->
+<!--<script src="dist/js/index.js"> </script>-->
 <script src="dist/js/bookingform.js"></script><!--bookingform.js-->
 </body>
 </html>

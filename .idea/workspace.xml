@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookingForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookingForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/bookForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/bookForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/estForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/estForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bookingform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/bookingform.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/estimateform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/estimateform.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estimateform.html" beforeDir="false" afterPath="$PROJECT_DIR$/estimateform.html" afterDir="false" />
     </list>
@@ -54,7 +57,8 @@
       <workItem from="1584360317960" duration="615000" />
       <workItem from="1584377650328" duration="624000" />
       <workItem from="1584379331319" duration="17304000" />
-      <workItem from="1584538149466" duration="17608000" />
+      <workItem from="1584538149466" duration="18580000" />
+      <workItem from="1584623377111" duration="22351000" />
     </task>
     <servers />
   </component>
@@ -92,5 +96,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584479580173" />
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584658723547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723547" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1584658723546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723546" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1584658723546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723546" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1584658723546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723546" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/dist/js/bookingform.js</url>
+          <line>158</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

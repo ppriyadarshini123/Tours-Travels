@@ -102,8 +102,11 @@
             if(room[j].checked) room[j].checked = false;
         }
         dispOne.innerHTML = "";
+        dispOneVal.innerHTML = "";
         dispHotelBook.innerHTML = "";
+        dispHotelBookVal.innerHTML = "";
         dispSingleDouble.innerHTML = "";
+        dispSingleDoubleVal.innerHTML = "";
 
         total = 0;
         x = 0;
@@ -249,33 +252,6 @@
     }/* end destChanged*/
 
     /**
-     * @name initializeDestChanged
-     * @desc When the destination dropdown on estimateform.html page changes,
-     * the radio buttons and displays are set to null, dest() function is called,
-     * to recalculate flight booking fee of chosen destination.
-     */
-    function initializeDestChanged()
-    {
-        console.log("initializeDestChanged");
-        id = destDd.selectedIndex + 1;
-        for(let i = 0; i< oneWay.length; i++)
-        {
-            if(oneWay[i].checked) oneWay[i].checked = false;
-        }
-        for(let j = 0; j< room.length; j++)
-        {
-            if(room[j].checked) room[j].checked = false;
-        }
-        dispOne.innerHTML = "";
-        dispHotelBook.innerHTML = "";
-        dispSingleDouble.innerHTML = "";
-
-        total = 0;
-        x = 0;
-        y = 0;
-        destChanged();
-    }/*end initializeDestchanged*/
-    /**
      * @name menu
      * @desc creates the left menu and implements toggle
      */
@@ -310,7 +286,7 @@
     function bindBtns() {
         console.log("bindBtns");
         //Checking if button exists on page and then add eventhandler
-        if(destDd != null)destDd.addEventListener("change", initializeDestChanged);
+        if(destDd != null)destDd.addEventListener("change", initialize);
         if(destDd != null)destDd.selectedIndex = id-1;
         if(bookNow != null)bookNow.addEventListener("click", book);
 
