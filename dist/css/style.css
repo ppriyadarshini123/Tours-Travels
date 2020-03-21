@@ -290,29 +290,31 @@ html, body {
 {
     padding-top: 20px;
 }
-.rowSiteMap
-{
-    background-color: #0A4069;
-    padding-top: 20px;
-    z-index: 10000;
-}
-.siteSocial
-{
-    margin: 0 auto;
-    width: 920px;
-    display:flex;
-    justify-content: space-between;
-}
 
+
+.colSiteMap
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0a0a0c;
+
+}
 .colSiteMap ul
 {
     padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .colSiteMap ul li
 {
     padding-bottom: 20px;
-    width:250px;
+
+}
+.widSiteMap
+{
+    z-index: 40;
+    padding-right: 40px;
 }
 
 .title
@@ -325,15 +327,7 @@ html, body {
     text-shadow: 2px 2px 4px #000000;
 }
 
-.sitemap
-{
-    display:flex;
-}
 
-.widSiteMap
-{
-    z-index: 40;
-}
 .link
 {
     color: #ffffff;
@@ -368,7 +362,10 @@ html, body {
 .goToTop
 {
     display:flex;
-    justify-content: space-between;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #0A4069;
 }
 .goToTop div a
 {

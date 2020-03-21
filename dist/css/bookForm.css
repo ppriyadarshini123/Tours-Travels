@@ -107,7 +107,7 @@ main
     text-align: center;
     width: 850px;
     background-color: #157ECF;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .head
@@ -173,21 +173,19 @@ input[type=text]
 
 .book
 {
-    color: #ffffff;
-    background-color: #157ECF;
+    color: #157ECF;
+    background-color: #ffffff;
     font-size: 15px;
+    font-weight: bold;
     width: 245px;
     padding: 20px;
     letter-spacing: 1.5px;
-    text-shadow: 2px 2px 4px #000000;
     border-radius: 35px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .book:hover
 {
-    background-color: #1895F5;
     text-decoration: underline;
 }
 
@@ -206,12 +204,12 @@ input[type=text]
 {
     padding-left: 18px;
     margin-right: 20px;
-    color: #A4031F;
+    color: #ffffff;
     line-height: 1.4;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     text-wrap: normal;
     font-size: 15px;
-    padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 /*FOOTER SECTION*/
