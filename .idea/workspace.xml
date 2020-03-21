@@ -2,13 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/1570556790-IBM-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/2-0df518b3696e26d1b3ff.chunk.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/20-c168c647a77d5b4e3940.chunk.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/EKmwC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/browser_support-1963aa6406ae47d3176af996336c5d219acd8913c5af309e72f18933e95201cc.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/codemirror-b8b886ef5a1a8d714eef6e7d5aec5b81630003feb80e3f9ef8cc949fb5a2645b.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/commonLibs-7484fe04f7187bb8ecb83c4962db75fdf5d900e6e629bfab2f8df7629e357051.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/editor-4b9455e47e680eb3ba4d576bce3169777f15a82bd0a30b719d5c5a229055432f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/emmet-codemirror-plugin-5d6164559517c9065f31696d2b6c916ff238693ed8c4260c1023e65c0f3fd658.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/everypage-388d7c21.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/everypage-4ce22aefec96724bf1b0.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/everypage-c9e67ee9b7c2932b14d2cc61b5030e706c94919a2e7339f8b9127aa8c189a048.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/firebase-de1f1ae1ef89f7726fb4.chunk.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/forkme_right_darkblue_121621.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/global-4d2f4d5c114e951837d930b10213fa7ed4056152c55132c05d3010ce1a7bc37a.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/index-a16e158fd5a503828f458d640ff9283e307e414f6cb77ba0995a7bd05efacddb.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/jquery.min.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/processorRouter-8764573cc2f0559a2050.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/twilight-c4d2eafba805f08fdb40c0900ac100b78469aba0532ca487a4fb1591a9424a02.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/vendor-a5119bc6229774b6deaf.chunk.js.download" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makisu/Makisu_files/visit.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/payal_priyadarshini_JSs_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/payal_priyadarshini_JSs_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookingForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookingForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/bookForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/bookForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/estForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/estForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/bookingform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/bookingform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/estimateform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/estimateform.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/estimateform.html" beforeDir="false" afterPath="$PROJECT_DIR$/estimateform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +84,9 @@
       <workItem from="1584377650328" duration="624000" />
       <workItem from="1584379331319" duration="17304000" />
       <workItem from="1584538149466" duration="18580000" />
-      <workItem from="1584623377111" duration="22351000" />
+      <workItem from="1584623377111" duration="22666000" />
+      <workItem from="1584711682016" duration="5612000" />
+      <workItem from="1584820441363" duration="5694000" />
     </task>
     <servers />
   </component>
@@ -96,33 +124,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584479580173" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584658723547">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584659024242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723547" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1584658723546">
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1584659024242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723546" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1584658723546">
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1584659024242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723546" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1584658723546">
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1584659024242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584658723546" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/dist/js/bookingform.js</url>
-          <line>158</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
   </component>
 </project>

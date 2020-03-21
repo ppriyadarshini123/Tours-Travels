@@ -92,10 +92,12 @@
         /* Display a confirmation booking message and display the 'View Destination' button*/
         if(fName.value !== "" && txtMobile.value !== "" && d && regExpFName && regExpMob)
         {
+            let dest = ["Amsterdam", "Brussels", "Portugal", "Prague", "Barcelona", "Vienna"]; /*To display destination in result*/
+
             let depDate = $("#datepicker").datepicker("getDate");
             let arrDate = $("#datepicker2").datepicker("getDate");
             lbConfirm.innerHTML = "Thank you for booking with Go Europe! Your flight is now booked for the departure date : "+ $.datepicker.formatDate("dd-mm-yy", depDate) + " and arrival date : " + $.datepicker.formatDate("dd-mm-yy", arrDate);
-            lbConfirm.innerHTML = "Your flight is booked for the departure date : "+ $.datepicker.formatDate("dd-mm-yy", depDate) + " and arrival date : " + $.datepicker.formatDate("dd-mm-yy", arrDate);
+            lbConfirm.innerHTML = "Your flight is booked for "+ dest[id-1] +" for the departure date : "+ $.datepicker.formatDate("dd-mm-yy", depDate) + " and arrival date : " + $.datepicker.formatDate("dd-mm-yy", arrDate);
             bookF.style.visibility = "hidden";
             destD.style.visibility = "visible";
         }/*if*/
@@ -157,6 +159,8 @@
      */
     function menu()
     {
+        console.log("menu");
+        /* THE LEFT MENU*/
         /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
         let $nigiri = $( '.nigiri' );
 
@@ -176,6 +180,7 @@
         });
 
     }/* end menu*/
+
 
     /**
      * @name datePicker
