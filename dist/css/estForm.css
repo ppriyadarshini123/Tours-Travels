@@ -343,51 +343,53 @@ input[type=radio]:not(old):checked +  label > span > span{
 {
     padding-top: 20px;
 }
-.rowSiteMap
-{
-    background-color: #0A4069;
-    padding-top: 20px;
-    z-index: 10000;
-}
-.siteSocial
-{
-    margin: 0 auto;
-    width: 920px;
-    display:flex;
-    justify-content: space-between;
-}
 
+
+.colSiteMap
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0a0a0c;
+
+}
 .colSiteMap ul
 {
     padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .colSiteMap ul li
 {
     padding-bottom: 20px;
-    width:250px;
+
+}
+.widSiteMap
+{
+    z-index: 40;
+    padding-right: 40px;
 }
 
-
-.titleFooter
+.title
 {
     font-size: 20px;
     color: #ffffff;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.sitemap
+.subTitle
 {
-    display:flex;
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.widSiteMap
-{
-    z-index: 40;
-}
+
 .link
 {
     color: #ffffff;
@@ -422,7 +424,11 @@ input[type=radio]:not(old):checked +  label > span > span{
 .goToTop
 {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #0A4069;
 }
 .goToTop div a
 {

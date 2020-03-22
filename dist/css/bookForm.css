@@ -215,123 +215,55 @@ input[type=text]
 /*FOOTER SECTION*/
 .footer
 {
-    padding-top: 40px;
-}
-.rowSiteMap
-{
-    background-color: #86A8D2;
     padding-top: 20px;
-    z-index: 10000;
 }
-.siteSocial
+
+
+.colSiteMap
 {
-    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0a0a0c;
 
-    width: 920px;
-
-    width: 960px;
-
-    display:flex;
-    justify-content: space-between;
 }
-
 .colSiteMap ul
 {
     padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .colSiteMap ul li
 {
     padding-bottom: 20px;
-    width:250px;
+
+}
+.widSiteMap
+{
+    z-index: 40;
+    padding-right: 40px;
 }
 
 .title
 {
-    font-size: 14px;
-    color: #ffffff;
-    letter-spacing: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.sitemap
-{
-    display:flex;
-}
-
-.widSiteMap
-{
-    z-index: 40;
-}
-.link
-{
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    text-decoration: none;
-    padding-bottom: 20px;
-}
-
-.link:hover
-{
-    text-decoration: underline;
-    color:#ffffff;
-    cursor: pointer;
-}
-
-/*FOOTER SECTION*/
-.footer
-{
-    padding-top: 20px;
-}
-.rowSiteMap
-{
-    background-color: #0A4069;
-    padding-top: 20px;
-    z-index: 10000;
-}
-.siteSocial
-{
-    margin: 0 auto;
-    width: 920px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.colSiteMap ul
-{
-    padding-top: 20px;
-}
-
-.colSiteMap ul li
-{
-    padding-bottom: 20px;
-    width:250px;
-}
-
-
-.titleFooter
-{
     font-size: 20px;
     color: #ffffff;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.sitemap
+.subTitle
 {
-    display:flex;
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.widSiteMap
-{
-    z-index: 40;
-}
+
 .link
 {
     color: #ffffff;
@@ -366,7 +298,11 @@ input[type=text]
 .goToTop
 {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #0A4069;
 }
 .goToTop div a
 {

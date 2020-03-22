@@ -22,107 +22,88 @@ html, body{width:100%; height: 100%;}
 /* GENERAL SECTION*/
 html, body {
     font-family: Arial, Helvetica, sans-serif;
-    /*background-color: #EBEEF2;*/
     background-color: lightgray;
 }
-
 .wrapper
 {
     margin: 0 auto;
-    width:960px;
+    position: relative;/*Added to place the Makisu menu in position, otherwise it becomes sticky*/
+    /*width:960px;*/
 }
-
 
 /*HEADER SECTION*/
 .headerImage
 {
     background-repeat: no-repeat;
     padding-bottom: 20px;
+    width: 100%;
+    background-color: #0A4069;
+    height: 4.6vw;
+    position: relative;
 }
-
-.logo {
-    margin-top: -145px;
-    margin-left: -150px;
-}
-
 
 .logo
 {
-    margin-top: -145px;
 
 }
-
 
 .zIn
 {
-    z-index: 1000;
-    width:400px;
-    height:145px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    left: 10%;
 }
+
+
+.phonePosition
+{
+    display: flex;
+    position: absolute;
+    left: 67%;
+    padding: 45px;
+}
+
 .phone
 {
-    margin-top: -120px;
-
-    margin-left: 550px;
-
-    margin-left: 600px;
-
     width: 32px;
     height: 32px;
 }
 
 .phDisp
 {
-    margin-top: -140px;
-
-    margin-left: 570px;
-
-    margin-left: 620px;
-
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
     padding-left: 20px;
     text-shadow: 2px 2px 4px #000000;
 }
+
 .phTime
 {
-    margin-top: 5px;
-
-    margin-left: 570px;
-
-    margin-left: 620px;
-
+    padding-top: 10px;
     color: white;
     letter-spacing: 1px;
     font-size: 14px;
     padding-left: 20px;
     text-shadow: 2px 2px 4px #000000;
 }
-.padding
-{
-    padding-bottom: 20px;
-}
 
 
 /* MAIN SECTION*/
-.ui-draggable, .ui-droppable {
-    background-position: top;
+main
+{
+    height: 1058px;
 }
 
-
-
-.tabPosition {
-    margin-left: 172px;
-    margin-top: -270px;
-}
-.tabPosition{
-    margin-left: 172px;
-    margin-top: -345px;
-
-    padding-bottom: 20px;
+.tabPosition
+{
+   /* background-color: #157ECF;
+    margin-top: 10px;*/
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    /*padding-bottom: 20px;
+    width: 850px;*/
 }
 .dest
 {
@@ -151,10 +132,22 @@ html, body {
 {
    z-index: 50;
 }
+#tabs ul
+{
+    background-color: #1167A8;
+}
 #tabs ul li
 {
-    background-color: #86A8D2;
+    background-color: #1167A8;
+    color: #ffffff;
 }
+
+
+.ui-draggable, .ui-droppable {
+    /*background-position: top;*/
+}
+
+
 
 
 /*FOOTER SECTION*/
@@ -162,54 +155,53 @@ html, body {
 {
     padding-top: 20px;
 }
-.rowSiteMap
+
+
+.colSiteMap
 {
-    background-color: #86A8D2;
-    padding-top: 20px;
-    z-index: 10000;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0a0a0c;
+
 }
-.siteSocial
-{
-    margin: 0 auto;
-
-    width: 920px;
-
-    width: 960px;
-
-    display:flex;
-    justify-content: space-between;
-}
-
 .colSiteMap ul
 {
     padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .colSiteMap ul li
 {
     padding-bottom: 20px;
-    width:250px;
+
+}
+.widSiteMap
+{
+    z-index: 40;
+    padding-right: 40px;
 }
 
 .title
 {
-    font-size: 14px;
+    font-size: 20px;
     color: #ffffff;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.sitemap
+.subTitle
 {
-    display:flex;
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.widSiteMap
-{
-    z-index: 40;
-}
+
 .link
 {
     color: #ffffff;
@@ -244,7 +236,11 @@ html, body {
 .goToTop
 {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #0A4069;
 }
 .goToTop div a
 {

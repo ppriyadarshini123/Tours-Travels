@@ -303,7 +303,7 @@ html, body {
 {
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .colSiteMap ul li
@@ -321,10 +321,19 @@ html, body {
 {
     font-size: 20px;
     color: #ffffff;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-shadow: 2px 2px 4px #000000;
+}
+
+.subTitle
+{
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -362,6 +371,7 @@ html, body {
 .goToTop
 {
     display:flex;
+    justify-content: space-around;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-top: 20px;

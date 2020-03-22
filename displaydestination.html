@@ -15,34 +15,38 @@
 <body>
 <header id="top">
     <div class="headerImage">
-        <img src="dist/images/headernew.png" alt="Header Image">
+        <!-- <img src="dist/images/headernew.png" alt="Header Background Image">-->
         <div class="wrapper">
-            <div>
-                <a href="index.html" class="zIn">
-                    <img src="dist/images/logonew.png" class="logo" alt="Logo"/>
+            <div  class="zIn">
+                <a href="index.html">
+                    <img src="dist/images/optimized/logo_initial_with_transparency-350x141.png" class="logo" alt="Logo"/>
                 </a>
             </div><!--logo-->
-            <div>
-                <img src="./dist/images/telephone.png" class="phone" alt="Phone">
-                <p class="phDisp">+44 7549231859</p>
-                <p class="phTime">24 hrs a day / 7 days a week</p>
+            <div class="phonePosition">
+                <div><img src="./dist/images/optimized/telephone-40x40.png" class="phone" alt="Telephone"></div>
+                <div>
+                    <p class="phDisp">+44 5555555555</p>
+                    <p class="phTime">24 hrs a day / 7 days a week</p>
+                </div>
             </div><!--Phone number-->
         </div><!--adding logo and phone to wrapper-->
     </div><!--Header Image-->
 </header>
-<main>
-    <div class="wrapper padding">
-        <section class="demo">
-            <dl class="list nigiri">
-                <dt>Menu</dt>
-                <dd><a href="index.html">Home</a></dd>
-                <dd><a href="#">Holidays</a></dd>
-                <dd><a href="#">Visas</a></dd>
-                <dd><a href="#">Things To Do</a></dd>
-                <dd><a href="#">Last minute Deals</a></dd>
-            </dl>
-            <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
-        </section>
+
+<div class="wrapper">
+    <section class="demo">
+        <dl class="list nigiri">
+            <dt>Menu</dt>
+            <dd><a href="#">Home</a></dd>
+            <dd><a href="#">Get an estimate</a></dd>
+            <dd><a href="#">Book a flight</a></dd>
+            <dd><a href="#">Holidays</a></dd>
+            <dd><a href="#">Things to do</a></dd>
+            <dd><a href="#">Last minute Deals</a></dd>
+        </dl>
+        <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
+    </section>
+    <main>
         <div class="tabPosition" id="tDisp">
             <div id="dispDest" class="dest"></div><!--Display destination-->
             <div id="tabs" class="id">
@@ -74,47 +78,39 @@
                 </div><!--Tab 3-->
             </div><!--Tab list-->
         </div><!--Display tabs-->
-    </div><!--Menu-->
-</main>
+    </main>
+</div><!--Menu-->
+
 <footer class="footer">
     <div class="rowSiteMap">
-        <div class="siteSocial">
-            <div class="colSiteMap">
-                <p class="title">Sitemap</p>
-                <div class="sitemap">
-                    <div class="widSiteMap">
-                        <ul>
-                            <li><a class="link" href="index.html">Home</a></li>
-                            <li><a class="link" href="#">Holiday Packages</a></li>
-                            <li><a class="link" href="#">Weekend Getaways</a></li>
-                            <li><a class="link" href="#">Visas</a></li>
-                        </ul>
-                    </div><!--Sitemap first column-->
-                    <div class="widSiteMap">
-                        <ul>
-                            <li><a class="link" href="#">Things to do</a></li>
-                            <li><a class="link" href="#">Last minute deals</a></li>
-                            <li><a class="link" href="#">UK Holidays</a></li>
-                            <li><a class="link" href="#">European Holidays</a></li>
-                        </ul>
-                    </div><!--sitemap second column-->
-                </div><!--sitemap columns-->
-            </div><!--Sitemap-->
-
-            <div class="colSocialMedia">
-                <div class="goToTop">
-                    <div class="widSiteMap">
-                        <h3 class="title">Find us here:</h3>
-                        <a href="#"><img src="./dist/images/facebook.png" title="Find us on Facebook" alt="Facebook" width="32" height="32"></a>
-                        <a href="#"><img src="./dist/images/twitter.png" title="Find us on Twitter" alt="Twitter" width="30" height="30"></a>
-                        <a href="#"><img src="./dist/images/youtube.png" title="Find us on YouTube" alt="YouTube" width="30" height="30"></a>
-                    </div><!--Social media icons-->
-                    <div class="widSiteMap">
-                        <a href="#top" class="link" >Go to top</a>
-                    </div><!--go to top-->
-                </div><!--Social media icons and go to top-->
-            </div><!--Social media icons and go to top border-->
-        </div><!--siteSocial-->
+        <div class="colSiteMap">
+            <div class="widSiteMap">
+                <ul>
+                    <li><a class="link" href="#">Home</a></li>
+                    <li><a class="link" href="#">Get an estimate</a></li>
+                    <li><a class="link" href="#">Book a flight</a></li>
+                    <li><a class="link" href="#">Holidays</a></li>
+                    <li><a class="link" href="#">Things to do</a></li>
+                    <li><a class="link" href="#">Last minute deals</a></li>
+                </ul>
+            </div><!--Sitemap first column-->
+        </div><!--Sitemap-->
+        <div class="goToTop">
+            <div class="widSiteMap">
+                <h3 class="title">Main Office :</h3>
+                <p class="subTitle">25 Osier Close</p>
+                <p class="subTitle">Cambridge</p>
+                <p class="subTitle">CB1 6FG</p>
+            </div>
+            <div class="widSiteMap">
+                <h3 class="title">Find us here:</h3>
+                <a href="#"><img src="./dist/images/optimized/fb-30x30.png" title="Find us on Facebook" alt="Facebook"></a>
+                <a href="#"><img src="./dist/images/optimized/twitterWhite-30x30.png" title="Find us on Twitter" alt="Twitter"></a>
+            </div><!--Social media icons-->
+            <div class="widSiteMap">
+                <a href="#top" class="link" >Go to top</a>
+            </div><!--go to top-->
+        </div><!--Social media icons and go to top-->
     </div><!-- Footer row-->
     <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--copyright-->
 </footer>
