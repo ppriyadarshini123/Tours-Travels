@@ -134,21 +134,17 @@ main
 }
 #tabs ul
 {
-    background-color: #1167A8;
+    /*background-color: #1167A8;*/
 }
-#tabs ul li
+#tabs ul li:active
 {
     background-color: #1167A8;
     color: #ffffff;
 }
 
-
 .ui-draggable, .ui-droppable {
     /*background-position: top;*/
 }
-
-
-
 
 /*FOOTER SECTION*/
 .footer

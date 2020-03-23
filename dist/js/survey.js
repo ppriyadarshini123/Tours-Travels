@@ -17,18 +17,12 @@
 
     /* Store the html element in a constant*/
     const btnOK = document.getElementById("ok");
-
     let txtComments = document.getElementById("comment");
-
-
 
     /*Display field*/
     let dispThanks1 = document.getElementById("dispThanks");
 
-
-
     //Functions
-
     /**
      * @name okClicked
      * @desc After 'Ok' button is clicked, display Thanks.
@@ -41,26 +35,10 @@
             plane();
         }
         else
-            {
-                dispThanks1.innerHTML = "Please enter your comments. Thanks";
+        {
+            dispThanks1.innerHTML = "Please enter your comments. Thanks";
         }
     }/* end okClicked*/
-
-    //onload initialiser
-    window.onload = init;
-
-    /**
-     * @name init
-     * @desc initialising function
-     */
-    function init() {
-        bindBtns();
-        plane();
-    }//end init
-
-
-    //Functions
-
 
     /**
      *  @name bindBtns
@@ -78,7 +56,6 @@
      */
     function plane()
     {
-
         //Old code
         /*  $(document).ready(function () {
               $("#ok").click(function () {
@@ -92,16 +69,16 @@
           });*/
         $(document).ready(function () {
             $("#comment").change(function () {
-                //Check if the text area has value and is not empty
-                if ($.trim($('#comment').val()).length > 1) {
-                    $("#plane").animate({
-                        marginLeft: '+=1300px',
-                        marginTop: '-=500px',
-                        speed: '50',
-                        easing: 'linear'
-                    }).fadeToggle('slow', 'linear');
+                    //Check if the text area has value and is not empty
+                    if ($.trim($('#comment').val()).length > 1) {
+                        $("#plane").animate({
+                            marginLeft: '+=1300px',
+                            marginTop: '-=500px',
+                            speed: '50',
+                            easing: 'linear'
+                        }).fadeToggle('slow', 'linear');
+                    }
                 }
-            }
             );
 
         });
@@ -121,29 +98,6 @@
 
     //onload initialiser
     window.onload = init;
-
-        $(document).ready(function(){
-            $("#ok").click(function(){
-                $("#plane").animate({
-                    marginLeft: '+=1300px',
-                    marginTop:'-=500px',
-                    speed: '50',
-                    easing: 'linear'
-                }).fadeToggle('slow','linear');
-            });
-        });
-
-    }/* end plane*/
-
-    /**
-     * @name okClicked
-     * @desc After 'Ok' button is clicked, display Thanks.
-     */
-    function okClicked()
-    {
-        dispThanks1.innerHTML = "Thanks for your feedback. Have a great trip !";
-    }/* end okClicked*/
-
 
 })();/*end iffy*/
 

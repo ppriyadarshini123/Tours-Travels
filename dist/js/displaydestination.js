@@ -16,48 +16,7 @@
 (function(){
 
 
-    /**
-     * @name getParameterByName
-     * @desc The value of id from querystring is extracted using regular expression
-     * @param: name, url
-     */
-    function getParameterByName(name,url)
-    {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-
-    }/* end getParameterByName*/
-
-    /* Getting the querystring*/
-    let id = getParameterByName('id');
-
-    /* Display fields*/
-    let dispDest = document.getElementById("dispDest");
-
-
-    //onload initialiser
-    window.onload = init;
-
-    /**
-     * @name init
-     * @desc initialising function
-     */
-    function init() {
-        menu();
-        openTabs();
-        openSurvey();
-
-    }//end init
-
-
     //Functions
-
-
     /**
      * @name menu
      * @desc creates the left menu and implements toggle
@@ -98,7 +57,7 @@
 
     /**
      * @name openSurvey
-     * @desc When the user closes the tab area, or presses back button, open the survey page.
+     * @desc When the user closes the tab area, or presses back button, opens the survey page.
      */
     function openSurvey() {
 
@@ -115,10 +74,14 @@
                 e.preventDefault();
             });
         });*/
+       console.log("survey");
 
-        $(window).unload( function () {
-            window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
-            e.preventDefault();} );
+            $(window).unload(function () {
+                console.log("unload");
+                window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
+                e.preventDefault();
+            });
+
     }/* end openSurvey*/
 
 
@@ -135,7 +98,4 @@
     //onload initialiser
     window.onload = init;
 
-
-
 })();/*end iffy*/
-
