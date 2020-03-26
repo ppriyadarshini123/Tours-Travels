@@ -59,49 +59,55 @@
      * @name openSurvey
      * @desc When the user closes the tab area, or presses back button, opens the survey page.
      */
-   /* function openSurvey(e) {
+    /* function openSurvey(e) {
 
-        /!* $(document).ready(function () {
-             $("#tDisp").mouseleave(function (e) {
-                 window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
-                 e.preventDefault();
-             });
-         });*!/
+         /!* $(document).ready(function () {
+              $("#tDisp").mouseleave(function (e) {
+                  window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
+                  e.preventDefault();
+              });
+          });*!/
 
-        /!* $(document).ready(function () {
-             $("#tDisp").mouseleave(function (e) {
-                 window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
-                 e.preventDefault();
-             });
-         });*!/
-        console.log("survey");
+         /!* $(document).ready(function () {
+              $("#tDisp").mouseleave(function (e) {
+                  window.open("survey.html", "", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
+                  e.preventDefault();
+              });
+          });*!/
+         console.log("survey");
 
 
-        /!* window.addEventListener('beforeunload',function(e)
-         {*!/
-        /!*   $(window).unload(function(e){
-               console.log("unload");
-               window.open("survey.html","width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
-               e.preventDefault();
-           });*!/
+         /!* window.addEventListener('beforeunload',function(e)
+          {*!/
+         /!*   $(window).unload(function(e){
+                console.log("unload");
+                window.open("survey.html","width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
+                e.preventDefault();
+            });*!/
 
-        /!* $(document).on('unload',function(e){*!/
-        console.log("unload");
-        document.open("survey.html", "_parent");
-        /!*"width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px"*!/
-        e.preventDefault();
-        e.returnValue = '';
-        /!* });*!/
+         /!* $(document).on('unload',function(e){*!/
+         console.log("unload");
+         document.open("survey.html", "_parent");
+         /!*"width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px"*!/
+         e.preventDefault();
+         e.returnValue = '';
+         /!* });*!/
 
-        /!* } );*!/
-    }/!* end openSurvey*!/*/
+         /!* } );*!/
+     }/!* end openSurvey*!/*/
 
-   function openSurvey(e)
-   {
-       window.open("survey.html", "_blank","width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");
-       e.returnValue = '';
-       /*$("#tab").load("survey.html").dialog({modal:true});*/
-   }
+    function openSurvey(e)
+    {
+
+        $(document).ready(function () {
+            /*$(window).onmouseleave(function() {*/
+            window.open("survey.html", "_blank", "width=400px,height=400px,scrollbars=no,left=-1500px,location=no,resizable=no,top=450px");
+            e.returnValue = '';
+            /* });*/
+        });
+
+        /*$("#tab").load("survey.html").dialog({modal:true});*/
+    }
 
 
     /**
@@ -113,8 +119,7 @@
         openTabs();
         /* window.onbeforeunload = openSurvey;*/
         /*window.addEventListener("unload", openSurvey);*/
-        document.onbeforeunload = openSurvey;
-       /* openSurvey();*/
+        openSurvey();
         /*document.open("survey.html", "_self", "width=400px,height=400px,scrollbars=no,left=450px,location=no,resizable=no,top=150px");*/
     }//end init
 
