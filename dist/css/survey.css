@@ -23,7 +23,7 @@ html, body{width:100%;}
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     /*background-color: #EBEEF2;*/
-    background-color: #40444B;
+    background-color: #157ECF;
 }
 .wrapper
 {
@@ -38,22 +38,54 @@ html, body {
 /* MAIN SECTION*/
 .container
 {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     margin-top: 40px;
     position: relative;
     z-index: 40;
     padding-bottom: 40px;
+    text-align: center;
 
 }
 
 .head
 {
-    padding-bottom: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 14px;
     letter-spacing: 1px;
     color: #ffffff;
     text-shadow: 1px 1px 2px #000000;
     height: 5px;
+    text-align: center;
+}
+
+.thanks
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    height: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.ok
+{
+    color: #157ECF;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    width: 145px;
+    padding: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.ok:hover
+{
+    text-decoration: underline;
 }
 
 .plane
@@ -62,6 +94,6 @@ html, body {
      width:100px;
      position: absolute;
      background-image: url("../images/aeroplane.png");
-     margin-left: 20px;
-     margin-top: -30px;
+     margin-left: 40px;
+     margin-top: 40px;
  }

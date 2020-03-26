@@ -101,7 +101,7 @@
 
         $(document).ready(function () {
             /*$(window).onmouseleave(function() {*/
-            window.open("survey.html", "_blank", "width=400px,height=400px,scrollbars=no,left=-1500px,location=no,resizable=no,top=450px");
+            window.open("survey.html", "_blank", "width=400px,height=550px,scrollbars=no,left=-1500px,location=no,resizable=no,top=450px");
             e.returnValue = '';
             /* });*/
         });
