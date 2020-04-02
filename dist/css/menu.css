@@ -52,10 +52,8 @@ a {
     transform-style: preserve-3d;
     text-transform: capitalize;
     position: absolute;
-    top: 37%;
+    top: 12%;
     left: 12%;
-   /* left: 20%;
-    top: 30%;*/
 }
 
 .list a {
@@ -132,8 +130,8 @@ a {
 {
     width: 70px;
     position: absolute;
-    top: 58%;
-    left: 16.2%;
+    top: 35.5%;
+    left: 18.2%;
     z-index: 50;
 }
 

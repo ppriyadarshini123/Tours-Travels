@@ -20,10 +20,374 @@ table { border-collapse: collapse; border-spacing: 0; }
 html, body{width:100%; height: 100%;}
 
 /* GENERAL SECTION*/
-html, body {
+html, body
+{
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .wrapper {
+        margin: 0 auto;
+        position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
+        /*width:960px;*/
+    }
+
+    /*HEADER SECTION*/
+    .headerImage {
+        background-repeat: no-repeat;
+        padding-bottom: 2vw;
+        width: 100%;
+        background-color: #0A4069;
+        height: 4.6vw;
+        position: relative;
+    }
+
+    .logo
+    {
+
+    }
+
+    .zIn
+    {
+        cursor: pointer;
+        position: absolute;
+        left: 10%;
+    }
+
+
+    .phonePosition {
+        display: flex;
+        position: absolute;
+        left: 67%;
+        padding: 1.2vw;
+    }
+
+    .phone
+    {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .phDisp
+    {
+        color: white;
+        letter-spacing: .4vw;
+        font-size: 1.5vw;
+        padding-left: 1.5vw;
+        text-shadow: .5vw .5vw 1vw #000000;
+    }
+
+    .phTime {
+        padding-top: .3vw;
+        color: white;
+        letter-spacing: .2vw;
+        font-size: 1.5vw;
+        padding-left: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+
+    /*MENU & SLIDESHOW SECTION*/
+    .slideshow {
+        z-index: 40;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .text-block {
+        position: absolute;
+        color: white;
+        padding: 20px;
+        line-height: 2;
+        letter-spacing: 1px;
+        font-weight: lighter;
+        font-size: large;
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        right: 0;
+        /*background: rgb(0, 0, 0); !* Fallback color *!
+        background: rgba(0, 0, 0, 0.5); !* Black background with 0.5 opacity *!
+        text-shadow: 2px 2px 4px #000000;*/
+        background-color: #1167A8;
+        /*background: rgb(23, 142, 232); !* Fallback color *!*/
+        /*background: rgba(23, 142, 232, 0.5); !* Black background with 0.5 opacity *!*/
+        /*text-shadow: 2px 2px 4px #178EE8;*/
+        width: 280px;
+        height: 100px;
+        text-align: center;
+    }
+
+    /* WHY CHOOSE US - CAROUSEL SECTION*/
+    .whyChooseUsPosition {
+       /* position: relative;*/
+        height: 255px;
+    }
+
+    .whyChooseUs {
+        margin-top: 15px;
+        max-width: 920px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        /*border: 1px solid black;*/
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-right: 10px;
+        padding-left: 1px;
+        z-index: 40;
+       /* position: absolute;
+        bottom: 5%;
+        left: 34%;*/
+        position: relative;
+        border-radius: 60px;
+    }
+
+    .reasons {
+        height: 250px;
+        width: 925px;
+        background: #ffffff;
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .item {
+        display: inline-block;
+        height: 100%;
+        width: 300px;
+        outline: 1px dotted gray;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .item img {
+        padding-bottom: 20px;
+    }
+
+    .item p {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .paddles {
+    }
+
+    .paddle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2em;
+    }
+
+    .left-paddle {
+        left: 0;
+        color: #ffffff;
+        background-color: #1167A8;
+
+    }
+
+    .right-paddle {
+        right: 0;
+        color: #ffffff;
+        background-color: #1167A8;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+    /*
+        Top DEALS SECTION
+    */
+    .topDeals
+    {
+        z-index: 500;
+        text-align: center;
+        padding-top: 20px;
+        background-color: aliceblue;
+    }
+
+    .heading {
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 25px;
+    }
+
+    .moreDest
+    {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        width: 960px;
+        margin: 9px auto 0;
+    }
+    .topTitle
+    {
+        display: inline;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .dest {
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        cursor: pointer;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dest img {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 66px;
+    }
+
+    .package {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        color: #000000;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .price {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        color: #000000;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .book {
+        color: #ffffff;
+        background-color: #1167A8;
+        font-size: 15px;
+        margin-left: 90px;
+        display: block;
+        width: 80px;
+        padding: 20px;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px #000000;
+        border-radius: 35px;
+    }
+
+    .book:hover {
+        background-color: #1895F5;
+        text-decoration: underline;
+    }
+
+
+    /*FOOTER SECTION*/
+    .footer {
+        padding-top: 20px;
+    }
+
+
+    .colSiteMap {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0a0a0c;
+
+    }
+
+    .colSiteMap ul {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .colSiteMap ul li {
+        padding-bottom: 20px;
+
+    }
+
+    .widSiteMap {
+        z-index: 40;
+        padding-right: 40px;
+    }
+
+    .title {
+        font-size: 20px;
+        color: #ffffff;
+        letter-spacing: 1.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .subTitle {
+        font-size: 15px;
+        color: #ffffff;
+        letter-spacing: 1.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .link {
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+
+    /* SOCIAL MEDIA SECTION*/
+    /*index.html section*/
+    .colSocialMedia ul li a {
+        text-decoration: none;
+    }
+
+    .colSocialMedia ul li a:hover {
+        text-decoration: underline;
+        color: #40444B;
+    }
+
+    .goToTop {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: #0A4069;
+    }
+
+    .goToTop div a {
+        padding-left: 10px;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .base {
+        background-color: black;
+        height: 50px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 2px;
+    }
+
+}/*@media only screen and (min-width: 768px) and (max-width: 1200px) */
+
 
 @media only screen and (min-width: 1200px) {
     .wrapper {
@@ -213,6 +577,10 @@ html, body {
         font-size: 25px;
     }
 
+    .topTitle
+    {
+        display: none;
+    }
     .moreDest {
         display: flex;
         justify-content: space-around;
@@ -375,354 +743,3 @@ html, body {
     }
 
 }/*@media only screen and (min-width: 1200px) */
-
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-    .wrapper {
-        margin: 0 auto;
-        position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
-        /*width:960px;*/
-    }
-
-    /*HEADER SECTION*/
-    .headerImage {
-        background-repeat: no-repeat;
-        padding-bottom: 20px;
-        width: 100%;
-        background-color: #0A4069;
-        height: 4.6vw;
-        position: relative;
-    }
-
-    .logo {
-        margin-top: 10px;
-    }
-
-    .zIn {
-        cursor: pointer;
-        position: absolute;
-        left: 10%;
-    }
-
-
-    .phonePosition {
-        display: flex;
-        position: absolute;
-        left: 67%;
-        padding: 1.2vw;
-    }
-
-    .phone {
-        width: 32px;
-        height: 32px;
-    }
-
-    .phDisp {
-        color: white;
-        letter-spacing: 2px;
-        font-size: 20px;
-        padding-left: 20px;
-        text-shadow: 2px 2px 4px #000000;
-    }
-
-    .phTime {
-        padding-top: 10px;
-        color: white;
-        letter-spacing: 1px;
-        font-size: 14px;
-        padding-left: 20px;
-        text-shadow: 2px 2px 4px #000000;
-    }
-
-
-    /*MENU & SLIDESHOW SECTION*/
-    .slideshow {
-        z-index: 40;
-        cursor: pointer;
-        margin-top: 10px;
-        width: 100%;
-        position: relative;
-
-    }
-
-    .text-block {
-        position: absolute;
-        color: white;
-        padding: 20px;
-        line-height: 2;
-        letter-spacing: 1px;
-        font-weight: lighter;
-        font-size: large;
-        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-        right: 0;
-        /*background: rgb(0, 0, 0); !* Fallback color *!
-        background: rgba(0, 0, 0, 0.5); !* Black background with 0.5 opacity *!
-        text-shadow: 2px 2px 4px #000000;*/
-        background-color: #1167A8;
-        /*background: rgb(23, 142, 232); !* Fallback color *!*/
-        /*background: rgba(23, 142, 232, 0.5); !* Black background with 0.5 opacity *!*/
-        /*text-shadow: 2px 2px 4px #178EE8;*/
-        width: 280px;
-        height: 100px;
-        text-align: center;
-    }
-
-    /* WHY CHOOSE US - CAROUSEL SECTION*/
-    .whyChooseUsPosition {
-        position: relative;
-        height: 440px;
-    }
-
-    .whyChooseUs {
-        margin-top: 15px;
-        max-width: 920px;
-        height: 250px;
-        margin-left: auto;
-        margin-right: auto;
-        /*border: 1px solid black;*/
-        overflow-x: hidden;
-        overflow-y: hidden;
-        padding-right: 10px;
-        padding-left: 1px;
-        z-index: 40;
-        position: absolute;
-        bottom: 5%;
-        left: 34%;
-        border-radius: 60px;
-    }
-
-    .reasons {
-        height: 250px;
-        width: 925px;
-        background: #ffffff;
-        box-sizing: border-box;
-        white-space: nowrap;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-    .item {
-        display: inline-block;
-        height: 100%;
-        width: 300px;
-        outline: 1px dotted gray;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
-
-    .item img {
-        padding-bottom: 20px;
-    }
-
-    .item p {
-        font-size: 20px;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    .paddles {
-    }
-
-    .paddle {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 2em;
-    }
-
-    .left-paddle {
-        left: 0;
-        color: #ffffff;
-        background-color: #1167A8;
-
-    }
-
-    .right-paddle {
-        right: 0;
-        color: #ffffff;
-        background-color: #1167A8;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-
-    /*
-        Top DEALS SECTION
-    */
-    .topDeals {
-      /*  position: absolute;
-        bottom: -15%;
-        left: 34%;*/
-        z-index: 500;
-    }
-
-    .heading {
-        text-align: center;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        font-size: 25px;
-    }
-
-    .moreDest {
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 20px;
-        width: 960px;
-        margin: 0 auto;
-    }
-
-    .dest {
-        background-color: white;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        cursor: pointer;
-        z-index: 40;
-        border-radius: 147px;
-        border-bottom: #000000 1px solid;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .dest img {
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 131px;
-    }
-
-    .package {
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        color: #000000;
-        font-size: 14px;
-        letter-spacing: 1px;
-    }
-
-    .price {
-        padding-left: 20px;
-        padding-bottom: 10px;
-        color: #000000;
-        font-size: 15px;
-        letter-spacing: 1px;
-    }
-
-    .book {
-        color: #ffffff;
-        background-color: #1167A8;
-        font-size: 15px;
-        margin-left: 90px;
-        display: block;
-        width: 80px;
-        padding: 20px;
-        letter-spacing: 1px;
-        text-shadow: 2px 2px 4px #000000;
-        border-radius: 35px;
-    }
-
-    .book:hover {
-        background-color: #1895F5;
-        text-decoration: underline;
-    }
-
-
-    /*FOOTER SECTION*/
-    .footer {
-        padding-top: 20px;
-    }
-
-
-    .colSiteMap {
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: #0a0a0c;
-
-    }
-
-    .colSiteMap ul {
-        padding-top: 20px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .colSiteMap ul li {
-        padding-bottom: 20px;
-
-    }
-
-    .widSiteMap {
-        z-index: 40;
-        padding-right: 40px;
-    }
-
-    .title {
-        font-size: 20px;
-        color: #ffffff;
-        letter-spacing: 1.5px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-shadow: 2px 2px 4px #000000;
-    }
-
-    .subTitle {
-        font-size: 15px;
-        color: #ffffff;
-        letter-spacing: 1.5px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-
-    .link {
-        color: #ffffff;
-        font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 1.2;
-        text-decoration: none;
-        padding-bottom: 20px;
-    }
-
-    .link:hover {
-        text-decoration: underline;
-        color: #ffffff;
-        cursor: pointer;
-    }
-
-
-    /* SOCIAL MEDIA SECTION*/
-    /*index.html section*/
-    .colSocialMedia ul li a {
-        text-decoration: none;
-    }
-
-    .colSocialMedia ul li a:hover {
-        text-decoration: underline;
-        color: #40444B;
-    }
-
-    .goToTop {
-        display: flex;
-        justify-content: space-around;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        background-color: #0A4069;
-    }
-
-    .goToTop div a {
-        padding-left: 10px;
-        color: #ffffff;
-        padding-top: 10px;
-    }
-
-    .base {
-        background-color: black;
-        height: 50px;
-        color: #ffffff;
-        text-align: center;
-        padding-top: 10px;
-        letter-spacing: 2px;
-    }
-
-}/*@media only screen and (min-width: 768px) and (max-width: 1200px) */

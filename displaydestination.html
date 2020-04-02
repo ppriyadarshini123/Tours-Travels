@@ -14,8 +14,12 @@
         <!-- <img src="dist/images/headernew.png" alt="Header Background Image">-->
         <div class="wrapper">
             <div  class="zIn">
-                <a href="index.html">
-                    <img src="dist/images/optimized/logo_initial_with_transparency-350x141.png" class="logo" alt="Logo"/>
+                <a href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-350x141.png">
+                        <source media="(min-width: 768px) and (max-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-192x75.png">
+                        <img src="/dist/images/optimized/logo_initial_with_transparency-373x146.png" class="logo" alt="Logo"/>
+                    </picture>
                 </a>
             </div><!--logo-->
             <div class="phonePosition">

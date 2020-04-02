@@ -14,7 +14,11 @@
         <div class="wrapper">
             <div  class="zIn">
                 <a href="index.html">
-                    <img src="dist/images/optimized/logo_initial_with_transparency-350x141.png" class="logo" alt="Logo"/>
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-350x141.png">
+                        <source media="(min-width: 768px) and (max-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-192x75.png">
+                        <img src="/dist/images/optimized/logo_initial_with_transparency-373x146.png" class="logo" alt="Logo"/>
+                    </picture>
                 </a>
             </div><!--logo-->
             <div class="phonePosition">
@@ -43,17 +47,20 @@
     </section>
 
     <main>
-        <div class="container">
+        <!--<div class="container">-->
+            <div class="upperBlock">
             <p class="head">Flight & Hotel estimation grid</p>
             <div class="flex">
                 <div class="fontSpacing">
                     <p class="title">Flight booking </p>
-                    <span class="width">From:</span>
-                    <select title="origin" id="orig" name="odd" class="borderBottom">
-                        <option value="london" selected="selected" disabled>London
-                        </option>
-                    </select>
-                    <div class="fontSpacing">
+                    <div class="flightGap">
+                        <span class="width">From:</span>
+                        <select title="origin" id="orig" name="odd" class="borderBottom">
+                            <option value="london" selected="selected" disabled>London
+                            </option>
+                        </select>
+                    </div><!--from-->
+                    <div class="flightGap">
                         <span class="width">To:</span>
                         <select id="dest"  title="dest" name="dropdown" class="borderBottom">
                             <option value="amsterdam">Amsterdam</option>
@@ -63,8 +70,8 @@
                             <option value="barcelona">Barcelona</option>
                             <option value="vienna">Vienna</option>
                         </select>
-                    </div><!--fontSpacing-->
-                    <div class="fontSpacing">
+                    </div><!--to-->
+                    <div class="flightGap">
                         <input id="oneway" type="radio" name="one" value="oneway">
                         <label for="oneway" class=""><span><span></span></span>One way</label>
                         <input id="return" type="radio" name="one" value="return">
@@ -81,6 +88,7 @@
                     </div><!--fontSpacing-->
                 </div><!--hotelBooking-->
             </div><!--flex-->
+            </div>
             <div class="display">
                 <div class="dispEst">
                     <div class="disp">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
@@ -108,7 +116,7 @@
                 </div><!--dispEst-->
                 <input id="book" type="button" value="Book now" class="book">
             </div><!--Display Estimate-->
-        </div><!--Container-->
+       <!-- </div>&lt;!&ndash;Container&ndash;&gt;-->
     </main>
 </div><!--Wrapper-->
 <footer class="footer">
