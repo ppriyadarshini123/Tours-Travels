@@ -329,36 +329,7 @@ html, body {
 
 @media only screen and (min-width: 1200px)
 {
-    /* bookingform.html*/
 
-    /* estForm.css*/
-
-    /* CSS RESET SECTION
-    ------------------------------------------- */
-    /* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
-    address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-    b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
-    tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
-    ruby, section, summary, time, mark,
-    audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
-    img{vertical-align: top;}
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure, footer, header, menu, nav,
-    section, canvas, main, video { display: block; }
-    body { line-height: 1; }
-    ol, ul { list-style: none; }
-    blockquote, q { quotes: none; }
-    blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-    table { border-collapse: collapse; border-spacing: 0; }
-    html, body{width:100%; height: 100%;}
-
-
-    /* GENERAL SECTION*/
-    html, body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: lightgray;
-    }
     .wrapper {
         margin: 0 auto;
         position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
@@ -368,20 +339,18 @@ html, body {
     /*HEADER SECTION*/
     .headerImage {
         background-repeat: no-repeat;
-        padding-bottom: 2vw;
+        padding-bottom: 20px;
         width: 100%;
         background-color: #0A4069;
         height: 4.6vw;
         position: relative;
     }
 
-    .logo
-    {
+    .logo {
 
     }
 
-    .zIn
-    {
+    .zIn {
         cursor: pointer;
         position: absolute;
         left: 10%;
@@ -392,32 +361,31 @@ html, body {
         display: flex;
         position: absolute;
         left: 67%;
-        padding: 1.2vw;
+        padding: 45px;
     }
 
-    .phone
-    {
-        width: 3vw;
-        height: 3vw;
+    .phone {
+        width: 32px;
+        height: 32px;
     }
 
-    .phDisp
-    {
+    .phDisp {
         color: white;
-        letter-spacing: .4vw;
-        font-size: 1.5vw;
-        padding-left: 1.5vw;
-        text-shadow: .5vw .5vw 1vw #000000;
-    }
-
-    .phTime {
-        padding-top: .3vw;
-        color: white;
-        letter-spacing: .2vw;
-        font-size: 1.5vw;
+        letter-spacing: 2px;
+        font-size: 20px;
         padding-left: 20px;
         text-shadow: 2px 2px 4px #000000;
     }
+
+    .phTime {
+        padding-top: 10px;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 14px;
+        padding-left: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
 
 
     /* MAIN SECTION*/
@@ -443,6 +411,7 @@ html, body {
         letter-spacing: 1px;
         color: #ffffff;
         font-weight: bold;
+        text-shadow: 2px 2px 4px #000000;
     }
 
     .fieldsCollection
@@ -531,6 +500,7 @@ html, body {
         float: left;
         padding-top: 5px;
         padding-bottom: 5px;
+        letter-spacing: 1.5px;
     }
 
     .confirmMessage
@@ -542,8 +512,8 @@ html, body {
         letter-spacing: 1.5px;
         text-wrap: normal;
         font-size: 15px;
-        padding-bottom: 20px;
-        padding-top: 70px;
+        height: 30px;
+        box-sizing: border-box;
     }
 
     /*FOOTER SECTION*/

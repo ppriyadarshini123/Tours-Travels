@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-192x75.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-345x135.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-360x145.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-372x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-373x146.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookingForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/bookingForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/displaydestination.html" beforeDir="false" afterPath="$PROJECT_DIR$/displaydestination.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/bookForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/bookForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/dispDest.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/dispDest.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/estForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/estForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimateform.html" beforeDir="false" afterPath="$PROJECT_DIR$/estimateform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +67,8 @@
       <workItem from="1585317678763" duration="11234000" />
       <workItem from="1585414659401" duration="8614000" />
       <workItem from="1585688058799" duration="3407000" />
-      <workItem from="1585740673612" duration="18746000" />
+      <workItem from="1585740673612" duration="19034000" />
+      <workItem from="1585942580543" duration="7922000" />
     </task>
     <servers />
   </component>
