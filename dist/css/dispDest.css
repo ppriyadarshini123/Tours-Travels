@@ -136,7 +136,6 @@ main
     font-size: 14px;
     letter-spacing: 1px;
     line-height: 16px;
-
 }
 
 
@@ -151,25 +150,16 @@ main
 {
     color: #ffffff;
 }
-#tabs ul
-{
-    /*background-color: #1167A8;*/
-}
-ul.tabs li.ui-state-active,
-ul.tabs li.ui-tabs-selected
+#tabs ul li
 {
     background-color: #157ECF;
+}
+#tabs ul li a:disabled
+{
+    background-color: #0A4069;
     color: #ffffff;
 }
-/*#tabs ul li:active
-{
-    background-color: #157ECF;
-    color: #ffffff;
-}*/
 
-.ui-draggable, .ui-droppable {
-    /*background-position: top;*/
-}
 
 .ui-widget-content
 {

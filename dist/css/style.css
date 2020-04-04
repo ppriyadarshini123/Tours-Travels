@@ -35,7 +35,8 @@ html, body
     }
 
     /*HEADER SECTION*/
-    .headerImage {
+    .headerImage
+    {
         background-repeat: no-repeat;
         padding-bottom: 2vw;
         width: 100%;
@@ -90,13 +91,19 @@ html, body
 
 
     /*MENU & SLIDESHOW SECTION*/
-    .slideshow {
+    .slideshow
+    {
         z-index: 40;
         cursor: pointer;
         margin-top: 10px;
         width: 100%;
         position: relative;
+    }
 
+    .mainPic
+    {
+        width: 100%;
+        max-width: 100%;
     }
 
     .text-block {
