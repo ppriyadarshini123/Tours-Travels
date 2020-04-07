@@ -41,7 +41,7 @@ html, body
         padding-bottom: 2vw;
         width: 100%;
         background-color: #0A4069;
-        height: 4.6vw;
+        height: 10.6vw;
         position: relative;
     }
 
@@ -55,6 +55,7 @@ html, body
         cursor: pointer;
         position: absolute;
         left: 10%;
+        margin-top: 2vw;
     }
 
 
@@ -62,7 +63,9 @@ html, body
         display: flex;
         position: absolute;
         left: 67%;
+        margin-top: 2vw;
         padding: 1.2vw;
+
     }
 
     .phone
@@ -85,7 +88,7 @@ html, body
         color: white;
         letter-spacing: .2vw;
         font-size: 1.5vw;
-        padding-left: 20px;
+        padding-left: 1.5vw;
         text-shadow: 2px 2px 4px #000000;
     }
 
@@ -109,11 +112,11 @@ html, body
     .text-block {
         position: absolute;
         color: white;
-        padding: 20px;
+        padding: 10px;
         line-height: 2;
         letter-spacing: 1px;
         font-weight: lighter;
-        font-size: large;
+        font-size: small;
         bottom: 0; /* At the bottom. Use top:0 to append it to the top */
         right: 0;
         /*background: rgb(0, 0, 0); !* Fallback color *!
@@ -123,8 +126,8 @@ html, body
         /*background: rgb(23, 142, 232); !* Fallback color *!*/
         /*background: rgba(23, 142, 232, 0.5); !* Black background with 0.5 opacity *!*/
         /*text-shadow: 2px 2px 4px #178EE8;*/
-        width: 280px;
-        height: 100px;
+        width: 171px;
+        height: 76px;
         text-align: center;
     }
 
@@ -153,7 +156,8 @@ html, body
         border-radius: 60px;
     }
 
-    .reasons {
+    .reasons
+    {
         height: 250px;
         width: 925px;
         background: #ffffff;
@@ -233,7 +237,10 @@ html, body
         display: flex;
         justify-content: space-around;
         padding-bottom: 20px;
-        width: 960px;
+       /* width: 960px;*/
+        /*width: 100%;
+        max-width: 100%;*/
+
         margin: 9px auto 0;
     }
     .topTitle
@@ -254,8 +261,8 @@ html, body
     }
 
     .dest img {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 2px;
+        padding-right: 5px;
         border-radius: 66px;
     }
 

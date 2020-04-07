@@ -24,255 +24,463 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
-.wrapper
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+
+    .wrapper {
+        margin: 0 auto;
+        position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
+        /*width:960px;*/
+    }
+
+    /*HEADER SECTION*/
+    .headerImage {
+        background-repeat: no-repeat;
+        padding-bottom: 20px;
+        width: 100%;
+        background-color: #0A4069;
+        height: 4.6vw;
+        position: relative;
+    }
+
+    .logo {
+
+    }
+
+    .zIn {
+        cursor: pointer;
+        position: absolute;
+        left: 10%;
+    }
+
+
+    .phonePosition {
+        display: flex;
+        position: absolute;
+        left: 67%;
+        padding: 1.2vw;
+    }
+
+    .phone {
+        width: 32px;
+        height: 32px;
+    }
+
+    .phDisp {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 20px;
+        padding-left: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .phTime {
+        padding-top: 10px;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 14px;
+        padding-left: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+
+    /* MAIN SECTION*/
+    main {
+        height: 1058px;
+    }
+
+    /*.tabPosition
+    {
+       !* background-color: #157ECF;
+        margin-top: 10px;*!
+        position: absolute;
+        left: 30%;
+        top: 20%;
+        !*padding-bottom: 20px;
+        width: 850px;*!
+    }*/
+    .tabPosition {
+        z-index: 50;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        text-align: center;
+        width: 850px;
+        margin-top: 10px;
+        height: 530px;
+    }
+
+    .dest {
+        color: black;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    .id {
+        width: 860px;
+        height: 280px;
+    }
+
+    .tab {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 16px;
+    }
+
+
+    #tabs {
+        z-index: 50;
+        height: 450px;
+        width: 75%;
+        background-color: #157ECF;
+        color: #ffffff;
+    }
+
+    #tabs div p {
+        color: #ffffff;
+    }
+
+    #tabs ul li {
+        background-color: #157ECF;
+    }
+
+    #tabs ul li a:disabled {
+        background-color: #0A4069;
+        color: #ffffff;
+    }
+
+
+    .ui-widget-content {
+        color: #ffffff;
+    }
+
+    /*FOOTER SECTION*/
+    .footer {
+        padding-top: 20px;
+    }
+
+
+    .colSiteMap {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0a0a0c;
+
+    }
+
+    .colSiteMap ul {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .colSiteMap ul li {
+        padding-bottom: 20px;
+
+    }
+
+    .widSiteMap {
+        z-index: 40;
+        padding-right: 40px;
+    }
+
+    .title {
+        font-size: 20px;
+        color: #ffffff;
+        letter-spacing: 1.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .subTitle {
+        font-size: 15px;
+        color: #ffffff;
+        letter-spacing: 1.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .link {
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+
+    /* SOCIAL MEDIA SECTION*/
+    /*index.html section*/
+    .colSocialMedia ul li a {
+        text-decoration: none;
+    }
+
+    .colSocialMedia ul li a:hover {
+        text-decoration: underline;
+        color: #40444B;
+    }
+
+    .goToTop {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: #0A4069;
+    }
+
+    .goToTop div a {
+        padding-left: 10px;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .base {
+        background-color: black;
+        height: 50px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 2px;
+    }
+}/*@media only screen and (min-width: 768px) and (max-width: 1200px)*/
+
+@media only screen and (min-width: 1200px)
 {
-    margin: 0 auto;
-    position: relative;/*Added to place the Makisu menu in position, otherwise it becomes sticky*/
-    /*width:960px;*/
-}
 
-/*HEADER SECTION*/
-.headerImage
-{
-    background-repeat: no-repeat;
-    padding-bottom: 20px;
-    width: 100%;
-    background-color: #0A4069;
-    height: 4.6vw;
-    position: relative;
-}
+    .wrapper {
+        margin: 0 auto;
+        position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
+        /*width:960px;*/
+    }
 
-.logo
-{
+    /*HEADER SECTION*/
+    .headerImage {
+        background-repeat: no-repeat;
+        padding-bottom: 20px;
+        width: 100%;
+        background-color: #0A4069;
+        height: 4.6vw;
+        position: relative;
+    }
 
-}
+    .logo {
 
-.zIn
-{
-    cursor: pointer;
-    position: absolute;
-    left: 10%;
-}
+    }
 
-
-.phonePosition
-{
-    display: flex;
-    position: absolute;
-    left: 67%;
-    padding: 45px;
-}
-
-.phone
-{
-    width: 32px;
-    height: 32px;
-}
-
-.phDisp
-{
-    color: white;
-    letter-spacing: 2px;
-    font-size: 20px;
-    padding-left: 20px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.phTime
-{
-    padding-top: 10px;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 14px;
-    padding-left: 20px;
-    text-shadow: 2px 2px 4px #000000;
-}
+    .zIn {
+        cursor: pointer;
+        position: absolute;
+        left: 10%;
+    }
 
 
-/* MAIN SECTION*/
-main
-{
-    height: 1058px;
-}
+    .phonePosition {
+        display: flex;
+        position: absolute;
+        left: 67%;
+        padding: 45px;
+    }
 
-/*.tabPosition
-{
-   !* background-color: #157ECF;
-    margin-top: 10px;*!
-    position: absolute;
-    left: 30%;
-    top: 20%;
-    !*padding-bottom: 20px;
-    width: 850px;*!
-}*/
+    .phone {
+        width: 32px;
+        height: 32px;
+    }
 
-.tabPosition
-{
-    z-index: 50;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 850px;
-    margin-top: 10px;
-    height: 530px;
-}
+    .phDisp {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 20px;
+        padding-left: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
 
-.dest
-{
-    color: black;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 16px;
-}
-
-.id
-{
-    width: 860px;
-    height: 280px;
-}
-
-.tab
-{
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 16px;
-}
+    .phTime {
+        padding-top: 10px;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 14px;
+        padding-left: 20px;
+        text-shadow: 2px 2px 4px #000000;
+    }
 
 
-#tabs
-{
-    z-index: 50;
-    height: 528px;
-    background-color: #157ECF;
-    color: #ffffff;
-}
-#tabs div p
-{
-    color: #ffffff;
-}
-#tabs ul li
-{
-    background-color: #157ECF;
-}
-#tabs ul li a:disabled
-{
-    background-color: #0A4069;
-    color: #ffffff;
-}
+    /* MAIN SECTION*/
+    main {
+        height: 1058px;
+    }
+
+    /*.tabPosition
+    {
+       !* background-color: #157ECF;
+        margin-top: 10px;*!
+        position: absolute;
+        left: 30%;
+        top: 20%;
+        !*padding-bottom: 20px;
+        width: 850px;*!
+    }*/
+    .tabPosition {
+        z-index: 50;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 850px;
+        margin-top: 10px;
+        height: 530px;
+    }
+
+    .dest {
+        color: black;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    .id {
+        width: 860px;
+        height: 280px;
+    }
+
+    .tab {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 16px;
+    }
 
 
-.ui-widget-content
-{
-    color: #ffffff;
-}
+    #tabs {
+        z-index: 50;
+        height: 528px;
+        background-color: #157ECF;
+        color: #ffffff;
+    }
 
-/*FOOTER SECTION*/
-.footer
-{
-    padding-top: 20px;
-}
+    #tabs div p {
+        color: #ffffff;
+    }
 
+    #tabs ul li {
+        background-color: #157ECF;
+    }
 
-.colSiteMap
-{
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #0a0a0c;
-
-}
-.colSiteMap ul
-{
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.colSiteMap ul li
-{
-    padding-bottom: 20px;
-
-}
-.widSiteMap
-{
-    z-index: 40;
-    padding-right: 40px;
-}
-
-.title
-{
-    font-size: 20px;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-.subTitle
-{
-    font-size: 15px;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+    #tabs ul li a:disabled {
+        background-color: #0A4069;
+        color: #ffffff;
+    }
 
 
-.link
-{
-    color: #ffffff;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    text-decoration: none;
-    padding-bottom: 20px;
-}
+    .ui-widget-content {
+        color: #ffffff;
+    }
 
-.link:hover
-{
-    text-decoration: underline;
-    color:#ffffff;
-    cursor: pointer;
-}
+    /*FOOTER SECTION*/
+    .footer {
+        padding-top: 20px;
+    }
 
 
-/* SOCIAL MEDIA SECTION*/
-/*index.html section*/
-.colSocialMedia ul li a
-{
-    text-decoration: none;
-}
+    .colSiteMap {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #0a0a0c;
 
-.colSocialMedia ul li a:hover
-{
-    text-decoration: underline;
-    color:#40444B;
-}
+    }
 
-.goToTop
-{
-    display:flex;
-    justify-content: space-around;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    background-color: #0A4069;
-}
-.goToTop div a
-{
-    padding-left: 10px;
-    color: #ffffff;
-    padding-top: 10px;
-}
-.base
-{
-    background-color: black;
-    height: 50px;
-    color:#ffffff;
-    text-align: center;
-    padding-top: 10px;
-    letter-spacing: 2px;
-}
+    .colSiteMap ul {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .colSiteMap ul li {
+        padding-bottom: 20px;
+
+    }
+
+    .widSiteMap {
+        z-index: 40;
+        padding-right: 40px;
+    }
+
+    .title {
+        font-size: 20px;
+        color: #ffffff;
+        letter-spacing: 1.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .subTitle {
+        font-size: 15px;
+        color: #ffffff;
+        letter-spacing: 1.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .link {
+        color: #ffffff;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+
+    /* SOCIAL MEDIA SECTION*/
+    /*index.html section*/
+    .colSocialMedia ul li a {
+        text-decoration: none;
+    }
+
+    .colSocialMedia ul li a:hover {
+        text-decoration: underline;
+        color: #40444B;
+    }
+
+    .goToTop {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: #0A4069;
+    }
+
+    .goToTop div a {
+        padding-left: 10px;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .base {
+        background-color: black;
+        height: 50px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        letter-spacing: 2px;
+    }
+}/*@media only screen and (min-width: 1200px)*/
 
 
 

@@ -119,7 +119,6 @@ html, body
     {
         background-color: #157ECF;
         z-index: 50;
-
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
@@ -164,6 +163,10 @@ html, body
         width: 47px;
         display: inline-block;
         color: #ffffff;
+    }
+    .flightGap
+    {
+        padding-top: 2vw;
     }
 
     .mar {
