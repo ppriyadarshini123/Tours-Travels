@@ -407,57 +407,63 @@ html, body
     .wrapper {
         margin: 0 auto;
         position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
-        /*width:960px;*/
     }
 
     /*HEADER SECTION*/
     .headerImage {
         background-repeat: no-repeat;
-        padding-bottom: 20px;
         width: 100%;
-        background-color: #0A4069;
-        height: 4.6vw;
-        position: relative;
+        background-color: #003399;
+        padding-left: 3vw;
+       /* height: 8.6vw;
+        position: relative;*/
     }
 
-    .logo {
-
+    .logo
+    {
+        margin-top: 1vw;
+        zoom: .8;
     }
 
     .zIn {
         cursor: pointer;
-        position: absolute;
-        left: 10%;
+        margin-right: 19vw;
+       /* position: absolute;
+        left: 10%;*/
     }
-
+    .logoHeader
+    {
+        display: flex;
+    }
 
     .phonePosition {
         display: flex;
-        position: absolute;
-        left: 67%;
-        padding: 45px;
+        margin-top: 4vw;
+       /* position: absolute;
+        right: 7%;*/
+        /*padding: 4vw;*/
     }
 
     .phone {
-        width: 32px;
-        height: 32px;
+        width: 2vw;
+        height: 2vw;
     }
 
     .phDisp {
         color: white;
-        letter-spacing: 2px;
-        font-size: 20px;
-        padding-left: 20px;
-        text-shadow: 2px 2px 4px #000000;
+        letter-spacing: .1vw;
+        font-size: 1vw;
+        padding-left: 1vw;
+        text-shadow: 1vw 1vw 1vw #000000;
     }
 
     .phTime {
-        padding-top: 10px;
+        padding-top: .28vw;
         color: white;
-        letter-spacing: 1px;
-        font-size: 14px;
-        padding-left: 20px;
-        text-shadow: 2px 2px 4px #000000;
+        letter-spacing: .1vw;
+        font-size: 1vw;
+        padding-left: 1vw;
+        text-shadow: 1vw 1vw 1vw #000000;
     }
 
 
@@ -465,18 +471,18 @@ html, body
     .slideshow {
         z-index: 40;
         cursor: pointer;
-        margin-top: 10px;
+        margin-top: .5vw;
         width: 100%;
-        position: relative;
+        /*position: relative;*/
 
     }
 
     .text-block {
         position: absolute;
         color: white;
-        padding: 20px;
+        padding: 5vw;
         line-height: 2;
-        letter-spacing: 1px;
+        letter-spacing: .2vw;
         font-weight: lighter;
         font-size: large;
         bottom: 0; /* At the bottom. Use top:0 to append it to the top */
@@ -488,38 +494,40 @@ html, body
         /*background: rgb(23, 142, 232); !* Fallback color *!*/
         /*background: rgba(23, 142, 232, 0.5); !* Black background with 0.5 opacity *!*/
         /*text-shadow: 2px 2px 4px #178EE8;*/
-        width: 280px;
-        height: 100px;
+        width: 9vw;
+        height: 5vw;
         text-align: center;
     }
 
     /* WHY CHOOSE US - CAROUSEL SECTION*/
     .whyChooseUsPosition {
         position: relative;
-        height: 440px;
+        width: 64vw;/*879px*/
+        margin-left: auto;
+        margin-right: auto;
+       /* height: 440px;*/
     }
 
     .whyChooseUs {
-        margin-top: 15px;
-        max-width: 920px;
-        height: 250px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 2vw;
+       /* max-width: 841px;*/
+        /*margin-left: auto;
+        margin-right: auto;*/
         /*border: 1px solid black;*/
         overflow-x: hidden;
         overflow-y: hidden;
-        padding-right: 10px;
-        padding-left: 1px;
+       /* padding-right: 10px;*/
+        padding-left: 1vw;
         z-index: 40;
-        position: absolute;
+        /*position: absolute;
         bottom: 5%;
-        left: 34%;
-        border-radius: 60px;
+        left: 34%;*/
+        /*border-radius: 60px;*/
     }
 
     .reasons {
-        height: 250px;
-        width: 925px;
+        height: 200px;
+        width: 850px;
         background: #ffffff;
         box-sizing: border-box;
         white-space: nowrap;
@@ -554,19 +562,24 @@ html, body
         top: 0;
         bottom: 0;
         width: 2em;
+
     }
 
     .left-paddle {
         left: 0;
         color: #ffffff;
         background-color: #1167A8;
-
+        border-bottom-left-radius: 21px;
+        border-top-left-radius: 21px;
     }
 
     .right-paddle {
         right: 0;
         color: #ffffff;
         background-color: #1167A8;
+        border-bottom-right-radius: 21px;
+        border-top-right-radius: 21px;
+
     }
 
     .hidden {
@@ -578,10 +591,11 @@ html, body
         Top DEALS SECTION
     */
     .topDeals {
-        position: absolute;
+       /* position: absolute;
         bottom: -15%;
-        left: 34%;
+        left: 34%;*/
         z-index: 500;
+        margin-top: -19vw;
     }
 
     .heading {
@@ -609,17 +623,18 @@ html, body
         padding-bottom: 20px;
         cursor: pointer;
         z-index: 40;
-        border-radius: 147px;
+        border-radius: 19px;
         border-bottom: #000000 1px solid;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        box-shadow: 1px 1px lightblue;
     }
 
     .dest img {
         padding-left: 20px;
         padding-right: 20px;
-        border-radius: 131px;
+        border-radius: 19px;
     }
 
     .package {

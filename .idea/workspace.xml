@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency-373x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/amsterdam-1227x411.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/amsterdam-1227x432.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/bruss-1227x432.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/logo_initial_with_transparency-372x157.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/dispDest.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/dispDest.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/estForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/estForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency.ai" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/logo_initial_with_transparency.ai" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ToursTravels" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
@@ -73,7 +77,13 @@
       <workItem from="1586002188971" duration="7453000" />
       <workItem from="1586208701033" duration="1538000" />
       <workItem from="1586292248871" duration="645000" />
-      <workItem from="1586295679413" duration="4973000" />
+      <workItem from="1586295679413" duration="5047000" />
+      <workItem from="1592115725382" duration="599000" />
+      <workItem from="1592290936051" duration="1194000" />
+      <workItem from="1592460648962" duration="2457000" />
+      <workItem from="1593707973325" duration="270000" />
+      <workItem from="1598627176163" duration="7826000" />
+      <workItem from="1598727213511" duration="7443000" />
     </task>
     <servers />
   </component>
@@ -107,29 +117,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1584479580173">
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1598627611411">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584479580173" />
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1584659024242">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
-    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1584659024242">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
-    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1584659024242">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
-    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1584659024242">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728/-2560.0.2560.1400@0.0.1366.728" timestamp="1584659024242" />
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585846232147">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1585846232147" />
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598627611411" />
   </component>
 </project>
