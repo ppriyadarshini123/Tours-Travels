@@ -133,7 +133,7 @@ html, body
 
     /* WHY CHOOSE US - CAROUSEL SECTION*/
     .whyChooseUsPosition {
-       /* position: relative;*/
+        /* position: relative;*/
         height: 255px;
     }
 
@@ -149,9 +149,9 @@ html, body
         padding-right: 10px;
         padding-left: 1px;
         z-index: 40;
-       /* position: absolute;
-        bottom: 5%;
-        left: 34%;*/
+        /* position: absolute;
+         bottom: 5%;
+         left: 34%;*/
         position: relative;
         border-radius: 60px;
     }
@@ -237,7 +237,7 @@ html, body
         display: flex;
         justify-content: space-around;
         padding-bottom: 20px;
-       /* width: 960px;*/
+        /* width: 960px;*/
         /*width: 100%;
         max-width: 100%;*/
 
@@ -415,38 +415,37 @@ html, body
         width: 100%;
         background-color: #003399;
         padding-left: 3vw;
-       /* height: 8.6vw;
-        position: relative;*/
+        /* height: 8.6vw;
+         position: relative;*/
     }
 
     .logo
     {
         margin-top: 1vw;
-        zoom: .8;
+        zoom: .6;
     }
 
     .zIn {
         cursor: pointer;
-        margin-right: 19vw;
-       /* position: absolute;
-        left: 10%;*/
+        margin-right: 48vw;
     }
     .logoHeader
     {
         display: flex;
     }
+    .iconPosition
+    {
+        display: flex;
+        justify-content: space-around;
+    }
 
     .phonePosition {
         display: flex;
-        margin-top: 4vw;
-       /* position: absolute;
-        right: 7%;*/
-        /*padding: 4vw;*/
+        margin-top: 0.8vw;
     }
 
     .phone {
-        width: 2vw;
-        height: 2vw;
+        height: 19px;
     }
 
     .phDisp {
@@ -455,15 +454,15 @@ html, body
         font-size: 1vw;
         padding-left: 1vw;
         text-shadow: 1vw 1vw 1vw #000000;
+        padding-top: .3vw;
+        margin-right: 2vw;
     }
 
-    .phTime {
-        padding-top: .28vw;
-        color: white;
-        letter-spacing: .1vw;
-        font-size: 1vw;
-        padding-left: 1vw;
-        text-shadow: 1vw 1vw 1vw #000000;
+    .emailAddress
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-top: .8vw;
     }
 
 
@@ -477,14 +476,34 @@ html, body
 
     }
 
+    .text-block h4
+    {
+        font-size: 3vw;
+    }
+    .text-block p
+    {
+        font-size: 2vw;
+    }
+    .bookNow
+    {
+        color: white;
+        border: 1px white solid;
+        padding: 1vw;
+        box-sizing: border-box;
+        border-radius: 3vw;
+        line-height: 2;
+        font-size: 2vw;
+    }
     .text-block {
         position: absolute;
+        /*top: 5%;
+        left: 37%;*/
         color: white;
-        padding: 5vw;
-        line-height: 2;
-        letter-spacing: .2vw;
+        padding: 1vw;
+        line-height: 1.5;
+        letter-spacing: .1vw;
         font-weight: lighter;
-        font-size: large;
+        font-size: 3vw;
         bottom: 0; /* At the bottom. Use top:0 to append it to the top */
         right: 0;
         /*background: rgb(0, 0, 0); !* Fallback color *!
@@ -494,8 +513,8 @@ html, body
         /*background: rgb(23, 142, 232); !* Fallback color *!*/
         /*background: rgba(23, 142, 232, 0.5); !* Black background with 0.5 opacity *!*/
         /*text-shadow: 2px 2px 4px #178EE8;*/
-        width: 9vw;
-        height: 5vw;
+        /* width: 9vw;
+         height: 5vw;*/
         text-align: center;
     }
 
@@ -505,18 +524,18 @@ html, body
         width: 64vw;/*879px*/
         margin-left: auto;
         margin-right: auto;
-       /* height: 440px;*/
+        /* height: 440px;*/
     }
 
     .whyChooseUs {
         margin-top: 2vw;
-       /* max-width: 841px;*/
+        /* max-width: 841px;*/
         /*margin-left: auto;
         margin-right: auto;*/
         /*border: 1px solid black;*/
         overflow-x: hidden;
         overflow-y: hidden;
-       /* padding-right: 10px;*/
+        /* padding-right: 10px;*/
         padding-left: 1vw;
         z-index: 40;
         /*position: absolute;
@@ -591,12 +610,18 @@ html, body
         Top DEALS SECTION
     */
     .topDeals {
-       /* position: absolute;
-        bottom: -15%;
-        left: 34%;*/
+        /* position: absolute;
+         bottom: -15%;
+         left: 34%;*/
         z-index: 500;
-        margin-top: -19vw;
+        /*margin-top: -19vw;*/
+        background-color: #176BAA;
+        padding-bottom: 2vw;
+        border-top: 1px white solid;
+        text-align: center;
     }
+
+
 
     .heading {
         text-align: center;
@@ -607,7 +632,12 @@ html, body
 
     .topTitle
     {
-        display: none;
+        background-color: white;
+        color: #176BAA;
+        letter-spacing: .1vw;
+        font-size: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
     }
     .moreDest {
         display: flex;
@@ -615,6 +645,7 @@ html, body
         padding-bottom: 20px;
         width: 960px;
         margin: 0 auto;
+        padding-top: 2vw;
     }
 
     .dest {
