@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/Portugal-1213x449.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/amsterdam-1213x449.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/barcelona-1213x449.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/brussels-1213x449.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/email-icon-25x19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/email-icon-29x22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/prague-1213x449.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/vienna-1213x449.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/images/optimized/amsterdam-2540x1058.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/optimized/amsterdam-2540x1058.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +76,7 @@
       <workItem from="1593707973325" duration="270000" />
       <workItem from="1598627176163" duration="7826000" />
       <workItem from="1598727213511" duration="7555000" />
-      <workItem from="1598788730402" duration="12606000" />
+      <workItem from="1598788730402" duration="12794000" />
     </task>
     <servers />
   </component>
