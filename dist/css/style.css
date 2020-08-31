@@ -486,13 +486,15 @@ html, body
     }
     .bookNow
     {
-        color: white;
-        border: 1px white solid;
-        padding: 1vw;
-        box-sizing: border-box;
-        border-radius: 3vw;
-        line-height: 2;
+        color: #1167A8;
+        background-color: #ffffff;
         font-size: 2vw;
+        display: block;
+        padding: 1vw;
+        letter-spacing: .1vw;
+        text-shadow: 1px 1px 2px #000000;
+        border-radius: 1vw;
+        margin-top: 1vw;
     }
     .text-block {
         position: absolute;
@@ -521,10 +523,9 @@ html, body
     /* WHY CHOOSE US - CAROUSEL SECTION*/
     .whyChooseUsPosition {
         position: relative;
-        width: 64vw;/*879px*/
+        width: 73vw;
         margin-left: auto;
         margin-right: auto;
-        /* height: 440px;*/
     }
 
     .whyChooseUs {
@@ -536,7 +537,7 @@ html, body
         overflow-x: hidden;
         overflow-y: hidden;
         /* padding-right: 10px;*/
-        padding-left: 1vw;
+       /* padding-left: 1vw;*/
         z-index: 40;
         /*position: absolute;
         bottom: 5%;
@@ -546,7 +547,6 @@ html, body
 
     .reasons {
         height: 200px;
-        width: 850px;
         background: #ffffff;
         box-sizing: border-box;
         white-space: nowrap;
@@ -557,9 +557,7 @@ html, body
     .item {
         display: inline-block;
         height: 100%;
-        width: 300px;
-        outline: 1px dotted gray;
-        padding-right: 20px;
+        /*outline: 1px dotted gray;*/
         box-sizing: border-box;
     }
 
@@ -571,15 +569,16 @@ html, body
         font-size: 20px;
         text-align: center;
         letter-spacing: 1px;
+        padding-bottom: 1vw;
     }
 
     .paddles {
     }
 
     .paddle {
-        position: absolute;
+       /* position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: 0;*/
         width: 2em;
 
     }
@@ -650,22 +649,17 @@ html, body
 
     .dest {
         background-color: white;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: .5vw;
+        padding-bottom: .5vw;
         cursor: pointer;
         z-index: 40;
-        border-radius: 19px;
-        border-bottom: #000000 1px solid;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        box-shadow: 1px 1px lightblue;
+        border-radius: 1vw;
     }
 
     .dest img {
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 19px;
+        padding-left: .5vw;
+        padding-right: .5vw;
+        border-radius: 1vw;
     }
 
     .package {
