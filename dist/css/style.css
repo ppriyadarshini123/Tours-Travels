@@ -683,13 +683,14 @@ html, body
         color: #ffffff;
         background-color: #1167A8;
         font-size: 15px;
-        margin-left: 90px;
         display: block;
         width: 80px;
         padding: 20px;
         letter-spacing: 1px;
         text-shadow: 2px 2px 4px #000000;
         border-radius: 35px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .book:hover {

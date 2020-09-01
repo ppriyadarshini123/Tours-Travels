@@ -62,13 +62,15 @@
         // duration of scroll animation
         let scrollDuration = 1500;
 
-        // paddles
+       /* // paddles
         let leftPaddle = document.getElementsByClassName('left-paddle');
-        let rightPaddle = document.getElementsByClassName('right-paddle');
+        let rightPaddle = document.getElementsByClassName('right-paddle');*/
 
         // get items dimensions
         let itemsLength = $('.item').length;
+        console.log("itemsLength="+itemsLength);
         let itemSize = $('.item').outerWidth(true);
+        console.log("itemSize="+itemSize);
 
         // get some relevant size for the paddle triggering point
         let paddleMargin = 20;
@@ -78,6 +80,7 @@
             return $('.whyChooseUs').outerWidth();
         }
         let menuWrapperSize = getMenuWrapperSize();
+        console.log("MenuWrapperSize="+menuWrapperSize);
 
         // the wrapper is responsive
         $(window).on('resize', function() {
@@ -93,41 +96,66 @@
         };
 
         let menuSize = getMenuSize() + 45;
+        console.log("menuSize"+menuSize);
 
         // get how much of menu is invisible
         let menuInvisibleSize = menuSize - menuWrapperSize;
+        console.log("menuInvisibleSize"+menuInvisibleSize);
 
         // get how much have we scrolled to the left
         let getMenuPosition = function() {
             return $('.reasons').scrollLeft();
         };
 
+        for(j=0;j<100;j++) {
+            for (i = 1; i <= itemsLength; i++) {
+                $('.reasons').animate({ "scrollLeft": "+=150px" }, "slow");
+               /* $('.reasons').animate( { scrollLeft: $('.item')[i].scrollLeft($('.item')[i].scrollLeft())},{duration: 400}, {complete: function(){
+                        let finalMenuPosition = getMenuPosition();
+                        if(finalMenuPosition == getMenuSize()) itemSize = 0;
+                        /!*break;*!/
+                    }});*/
+               /* $('.reasons').scrollLeft(itemSize+itemSize);*/
+                /*$('.reasons').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);*/
+               /* $('.reasons').scrollLeft();*/
+            }
+        }
+       /* $('.reasons').scrollLeft(300);*/
+
+       /* $('.reasons').scroll(function(){
+            $('.reasons').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+        });*/
+
         // finally, what happens when we are actually scrolling the menu
-        $('.reasons').on('scroll', function() {
+       /* $('.reasons').on('scroll', function() {
 
             // get how much of menu is invisible
             menuInvisibleSize = menuSize - menuWrapperSize;
+            console.log("menuInvisibleSize"+menuInvisibleSize);
+
             // get how much have we scrolled so far
             let menuPosition = getMenuPosition();
+            console.log("menuPosition"+menuPosition);
 
             let menuEndOffset = menuInvisibleSize - paddleMargin;
+            console.log("menuEndOffset="+menuEndOffset);
 
             // show & hide the paddles
             // depending on scroll position
             if (menuPosition <= paddleMargin) {
-                $(leftPaddle).addClass('hidden');
-                $(rightPaddle).removeClass('hidden');
+                /!*$(leftPaddle).addClass('hidden');
+                $(rightPaddle).removeClass('hidden');*!/
             } else if (menuPosition < menuEndOffset) {
                 // show both paddles in the middle
-                $(leftPaddle).removeClass('hidden');
-                $(rightPaddle).removeClass('hidden');
+               /!* $(leftPaddle).removeClass('hidden');
+                $(rightPaddle).removeClass('hidden');*!/
             } else if (menuPosition >= menuEndOffset) {
-                $(leftPaddle).removeClass('hidden');
-                $(rightPaddle).addClass('hidden');
+               /!* $(leftPaddle).removeClass('hidden');
+                $(rightPaddle).addClass('hidden');*!/
             }
-        });
+        });*/
 
-        // scroll to left
+       /* // scroll to left
         $(rightPaddle).on('click', function() {
             $('.reasons').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
         });
@@ -135,7 +163,7 @@
         // scroll to right
         $(leftPaddle).on('click', function() {
             $('.reasons').animate( { scrollLeft: '0' }, scrollDuration);
-        });
+        });*/
 
     } /* end whychooseusscroll */
 
