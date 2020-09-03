@@ -1,0 +1,51 @@
+ <div class="testDiv">
+        <h1 class="heading">Test Text</h1>
+        <ul class="reasons">
+            <li class="item">
+               <img>
+            </li>
+            <li class="item">
+              <img>
+            </li>
+            <li class="item">
+               <img>
+            </li>  
+        </ul>       
+    </div><!--Carousel-->
+
+JQuery:
+ $(document).ready(loop());
+
+ function loop(){
+   
+	for (i = 1; i <= itemsLength; i++) {
+          $('.reasons').animate({"scrollLeft": "+=150px"},"slow", function(){
+                        loop();
+                              }/*function*/     
+                              });/*animate*/
+            }/*for*/
+        }/*loop()*/
+
+CSS:
+    .testDiv {
+        margin-top: 2vw;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        z-index: 40;
+        
+    }
+
+    .reasons {
+        height: 200px;
+        background: #ffffff;
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .item {
+        display: inline-block;
+        height: 100%;
+        box-sizing: border-box;
+    }

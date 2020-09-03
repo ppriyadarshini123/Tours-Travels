@@ -223,6 +223,7 @@ html, body
         text-align: center;
         padding-top: 20px;
         background-color: aliceblue;
+        position: relative;
     }
 
     .heading {
@@ -575,10 +576,11 @@ html, body
     .paddles {
     }
 
+    /*
     .paddle {
-       /* position: absolute;
+       !* position: absolute;
         top: 0;
-        bottom: 0;*/
+        bottom: 0;*!
         width: 2em;
 
     }
@@ -599,6 +601,7 @@ html, body
         border-top-right-radius: 21px;
 
     }
+    */
 
     .hidden {
         display: none;
@@ -618,6 +621,7 @@ html, body
         padding-bottom: 2vw;
         border-top: 1px white solid;
         text-align: center;
+        position: relative;
     }
 
 
@@ -637,6 +641,20 @@ html, body
         font-size: 2vw;
         padding-top: 2vw;
         padding-bottom: 2vw;
+    }
+    .design
+    {
+        position: absolute;
+        right:-3%;
+        top: 40%;
+        transform: rotate(20deg) scaleY(.5) scaleX(.5);
+    }
+
+    .design2
+    {
+        position: absolute;
+        left:-4%;
+        transform: rotate(-20deg) scaleY(.5) scaleX(.5);
     }
     .moreDest {
         display: flex;
