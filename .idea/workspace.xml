@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57a6b38-89b9-4193-b8ae-46e22b8fb2d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/iconfinder_chair_umbrella_3512614---256x256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/iconfinder_chair_umbrella_3512614.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/images/optimized/iconfinder_coronovirus_02_5826047.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questionjQuery.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/Portugal-1233x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/amsterdam-1229x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/amsterdam-1233x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/barcelona-1233x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/brussels-1233x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/prague-1233x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/images/optimized/vienna-1233x460.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -35,7 +40,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -47,7 +51,10 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ToursTravels" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -95,12 +102,15 @@
       <workItem from="1598864315115" duration="5222000" />
       <workItem from="1598943427590" duration="6999000" />
       <workItem from="1599033773680" duration="20021000" />
-      <workItem from="1599118698027" duration="12086000" />
+      <workItem from="1599118698027" duration="12874000" />
+      <workItem from="1599168092281" duration="292000" />
+      <workItem from="1599237450260" duration="4156000" />
+      <workItem from="1599308351490" duration="10193000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -117,13 +127,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -133,5 +142,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598627611411" />
+    <state x="16" y="17" key="SettingsEditor" timestamp="1599168379190">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="16" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599168379190" />
   </component>
 </project>

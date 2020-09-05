@@ -22,8 +22,8 @@ html, body{width:100%; height: 100%;}
 /* GENERAL SECTION*/
 html, body
 {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
+    font-family: gaultier, sans-serif;
 }
 
 
@@ -454,9 +454,10 @@ html, body
         letter-spacing: .1vw;
         font-size: 1vw;
         padding-left: 1vw;
-        text-shadow: 1vw 1vw 1vw #000000;
+        /*text-shadow: 1vw 1vw 1vw #000000;*/
         padding-top: .3vw;
         margin-right: 2vw;
+
     }
 
     .emailAddress
@@ -480,10 +481,18 @@ html, body
     .text-block h4
     {
         font-size: 3vw;
+
+    }
+
+    .text-block
+    {
+        font-family: gaultier, sans-serif;
     }
     .text-block p
     {
         font-size: 2vw;
+        font-family: gaultier, sans-serif;
+
     }
     .bookNow
     {
@@ -553,6 +562,7 @@ html, body
         white-space: nowrap;
         overflow-x: hidden;
         overflow-y: hidden;
+        font-family: gaultier, sans-serif;
     }
 
     .item {
@@ -631,6 +641,7 @@ html, body
         padding-top: 12px;
         padding-bottom: 12px;
         font-size: 25px;
+        font-family: gaultier, sans-serif;
     }
 
     .topTitle
@@ -641,6 +652,7 @@ html, body
         font-size: 2vw;
         padding-top: 2vw;
         padding-bottom: 2vw;
+        font-family: gaultier, sans-serif;
     }
     .design
     {
@@ -672,6 +684,7 @@ html, body
         cursor: pointer;
         z-index: 40;
         border-radius: 1vw;
+        font-family: gaultier, sans-serif;
     }
 
     .dest img {
@@ -767,10 +780,10 @@ html, body
     .link {
         color: #ffffff;
         font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 1.2;
+        letter-spacing: .12vw;
         text-decoration: none;
         padding-bottom: 20px;
+        font-family: gaultier, sans-serif;
     }
 
     .link:hover {
@@ -798,6 +811,7 @@ html, body
         padding-bottom: 20px;
         padding-top: 20px;
         background-color: #0A4069;
+        font-family: gaultier, sans-serif;
     }
 
     .goToTop div a {
@@ -813,6 +827,7 @@ html, body
         text-align: center;
         padding-top: 10px;
         letter-spacing: 2px;
+        font-family: gaultier, sans-serif;
     }
 
 }/*@media only screen and (min-width: 1200px) */

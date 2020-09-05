@@ -17,25 +17,6 @@
 
 (function(){
 
-    /**
-     * @desc onload initilizer
-     * @type {init}
-     */
-    window.onload = init;
-
-    /**
-     * @name init
-     * @desc calls other functions, controls the flow
-     *
-     */
-    function init() {
-        slideShow();
-        whyChooseUsScroll();
-        menu();
-    }//end init
-
-
-
     /* FUNCTIONS*/
 
     /**
@@ -60,7 +41,7 @@
     {
         //Code taken from https://codepen.io/mahish/pen/RajmQw
         // duration of scroll animation
-        let scrollDuration = 1500;
+        /*let scrollDuration = 1500;*/
 
         /* // paddles
          let leftPaddle = document.getElementsByClassName('left-paddle');
@@ -103,9 +84,9 @@
         console.log("menuInvisibleSize"+menuInvisibleSize);*/
 
         // get how much have we scrolled to the left
-        let getMenuPosition = function() {
+       /* let getMenuPosition = function() {
             return $('.reasons').scrollLeft();
-        };
+        };*/
 
         $(document).ready(loop());
 
@@ -140,16 +121,17 @@
             }/!*for*!/
         }/!*loop()*!/*/
 
+        /*let reasons = $('.reasons');*/
         function loop(){
             for (i = 1, j=0; i <= itemsLength; i++, j+=300)
             {
                 $('.reasons').animate({"scrollLeft": j},4000, function(){
                     /*$('.reasons').pause(),*/
-                    2000
+                    2000, loop()
                 });
                 $('.reasons').delay(500);
             }
-            loop();
+           /*loop();*/
         }
         console.log("I am after final loop");
 
@@ -237,7 +219,6 @@
 
     }/* end MENU*/
 
-
     /**
      * @name init
      * @desc calls other functions, controls the flow
@@ -247,7 +228,6 @@
         slideShow();
         whyChooseUsScroll();
         menu();
-
     }//end init
 
     /**
@@ -255,9 +235,6 @@
      * @type {init}
      */
     window.onload = init;
-
-
-
 
 })();/*end iffy*/
 
