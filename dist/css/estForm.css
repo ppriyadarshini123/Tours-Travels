@@ -510,7 +510,7 @@ html, body
     /* MAIN SECTION*/
         main
         {
-            height: 1058px; /*this height is to keep the menu in place, at the same height as the home page*/
+            height: 77vw; /*this height is to keep the menu in place, at the same height as the home page 1058px*/
         }
 
         .container
@@ -695,12 +695,13 @@ html, body
 
         .dispEst {
             height: 352px;
-            width: 850px;
+            width: 70vw;
             margin-left: auto;
             margin-right: auto;
             text-align: left;
             background-color: #2A4D69;
             font-family: gaultier, sans-serif;
+
         }
 
         .disp

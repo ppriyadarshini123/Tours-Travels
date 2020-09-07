@@ -43,6 +43,7 @@
 
     /* Getting the querystring*/
     let id = getParameterByName('id');
+    console.log(id);
 
 
     /* FUNCTIONS*/
@@ -74,8 +75,9 @@
     function destDisp()
     {
         console.log("destDisp");
-        for(let j=0; j< destinations.length - 1; j++)
+        for(let j=0; j<= destinations.length - 1; j++)
         {
+            console.log(j);
             if(id == j+1)
                 dispDestD.innerHTML = destinations[j];
         }
