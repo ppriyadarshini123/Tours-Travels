@@ -117,10 +117,10 @@ html, body {
         font-size: 16px;
     }
 
-    .id {
-        width: 860px;
-        height: 280px;
-    }
+    /* .id {
+         width: 860px;
+         height: 280px;
+     }*/
 
     .tab {
         font-size: 14px;
@@ -260,64 +260,67 @@ html, body {
     .wrapper {
         margin: 0 auto;
         position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
-        /*width:960px;*/
     }
 
     /*HEADER SECTION*/
     .headerImage {
         background-repeat: no-repeat;
-        padding-bottom: 20px;
         width: 100%;
-        background-color: #0A4069;
-        height: 4.6vw;
-        position: relative;
+        background-color: #003399;
+        padding-left: 3vw;
+
     }
 
-    .logo {
-
+    .logo
+    {
+        margin-top: 1vw;
+        zoom: .6;
     }
 
     .zIn {
         cursor: pointer;
-        position: absolute;
-        left: 10%;
+        margin-right: 48vw;
     }
-
+    .logoHeader
+    {
+        display: flex;
+    }
+    .iconPosition
+    {
+        display: flex;
+        justify-content: space-around;
+    }
 
     .phonePosition {
         display: flex;
-        position: absolute;
-        left: 67%;
-        padding: 45px;
+        margin-top: 0.8vw;
     }
 
     .phone {
-        width: 32px;
-        height: 32px;
+        height: 19px;
     }
 
     .phDisp {
         color: white;
-        letter-spacing: 2px;
-        font-size: 20px;
-        padding-left: 20px;
-        text-shadow: 2px 2px 4px #000000;
+        letter-spacing: .1vw;
+        font-size: 1vw;
+        padding-left: 1vw;
+        /*text-shadow: 1vw 1vw 1vw #000000;*/
+        padding-top: .3vw;
+        margin-right: 2vw;
+
     }
 
-    .phTime {
-        padding-top: 10px;
-        color: white;
-        letter-spacing: 1px;
-        font-size: 14px;
-        padding-left: 20px;
-        text-shadow: 2px 2px 4px #000000;
+    .emailAddress
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-top: .8vw;
     }
 
 
     /* MAIN SECTION*/
-    main {
-        height: 1058px;
-    }
+
 
     /*.tabPosition
     {
@@ -334,9 +337,9 @@ html, body {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        width: 850px;
-        margin-top: 10px;
-        height: 530px;
+        width: 42vw;
+        margin-top: .5vw;
+
     }
 
     .dest {
@@ -346,31 +349,43 @@ html, body {
         font-size: 16px;
     }
 
-    .id {
-        width: 860px;
-        height: 280px;
-    }
-
+    /* .id {
+         width: 860px;
+         height: 280px;
+     }
+ */
     .tab {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 16px;
-    }
-
-
-    #tabs {
-        z-index: 50;
-        height: 528px;
-        background-color: #157ECF;
         color: #ffffff;
+        background-color:#157ECF;
     }
 
-    #tabs div p {
+
+    /*  #tabs {
+          z-index: 50;
+          height: 528px;
+          background-color: #157ECF;
+          color: #ffffff;
+      }*/
+
+
+    #tabs ul
+    {
+        background: transparent;
+        width: fit-content;
+        padding: 0;
+    }
+    #tabs .tab  p
+    {
         color: #ffffff;
+        background-color:#157ECF;
     }
-
-    #tabs ul li {
-        background-color: #157ECF;
+    #tabs-1, #tabs-2, #tabs-3
+    {
+        padding: .1vw;
+        height: auto;
     }
 
     #tabs ul li a:disabled {
@@ -379,13 +394,9 @@ html, body {
     }
 
 
-    .ui-widget-content {
-        color: #ffffff;
-    }
-
     /*FOOTER SECTION*/
     .footer {
-        padding-top: 20px;
+        padding-top: .5vw;
     }
 
 

@@ -13,40 +13,57 @@
     <div class="headerImage">
         <!-- <img src="dist/images/headernew.png" alt="Header Background Image">-->
         <div class="wrapper">
-            <div  class="zIn">
-                <a href="index.html">
-                    <picture>
-                        <source media="(min-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-350x141.png">
-                        <source media="(min-width: 768px) and (max-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-192x75.png">
-                        <img src="/dist/images/optimized/logo_initial_with_transparency-373x146.png" class="logo" alt="Logo"/>
-                    </picture>
-                </a>
-            </div><!--logo-->
-            <div class="phonePosition">
-                <div><img src="./dist/images/optimized/telephone-40x40.png" class="phone" alt="Telephone"></div>
-                <div>
-                    <p class="phDisp">+44 5555555555</p>
-                    <p class="phTime">24 hrs a day / 7 days a week</p>
-                </div>
-            </div><!--Phone number-->
-        </div><!--adding logo and phone to wrapper-->
-    </div><!--Header Image-->
-</header>
+            <div class="logoHeader">
+                <div  class="zIn">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-372x157.png">
+                            <source media="(min-width: 768px) and (max-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-192x75.png">
+                            <img src="/dist/images/optimized/logo_initial_with_transparency-372x157.png" class="logo" alt="Logo"/>
+                        </picture>
+                    </a>
+                </div><!--zIn logo-->
 
-<div class="wrapper" id="tab">
-    <section class="demo">
-        <dl class="list nigiri">
-            <dt>Menu</dt>
-            <dd><a href="#">Home</a></dd>
-            <dd><a href="#">Get an estimate</a></dd>
-            <dd><a href="#">Book a flight</a></dd>
-            <dd><a href="#">Holidays</a></dd>
-            <dd><a href="#">Things to do</a></dd>
-            <dd><a href="#">Last minute Deals</a></dd>
-        </dl>
-        <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
-    </section>
-    <main>
+                <div class="iconPosition">
+                    <div class="phonePosition">
+                        <div>
+                            <img src="./dist/images/optimized/telephone-40x40.png" class="phone" alt="Telephone">
+                        </div><!--phone image-->
+                        <div>
+                            <p class="phDisp">+44 5555555555</p>
+                        </div><!--phone number-->
+                    </div><!--phonePosition-->
+                    <div class="emailAddress">
+                        <div>
+                            <img src="./dist/images/optimized/email-icon-25x19.png" class="" alt="Email Address">
+                        </div>
+                        <div>
+                            <p class="phDisp">info@goeurope.com</p>
+                        </div>
+                    </div><!--Email Address-->
+                </div><!--iconPosition-->
+            </div><!--Phone number-->
+        </div><!--logo & phone-->
+    </div><!--adding logo and phone to wrapper-->
+</header>
+<main>
+    <div class="wrapper" id="tab">
+        <div class="positionMenu">
+            <section class="demo">
+                <dl class="list nigiri">
+                    <dt>Menu</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">Get an estimate</a></dd>
+                    <dd><a href="#">Book a flight</a></dd>
+                    <dd><a href="#">Holidays</a></dd>
+                    <dd><a href="#">Things to do</a></dd>
+                    <dd><a href="#">Last minute Deals</a></dd>
+                </dl>
+                <div class="toggPos">
+                    <a href="#" class="toggle">Toggle</a>
+                </div><!--Toggle buttn-->
+            </section>
+        </div>
         <div class="tabPosition" id="tDisp">
             <div id="dispDest" class="dest"></div><!--Display destination-->
             <div id="tabs" class="id">
@@ -65,32 +82,22 @@
                     <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias aperiam consectetur cumque, eum itaque laudantium minus nobis, nostrum porro quasi quo sit. Ab deserunt eligendi id laudantium quod.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum earum eius fugit nemo neque numquam officia quo suscipit temporibus. Ab at consequuntur cumque, delectus fuga iste natus qui vero.</p>
 
                 </div><!--Tab 1-->
                 <div id="tabs-2" class="tab">
                     <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
                     <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-
-
                 </div><!--Tab 2-->
                 <div id="tabs-3" class="tab">
                     <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
                     <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-
                 </div><!--Tab 3-->
             </div><!--Tab list-->
         </div><!--Display tabs-->
-    </main>
-</div><!--Menu-->
-
+    </div><!--Menu-->
+</main>
 <footer class="footer">
     <div class="rowSiteMap">
         <div class="colSiteMap">
