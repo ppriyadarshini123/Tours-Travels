@@ -42,7 +42,7 @@ html, body
         width: 100%;
         background-color: #0A4069;
         height: 10.6vw;
-        position: relative;
+       /* position: relative;*/
     }
 
     .logo
@@ -100,7 +100,7 @@ html, body
         cursor: pointer;
         margin-top: 10px;
         width: 100%;
-        position: relative;
+        /*position: relative;*/
     }
 
     .mainPic
@@ -134,7 +134,7 @@ html, body
     /* WHY CHOOSE US - CAROUSEL SECTION*/
     .whyChooseUsPosition {
         /* position: relative;*/
-        height: 255px;
+        /*height: 255px;*/
     }
 
     .whyChooseUs {
@@ -152,7 +152,7 @@ html, body
         /* position: absolute;
          bottom: 5%;
          left: 34%;*/
-        position: relative;
+        /*position: relative;*/
         border-radius: 60px;
     }
 
@@ -223,15 +223,9 @@ html, body
         text-align: center;
         padding-top: 20px;
         background-color: aliceblue;
-        position: relative;
+        /*position: relative;*/
     }
 
-    .heading {
-        text-align: center;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        font-size: 25px;
-    }
 
     .moreDest
     {
@@ -246,9 +240,13 @@ html, body
     }
     .topTitle
     {
-        display: inline;
-        font-weight: bold;
-        letter-spacing: 2px;
+        background-color: white;
+        color: #176BAA;
+        letter-spacing: .1vw;
+        font-size: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        font-family: gaultier, sans-serif;
     }
 
     .dest {
@@ -469,6 +467,7 @@ html, body
 
 
     /*MENU & SLIDESHOW SECTION*/
+
     .slideshow {
         z-index: 40;
         cursor: pointer;
@@ -477,6 +476,9 @@ html, body
         /*position: relative;*/
 
     }
+
+
+
 
     .text-block h4
     {
@@ -503,7 +505,7 @@ html, body
         padding: 1vw;
         letter-spacing: .1vw;
         text-shadow: 1px 1px 2px #000000;
-        border-radius: 1vw;
+        border-radius: 4vw;
         margin-top: 1vw;
     }
     .text-block {
@@ -532,14 +534,15 @@ html, body
 
     /* WHY CHOOSE US - CAROUSEL SECTION*/
     .whyChooseUsPosition {
-        position: relative;
+        /*position: relative;*/
         width: 73vw;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
     .whyChooseUs {
-        margin-top: 2vw;
+        /*margin-top: 2vw;*/
         /* max-width: 841px;*/
         /*margin-left: auto;
         margin-right: auto;*/
@@ -631,18 +634,13 @@ html, body
         padding-bottom: 2vw;
         border-top: 1px white solid;
         text-align: center;
-        position: relative;
+        /*position: relative;*/
     }
 
 
 
-    .heading {
-        text-align: center;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        font-size: 25px;
-        font-family: gaultier, sans-serif;
-    }
+
+
 
     .topTitle
     {

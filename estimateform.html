@@ -48,62 +48,63 @@
 
 </header>
 
-<div class="wrapper">
-    <section class="demo">
-        <dl class="list nigiri">
-            <dt>Menu</dt>
-            <dd><a href="#">Home</a></dd>
-            <dd><a href="#">Get an estimate</a></dd>
-            <dd><a href="#">Book a flight</a></dd>
-            <dd><a href="#">Holidays</a></dd>
-            <dd><a href="#">Things to do</a></dd>
-            <dd><a href="#">Last minute Deals</a></dd>
-        </dl>
-        <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
-    </section>
-
-    <main>
-        <!--<div class="container">-->
+<main>
+    <div class="wrapper">
+        <div class="positionMenu">
+            <section class="demo">
+                <dl class="list nigiri">
+                    <dt>Menu</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">Get an estimate</a></dd>
+                    <dd><a href="#">Book a flight</a></dd>
+                    <dd><a href="#">Holidays</a></dd>
+                    <dd><a href="#">Things to do</a></dd>
+                    <dd><a href="#">Last minute Deals</a></dd>
+                </dl>
+                <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
+            </section>
+        </div>
+        <div class="container">
             <div class="upperBlock">
-            <p class="head">Flight & Hotel estimation grid</p>
-            <div class="flex">
-                <div class="fontSpacing">
-                    <p class="title">Flight booking </p>
-                    <div class="flightGap">
-                        <span class="width">From:</span>
-                        <select title="origin" id="orig" name="odd" class="borderBottom">
-                            <option value="london" selected="selected" disabled>London
-                            </option>
-                        </select>
-                    </div><!--from-->
-                    <div class="flightGap">
-                        <span class="width">To:</span>
-                        <select id="dest"  title="dest" name="dropdown" class="borderBottom">
-                            <option value="amsterdam">Amsterdam</option>
-                            <option value="brussels">Brussels</option>
-                            <option value="portugal">Portugal</option>
-                            <option value="prague">Prague</option>
-                            <option value="barcelona">Barcelona</option>
-                            <option value="vienna">Vienna</option>
-                        </select>
-                    </div><!--to-->
-                    <div class="flightGap">
-                        <input id="oneway" type="radio" name="one" value="oneway">
-                        <label for="oneway" class=""><span><span></span></span>One way</label>
-                        <input id="return" type="radio" name="one" value="return">
-                        <label for="return" class=""><span><span></span></span>Return</label>
-                    </div><!--one way/return-->
-                </div><!--flightBooking-->
-                <div class="fontSpacing">
-                    <p class="title">Hotel booking: </p>
+                <p class="topTitle">Flight & Hotel estimation grid</p>
+                <div class="flex">
                     <div class="fontSpacing">
-                        <input id="single"   title="singleroom" type="radio" name="single"  value="single">
-                        <label for="single" class="text"><span><span></span></span>Single room</label>
-                        <input id="double"  title="double" type="radio" name="single" value="double">
-                        <label for="double" class="text padRight"><span><span></span></span>Double room</label>
-                    </div><!--fontSpacing-->
-                </div><!--hotelBooking-->
-            </div><!--flex-->
+                        <p class="title">Flight booking </p>
+                        <div class="flightGap">
+                            <span class="width">From:</span>
+                            <select title="origin" id="orig" name="odd" class="borderBottom">
+                                <option value="london" selected="selected" disabled>London
+                                </option>
+                            </select>
+                        </div><!--from-->
+                        <div class="flightGap">
+                            <span class="width">To:</span>
+                            <select id="dest"  title="dest" name="dropdown" class="borderBottom">
+                                <option value="amsterdam">Amsterdam</option>
+                                <option value="brussels">Brussels</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="prague">Prague</option>
+                                <option value="barcelona">Barcelona</option>
+                                <option value="vienna">Vienna</option>
+                            </select>
+                        </div><!--to-->
+                        <div class="flightGap">
+                            <input id="oneway" type="radio" name="one" value="oneway">
+                            <label for="oneway" class=""><span><span></span></span>One way</label>
+                            <input id="return" type="radio" name="one" value="return">
+                            <label for="return" class=""><span><span></span></span>Return</label>
+                        </div><!--one way/return-->
+                    </div><!--flightBooking-->
+                    <div class="fontSpacing">
+                        <p class="title">Hotel booking: </p>
+                        <div class="fontSpacing">
+                            <input id="single"   title="singleroom" type="radio" name="single"  value="single">
+                            <label for="single" class="text"><span><span></span></span>Single room</label>
+                            <input id="double"  title="double" type="radio" name="single" value="double">
+                            <label for="double" class="text padRight"><span><span></span></span>Double room</label>
+                        </div><!--fontSpacing-->
+                    </div><!--hotelBooking-->
+                </div><!--flex-->
             </div>
             <div class="display">
                 <div class="dispEst">
@@ -124,7 +125,7 @@
                         <div class="disp" id="singleDouble"></div><!--For display single/double room-->
                         <div class="dispVal" id="singleDoubleVal"></div><!--For display single/double room-->
                     </div><!--singleDouble-->
-                    <div class="line" id="line">---------------------------------------------------------------------------------------------------------------------------------------------------------------</div><!--Display total-->
+                    <div class="line" id="line">--------------------------------------------------------------------------</div><!--Display total-->
                     <div class="flexFee">
                         <div class="disp" id="total"></div><!--Display total-->
                         <div class="dispVal" id="totalVal"></div><!--Display total value-->
@@ -132,9 +133,10 @@
                 </div><!--dispEst-->
                 <input id="book" type="button" value="Book now" class="book">
             </div><!--Display Estimate-->
-       <!-- </div>&lt;!&ndash;Container&ndash;&gt;-->
-    </main>
-</div><!--Wrapper-->
+        </div><!--Container-->
+    </div><!--Wrapper-->
+</main>
+
 <footer class="footer">
     <div class="rowSiteMap">
         <div class="colSiteMap">

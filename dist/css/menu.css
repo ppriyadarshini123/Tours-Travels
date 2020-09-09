@@ -47,13 +47,28 @@ a {
 }
 
 /* List style*/
+.positionMenu
+{
+    position: absolute;
+    z-index: 55;
+    top:4vw;
+    left:6vw;
+}
+.toggPos
+{
+    display: block;
+    position: absolute;
+    z-index: 55;
+    top:16vw;
+    left:6vw;
+}
 .list {
 
     -webkit-transform-style: preserve-3d;
     text-transform: capitalize;
-    position: absolute;
-    top: 12%;
-    left: 12%;
+   /* position: absolute;
+    top: 32%;
+    left: 12%;*/
 }
 
 .list a {
@@ -126,14 +141,6 @@ a {
     text-indent: 10px;
 }
 
-.toggPos
-{
-    width: 70px;
-    position: absolute;
-    top: 34%;
-    left: 17%;
-    z-index: 50;
-}
 
 /* Individual styles */
 /* Original background color:#E32551 */
@@ -147,7 +154,7 @@ a {
     -webkit-transform: perspective(1200px) rotateY(40deg) !important;
     /*transform-origin: 110% 25%;*/
     /*top: 37%;*/
-    z-index: 50;
+    z-index: 55;
     -webkit-transform-origin: 110% 25%;
     /*left: 20%;*/
 }

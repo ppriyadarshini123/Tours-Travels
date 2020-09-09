@@ -45,23 +45,25 @@
             </div><!--Phone number-->
         </div><!--logo & phone-->
     </div><!--adding logo and phone to wrapper-->
-
 </header>
-
-<div class="wrapper">
-    <section class="demo">
-        <dl class="list nigiri">
-            <dt>Menu</dt>
-            <dd><a href="#">Home</a></dd>
-            <dd><a href="#">Get an estimate</a></dd>
-            <dd><a href="#">Book a flight</a></dd>
-            <dd><a href="#">Holidays</a></dd>
-            <dd><a href="#">Things to do</a></dd>
-            <dd><a href="#">Last minute Deals</a></dd>
-        </dl>
-        <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
-    </section>
-    <main>
+<main>
+    <div class="wrapper">
+        <div class="positionMenu">
+        <section class="demo">
+            <dl class="list nigiri">
+                <dt>Menu</dt>
+                <dd><a href="#">Home</a></dd>
+                <dd><a href="#">Get an estimate</a></dd>
+                <dd><a href="#">Book a flight</a></dd>
+                <dd><a href="#">Holidays</a></dd>
+                <dd><a href="#">Things to do</a></dd>
+                <dd><a href="#">Last minute Deals</a></dd>
+            </dl>
+            <div class="toggPos">
+                <a href="#" class="toggle">Toggle</a>
+            </div><!--Toggle buttn-->
+        </section>
+        </div>
         <div class="slideshow">
             <div>
                 <picture>
@@ -75,9 +77,8 @@
                     <a href="estimateform.html?id=1">
                         <span class="bookNow">BOOK NOW</span>
                     </a>
-
                 </div><!--Text block Amsterdam-->
-            </div>
+            </div><!--picture & text block-->
             <div>
                 <picture>
                     <source media="(min-width: 1200px)" srcset="dist/images/optimized/brussels-1233x460.png">
@@ -91,7 +92,7 @@
                         <span class="bookNow">BOOK NOW</span>
                     </a>
                 </div><!--Text block Brussels-->
-            </div>
+            </div><!--picture & text block-->
             <div>
                 <picture>
                     <source media="(min-width: 1200px)" srcset="dist/images/optimized/Portugal-1233x460.png">
@@ -105,9 +106,8 @@
                         <span class="bookNow">BOOK NOW</span>
                     </a>
                 </div><!--Text block Portugal-->
-            </div>
+            </div><!--picture & text block-->
             <div>
-
                 <picture>
                     <source media="(min-width: 1200px)" srcset="dist/images/optimized/prague-1233x460.png">
                     <!-- <source media="(min-width: 768px) and (max-width: 1200px)" srcset="dist/images/optimized/prague-1085x452.png">-->
@@ -120,7 +120,7 @@
                         <span class="bookNow">BOOK NOW</span>
                     </a>
                 </div><!--Text block Prague-->
-            </div>
+            </div><!--picture & text block-->
             <div>
                 <picture>
                     <source media="(min-width: 1200px)" srcset="dist/images/optimized/barcelona-1233x460.png">
@@ -134,9 +134,8 @@
                         <span class="bookNow">BOOK NOW</span>
                     </a>
                 </div><!--Text block Barcelone-->
-            </div>
+            </div><!--picture & text block-->
             <div>
-
                 <picture>
                     <source media="(min-width: 1200px)" srcset="dist/images/optimized/vienna-1233x460.png">
                     <!-- <source media="(min-width: 768px) and (max-width: 1200px)" srcset="dist/images/optimized/vienna-1085x452.png">-->
@@ -149,15 +148,14 @@
                         <span class="bookNow">BOOK NOW</span>
                     </a>
                 </div><!--Text block Vienna-->
-            </div>
-
+            </div><!--picture & text block-->
         </div><!--Slideshow of destinations-->
         <div class="topDeals">
             <h1 class="topTitle">Top Deals</h1>
             <img src="dist/images/optimized/iconfinder_coronovirus_02_5826047.png" width="256" height="256" class="design">
             <img src="dist/images/optimized/iconfinder_chair_umbrella_3512614---256x256.png"  class="design2">
             <div class="moreDest">
-                <div class="wrapper moreDest">
+                <div class="moreDest">
                     <div class="dest">
                         <img src="dist/images/newlayout/florence.jpg" alt="Florence">
                         <p class="package">4 Day tour to Florence</p>
@@ -179,51 +177,47 @@
                 </div><!--Destinations-->
             </div><!--Top deals section-->
         </div><!--topDeals-->
-    </main>
-</div><!--Adding slideshow to wrapper class-->
-
-
-<div class="whyChooseUsPosition">
-    <div class="whyChooseUs">
-        <h1 class="heading">Why choose us ?</h1>
-        <ul class="reasons">
-            <li class="item">
-                <img src="./dist/images/Carousel/amazingdestination-300x150.png" alt="Amazing Destinations"/>
-                <p>Amazing Destinations</p>
-            </li>
-            <li class="item">
-                <img src="./dist/images/Carousel/food-300x150.jpg" alt="Food on Tours"/>
-                <p>Yummy Food on Tours!</p>
-            </li>
-            <li class="item">
-                <img src="./dist/images/Carousel/hotel-300x150.jpg" alt="Refundable Hotel Booking"/>
-                <p>Refundable Hotel Booking</p>
-            </li>
-            <li class="item">
-                <img src="./dist/images/Carousel/baggage-300x150.jpg" alt="Convenient Baggage Service">
-                <p>Convenient Baggage Service</p>
-            </li>
-            <li class="item">
-                <img src="./dist/images/Carousel/bus-300x150.png" alt="Confortable Bus Tours"/>
-                <p>Comfortable Bus Tours</p>
-            </li>
-            <li class="item">
-                <img src="./dist/images/Carousel/car-300x150.jpg" alt="24/7 Car Pickup/Drop off"/>
-                <p>24/7 Car Pickup/Drop off</p>
-            </li>
-        </ul>
-       <!-- <div class="paddles">
-            <button class="left-paddle paddle hidden">
-                &lt;
-            </button>
-            <button class="right-paddle paddle">
-                >
-            </button>
-        </div>Next/Previous buttons-->
-    </div><!--Carousel-->
-</div>
-
-
+        <div class="whyChooseUsPosition">
+            <h1 class="topTitle">Why choose us ?</h1>
+            <div class="whyChooseUs">
+                <ul class="reasons">
+                    <li class="item">
+                        <img src="./dist/images/Carousel/amazingdestination-300x150.png" alt="Amazing Destinations"/>
+                        <p>Amazing Destinations</p>
+                    </li>
+                    <li class="item">
+                        <img src="./dist/images/Carousel/food-300x150.jpg" alt="Food on Tours"/>
+                        <p>Yummy Food on Tours!</p>
+                    </li>
+                    <li class="item">
+                        <img src="./dist/images/Carousel/hotel-300x150.jpg" alt="Refundable Hotel Booking"/>
+                        <p>Refundable Hotel Booking</p>
+                    </li>
+                    <li class="item">
+                        <img src="./dist/images/Carousel/baggage-300x150.jpg" alt="Convenient Baggage Service">
+                        <p>Convenient Baggage Service</p>
+                    </li>
+                    <li class="item">
+                        <img src="./dist/images/Carousel/bus-300x150.png" alt="Confortable Bus Tours"/>
+                        <p>Comfortable Bus Tours</p>
+                    </li>
+                    <li class="item">
+                        <img src="./dist/images/Carousel/car-300x150.jpg" alt="24/7 Car Pickup/Drop off"/>
+                        <p>24/7 Car Pickup/Drop off</p>
+                    </li>
+                </ul>
+                <!-- <div class="paddles">
+                     <button class="left-paddle paddle hidden">
+                         &lt;
+                     </button>
+                     <button class="right-paddle paddle">
+                         >
+                     </button>
+                 </div>Next/Previous buttons-->
+            </div><!--Carousel-->
+        </div>
+    </div><!--Adding slideshow to wrapper class-->
+</main>
 <footer class="footer">
     <div class="rowSiteMap">
         <div class="colSiteMap">
