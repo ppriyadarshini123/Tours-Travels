@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Flight & Hotel estimate form</title>
-    <!--  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">&lt;!&ndash;datepicker&ndash;&gt;-->
     <link rel="stylesheet" type="text/css" href="dist/css/estForm.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
 </head>
@@ -11,7 +10,6 @@
 
 <header id="top">
     <div class="headerImage">
-        <!-- <img src="dist/images/headernew.png" alt="Header Background Image">-->
         <div class="wrapper">
             <div class="logoHeader">
                 <div  class="zIn">
@@ -23,7 +21,6 @@
                         </picture>
                     </a>
                 </div><!--zIn logo-->
-
                 <div class="iconPosition">
                     <div class="phonePosition">
                         <div>
@@ -36,34 +33,32 @@
                     <div class="emailAddress">
                         <div>
                             <img src="./dist/images/optimized/email-icon-25x19.png" class="" alt="Email Address">
-                        </div>
+                        </div><!--email icon-->
                         <div>
                             <p class="phDisp">info@goeurope.com</p>
-                        </div>
-                    </div><!--Email Address-->
+                        </div><!--email address-->
+                    </div><!--emailAddress-->
                 </div><!--iconPosition-->
-            </div><!--Phone number-->
-        </div><!--logo & phone-->
-    </div><!--adding logo and phone to wrapper-->
-
+            </div><!--logoHeader-->
+        </div><!--wrapper-->
+    </div><!--headerImage-->
 </header>
-
 <main>
     <div class="wrapper">
         <div class="positionMenu">
             <section class="demo">
                 <dl class="list nigiri">
                     <dt>Menu</dt>
-                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="index.html">Home</a></dd>
                     <dd><a href="#">Get an estimate</a></dd>
                     <dd><a href="#">Book a flight</a></dd>
                     <dd><a href="#">Holidays</a></dd>
                     <dd><a href="#">Things to do</a></dd>
                     <dd><a href="#">Last minute Deals</a></dd>
                 </dl>
-                <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--Toggle buttn-->
+                <div class="toggPos"> <a href="#" class="toggle">Toggle</a></div><!--toggPos-->
             </section>
-        </div>
+        </div><!--positionMenu-->
         <div class="container">
             <div class="upperBlock">
                 <p class="topTitle">Flight & Hotel Estimation Grid</p>
@@ -76,7 +71,7 @@
                                 <option value="london" selected="selected" disabled>London
                                 </option>
                             </select>
-                        </div><!--from-->
+                        </div><!--flightGap-->
                         <div class="flightGap">
                             <span class="width">To:</span>
                             <select id="dest"  title="dest" name="dropdown" class="borderBottom">
@@ -87,14 +82,14 @@
                                 <option value="barcelona">Barcelona</option>
                                 <option value="vienna">Vienna</option>
                             </select>
-                        </div><!--to-->
+                        </div><!--flightGap-->
                         <div class="flightGap">
                             <input id="oneway" type="radio" name="one" value="oneway">
                             <label for="oneway" class=""><span><span></span></span>One way</label>
                             <input id="return" type="radio" name="one" value="return">
                             <label for="return" class=""><span><span></span></span>Return</label>
-                        </div><!--one way/return-->
-                    </div><!--flightBooking-->
+                        </div><!--flightGap-->
+                    </div><!--fontSpacing-->
                     <div class="fontSpacing">
                         <p class="title">Hotel booking: </p>
                         <div class="fontSpacing">
@@ -103,36 +98,37 @@
                             <input id="double"  title="double" type="radio" name="single" value="double">
                             <label for="double" class="text padRight"><span><span></span></span>Double room</label>
                         </div><!--fontSpacing-->
-                    </div><!--hotelBooking-->
+                    </div><!--fontSpacing-->
                 </div><!--flex-->
-            </div>
+            </div><!--upperBlock-->
             <div class="display">
                 <div class="dispEst">
-                    <div class="disp">Estimate of your booking to <span id="destD" class="city"></span>:</div><!--Display estimate-->
+                    <div class="disp">Estimate of your booking to <span id="destD" class="city"></span>:
+                    </div><!--disp-->
                     <div class="flexFee">
-                        <div class="disp" id="flightBookingFee"></div><!--Display booking fee-->
-                        <div class="dispVal" id="flightBookingFeeVal"></div><!--Display Booking fee value-->
-                    </div><!--flightBookingFee-->
+                        <div class="disp" id="flightBookingFee"></div><!--disp Display booking fee-->
+                        <div class="dispVal" id="flightBookingFeeVal"></div><!--dispVal Display Booking fee value-->
+                    </div><!--flexFee flightBookingFee-->
                     <div class="flexFee">
-                        <div class="disp" id="oneWayReturn"></div><!--Display one way or return-->
-                        <div class="dispVal" id="oneWayReturnVal"></div><!--Display one way or return value-->
-                    </div><!--oneWayReturn-->
+                        <div class="disp" id="oneWayReturn"></div><!--disp Display one way or return-->
+                        <div class="dispVal" id="oneWayReturnVal"></div><!--dispVal Display one way or return value-->
+                    </div><!--flexFee oneWayReturn-->
                     <div class="flexFee">
-                        <div class="disp" id="hotelBookingFee"></div><!--Display hotel booking fee-->
-                        <div class="dispVal" id="hotelBookingFeeVal"></div><!--Display hotel booking fee value-->
-                    </div><!--hotelBooking-->
+                        <div class="disp" id="hotelBookingFee"></div><!--disp Display hotel booking fee-->
+                        <div class="dispVal" id="hotelBookingFeeVal"></div><!--dispVal Display hotel booking fee value-->
+                    </div><!--flexFee hotelBooking-->
                     <div class="flexFee">
-                        <div class="disp" id="singleDouble"></div><!--For display single/double room-->
-                        <div class="dispVal" id="singleDoubleVal"></div><!--For display single/double room-->
-                    </div><!--singleDouble-->
-                    <div class="line" id="line">--------------------------------------------------------------------------</div><!--Display total-->
+                        <div class="disp" id="singleDouble"></div><!--disp For display single/double room-->
+                        <div class="dispVal" id="singleDoubleVal"></div><!--dispVal For display single/double room-->
+                    </div><!--flexFee singleDouble-->
+                    <div class="line" id="line">--------------------------------------------------------------------------</div><!--line-->
                     <div class="flexFee">
-                        <div class="disp" id="total"></div><!--Display total-->
-                        <div class="dispVal" id="totalVal"></div><!--Display total value-->
+                        <div class="disp" id="total"></div><!--disp Display total-->
+                        <div class="dispVal" id="totalVal"></div><!--dispVal Display total value-->
                     </div><!--flexFee-->
                 </div><!--dispEst-->
                 <input id="book" type="button" value="Book now" class="book">
-            </div><!--Display Estimate-->
+            </div><!--display Estimate-->
         </div><!--Container-->
     </div><!--Wrapper-->
 </main>
@@ -149,26 +145,26 @@
                     <li><a class="link" href="#">Things to do</a></li>
                     <li><a class="link" href="#">Last minute deals</a></li>
                 </ul>
-            </div><!--Sitemap first column-->
-        </div><!--Sitemap-->
+            </div><!--widSiteMap Sitemap first column-->
+        </div><!--colSiteMap-->
         <div class="goToTop">
             <div class="widSiteMap">
                 <h3 class="title">Main Office :</h3>
                 <p class="subTitle">25 Osier Close</p>
                 <p class="subTitle">Cambridge</p>
                 <p class="subTitle">CB1 6FG</p>
-            </div>
+            </div><!--widSiteMap-->
             <div class="widSiteMap">
                 <h3 class="title">Find us here:</h3>
                 <a href="#"><img src="./dist/images/optimized/fb-30x30.png" title="Find us on Facebook" alt="Facebook"></a>
                 <a href="#"><img src="./dist/images/optimized/twitterWhite-30x30.png" title="Find us on Twitter" alt="Twitter"></a>
-            </div><!--Social media icons-->
+            </div><!--widSiteMap-->
             <div class="widSiteMap">
                 <a href="#top" class="link" >Go to top</a>
-            </div><!--go to top-->
-        </div><!--Social media icons and go to top-->
-    </div><!-- Footer row-->
-    <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--copyright-->
+            </div><!--widSiteMap-->
+        </div><!--goToTop-->
+    </div><!-- rowSiteMap Footer row-->
+    <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--base copyright-->
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script><!--menu-->

@@ -29,20 +29,20 @@ html, body
     background-color: lightgray;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+/*@media only screen and (min-width: 768px) and (max-width: 1200px) {
 
     .wrapper {
         margin: 0 auto;
-        position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
-        /*width:960px;*/
+        position: relative; !*Added to place the Makisu menu in position, otherwise it becomes sticky*!
+        !*width:960px;*!
     }
 
-    /*HEADER SECTION*/
+    !*HEADER SECTION*!
     .headerImage {
         background-repeat: no-repeat;
         padding-bottom: 2vw;
         width: 100%;
-        background-color: #0A4069;
+        background-color: #1376C2;
         height: 4.6vw;
         position: relative;
     }
@@ -94,18 +94,18 @@ html, body
 
 
 
-    /* MAIN SECTION*/
-    /* main
+    !* MAIN SECTION*!
+    !* main
      {
          height: 1058px; !*this height is to keep the menu in place, at the same height as the home page*!
-     }*/
+     }*!
 
     section
     {
         box-shadow: #ffffff;
     }
 
-    /* .container
+    !* .container
      {
          z-index: 50;
          background-color: white;
@@ -113,7 +113,7 @@ html, body
          margin-right: auto;
          margin-top: 10px;
          text-align: center;
-     }*/
+     }*!
 
     .upperBlock
     {
@@ -136,12 +136,12 @@ html, body
         padding-bottom: 2vw;
         font-family: gaultier, sans-serif;
     }
-    /*
+    !*
         .flex
         {
             background-color: #157ECF;
 
-        }*/
+        }*!
 
     .title {
         font-size: 20px;
@@ -198,7 +198,7 @@ html, body
         display: block;
     }
 
-    /* Customizing the dropdown menu*/
+    !* Customizing the dropdown menu*!
     select {
         border: 1px dotted #999;
         border-radius: 0;
@@ -212,13 +212,13 @@ html, body
         color: #0c7abf;
     }
 
-    /* Customizing radio buttons*/
-    /* This code is taken from http://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/*/
+    !* Customizing radio buttons*!
+    !* This code is taken from http://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons!*!
     input[type=radio   ]:not(old) {
-        /*width     : 2em;
+        !*width     : 2em;
         margin    : 0;
         padding   : 0;
-        font-size : 1em;*/
+        font-size : 1em;*!
         opacity: 0;
     }
 
@@ -230,8 +230,8 @@ html, body
 
     input[type=radio   ]:not(old) + label > span {
         display: inline-block;
-        /* width            : 0.875em;
-         height           : 0.875em;*/
+        !* width            : 0.875em;
+         height           : 0.875em;*!
         width: 12px;
         height: 12px;
         margin: 0.25em 0.5em 0.25em 0.25em;
@@ -248,8 +248,8 @@ html, body
 
     input[type=radio]:not(old):checked + label > span > span {
         display: block;
-        /*   width            : 0.5em;
-           height           : 0.5em;*/
+        !*   width            : 0.5em;
+           height           : 0.5em;*!
         width: 7px;
         height: 7px;
         margin: 0.125em;
@@ -262,12 +262,12 @@ html, body
         width: 250px;
     }
 
-    /* DISPLAY ESTIMATE SECTION*/
+    !* DISPLAY ESTIMATE SECTION*!
     .display
     {
-        /*position: absolute;
+        !*position: absolute;
         top: 40%;
-        left: 10%;*/
+        left: 10%;*!
         margin-top: 20px;
         text-align: center;
     }
@@ -337,16 +337,16 @@ html, body
 
 
     #dest {
-        /* width: 358px;*/
+        !* width: 358px;*!
         border-bottom: solid 3px #86A8D2;
     }
 
     #orig {
-        /*width: 358px;*/
+        !*width: 358px;*!
         border-bottom: solid 3px #86A8D2;
     }
 
-    /*FOOTER SECTION*/
+    !*FOOTER SECTION*!
     .footer {
 
     }
@@ -409,8 +409,8 @@ html, body
     }
 
 
-    /* SOCIAL MEDIA SECTION*/
-    /*index.html section*/
+    !* SOCIAL MEDIA SECTION*!
+    !*index.html section*!
     .colSocialMedia ul li a {
         text-decoration: none;
     }
@@ -443,11 +443,11 @@ html, body
         padding-top: 10px;
         letter-spacing: 2px;
     }
-}
+}*/
 
 @media only screen and (min-width: 1200px) {
-
-    .wrapper {
+    .wrapper
+    {
         margin: 0 auto;
         position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
     }
@@ -456,10 +456,8 @@ html, body
     .headerImage {
         background-repeat: no-repeat;
         width: 100%;
-        background-color: #003399;
+        background-color: #1376C2;
         padding-left: 3vw;
-        /* height: 8.6vw;
-         position: relative;*/
     }
 
     .logo
@@ -468,7 +466,8 @@ html, body
         zoom: .6;
     }
 
-    .zIn {
+    .zIn
+    {
         cursor: pointer;
         margin-right: 48vw;
     }
@@ -482,24 +481,25 @@ html, body
         justify-content: space-around;
     }
 
-    .phonePosition {
+    .phonePosition
+    {
         display: flex;
         margin-top: 0.8vw;
     }
 
-    .phone {
+    .phone
+    {
         height: 19px;
     }
 
-    .phDisp {
+    .phDisp
+    {
         color: white;
         letter-spacing: .1vw;
         font-size: 1vw;
         padding-left: 1vw;
-        /*text-shadow: 1vw 1vw 1vw #000000;*/
         padding-top: .3vw;
         margin-right: 2vw;
-
     }
 
     .emailAddress
@@ -509,11 +509,8 @@ html, body
         margin-top: .8vw;
     }
 
+
     /* MAIN SECTION*/
-    /* main
-     {
-         !*height: 77vw;*! !*this height is to keep the menu in place, at the same height as the home page 1058px*!
-     }*/
 
     .container
     {
@@ -523,7 +520,6 @@ html, body
         margin-right: auto;
         margin-top: .5vw;
         text-align: center;
-        /* position: relative;*/
     }
 
 
@@ -542,8 +538,10 @@ html, body
     {
         display: flex;
         justify-content: center;
-        background-color: #157ECF;
+        background-color: #ffffff;
         padding-left: 12vw;
+        border-top: #1376C2 1px solid;
+        border-bottom: #1376C2 1px solid;
     }
 
     .title
@@ -561,7 +559,7 @@ html, body
         font-size: 15px;
         letter-spacing: 1px;
         box-sizing: border-box;
-        color: #ffffff;
+        color: #1376C2;
         margin-left: 15px;
         margin-right: 15px;
         font-family: gaultier, sans-serif;
@@ -571,18 +569,12 @@ html, body
         padding-top: .2vw;
         padding-bottom: .2vw;
     }
-    /* .upperBlock
-     {
-         margin-top: 10px;
-         background-color: #157ECF;
-         text-align: center;
-         position: relative;
-     }*/
+
     .width
     {
         width: 47px;
         display: inline-block;
-        color: #ffffff;
+        color: #1376C2;
         letter-spacing: 1.5px;
         font-family: gaultier, sans-serif;
     }
@@ -620,7 +612,8 @@ html, body
     }
 
     /* Customizing the dropdown menu*/
-    select {
+    select
+    {
         border: 1px dotted #999;
         border-radius: 0;
         height: 46px;
@@ -629,33 +622,30 @@ html, body
         width: 354px;
     }
 
-    option {
+    option
+    {
         color: #0c7abf;
     }
 
     /* Customizing radio buttons*/
     /* This code is taken from http://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/*/
-    input[type=radio   ]:not(old) {
-        /*width     : 2em;
-        margin    : 0;
-        padding   : 0;
-        font-size : 1em;*/
+    input[type=radio   ]:not(old)
+    {
         opacity: 0;
     }
 
-    input[type=radio   ]:not(old) + label {
+    input[type=radio   ]:not(old) + label
+    {
         display: inline-block;
         margin-left: -2em;
         line-height: 1.5em;
         letter-spacing: 1.5px;
         font-family: gaultier, sans-serif;
-
     }
 
-    input[type=radio   ]:not(old) + label > span {
+    input[type=radio   ]:not(old) + label > span
+    {
         display: inline-block;
-        /* width            : 0.875em;
-         height           : 0.875em;*/
         width: 12px;
         height: 12px;
         margin: 0.25em 0.5em 0.25em 0.25em;
@@ -665,15 +655,15 @@ html, body
         vertical-align: bottom;
     }
 
-    input[type=radio   ]:not(old):checked + label > span {
+    input[type=radio   ]:not(old):checked + label > span
+    {
         background-image: linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
     }
 
 
-    input[type=radio]:not(old):checked + label > span > span {
+    input[type=radio]:not(old):checked + label > span > span
+    {
         display: block;
-        /*   width            : 0.5em;
-           height           : 0.5em;*/
         width: 7px;
         height: 7px;
         margin: 0.125em;
@@ -682,20 +672,19 @@ html, body
         background: #0c7abf linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
     }
 
-    #dest option {
+    #dest option
+    {
         width: 250px;
     }
 
     /* DISPLAY ESTIMATE SECTION*/
     .display
     {
-        /* position: absolute;
-         top: 32%;
-         left: 34%;*/
         text-align: center;
     }
 
-    .dispEst {
+    .dispEst
+    {
         height: 19vw;
         width: 32vw;
         margin-left: auto;
@@ -703,7 +692,6 @@ html, body
         text-align: left;
         background-color: #2A4D69;
         font-family: gaultier, sans-serif;
-
     }
 
     .disp
@@ -715,7 +703,8 @@ html, body
         color: #ffffff;
     }
 
-    .dispVal {
+    .dispVal
+    {
         font-size: 1.3vw;
         letter-spacing: .1vw;
         padding-right: 1vw;
@@ -725,18 +714,19 @@ html, body
         font-weight: bold;
     }
 
-    .line {
+    .line
+    {
         color: #ffffff;
     }
 
-
-    .flexFee {
+    .flexFee
+    {
         display: flex;
         justify-content: space-between;
-
     }
 
-    .city {
+    .city
+    {
         color: #ffffff;
         font-weight: bold;
         font-size: 20px;
@@ -744,9 +734,10 @@ html, body
         text-decoration: underline;
     }
 
-    .book {
+    .book
+    {
         color: #ffffff;
-        background-color: #157ECF;
+        background-color: #1376C2;
         font-size: 15px;
         width: 114px;
         padding: 20px;
@@ -756,62 +747,66 @@ html, body
         margin-top: 10px;
     }
 
-    .book:hover {
+    .book:hover
+    {
         background-color: #1895F5;
         text-decoration: underline;
     }
 
 
-    #dest {
-        /* width: 358px;*/
+    #dest
+    {
         border-bottom: solid 3px #86A8D2;
     }
 
-    #orig {
-        /*width: 358px;*/
+    #orig
+    {
         border-bottom: solid 3px #86A8D2;
     }
 
     /*FOOTER SECTION*/
-    .footer {
-        padding-top: .5vw;
+    .footer
+    {
+        padding-top: 2vw;
     }
 
-
-    .colSiteMap {
+    .colSiteMap
+    {
         padding-left: 20px;
         padding-right: 20px;
         background-color: #0a0a0c;
-
     }
 
-    .colSiteMap ul {
+    .colSiteMap ul
+    {
         padding-top: 20px;
         display: flex;
         justify-content: space-around;
     }
 
-    .colSiteMap ul li {
+    .colSiteMap ul li
+    {
         padding-bottom: 20px;
-
     }
 
-    .widSiteMap {
+    .widSiteMap
+    {
         z-index: 40;
         padding-right: 40px;
     }
 
-    .title {
+    .title
+    {
         font-size: 20px;
         color: #ffffff;
         letter-spacing: 1.5px;
         padding-top: 10px;
         padding-bottom: 10px;
         text-shadow: 2px 2px 4px #000000;
-        font-family: gaultier, sans-serif;
     }
 
-    .subTitle {
+    .subTitle
+    {
         font-size: 15px;
         color: #ffffff;
         letter-spacing: 1.5px;
@@ -820,16 +815,18 @@ html, body
     }
 
 
-    .link {
+    .link
+    {
         color: #ffffff;
         font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 1.2;
+        letter-spacing: .12vw;
         text-decoration: none;
         padding-bottom: 20px;
+        font-family: gaultier, sans-serif;
     }
 
-    .link:hover {
+    .link:hover
+    {
         text-decoration: underline;
         color: #ffffff;
         cursor: pointer;
@@ -837,38 +834,45 @@ html, body
 
 
     /* SOCIAL MEDIA SECTION*/
-    /*index.html section*/
-    .colSocialMedia ul li a {
+    .colSocialMedia ul li a
+    {
         text-decoration: none;
     }
 
-    .colSocialMedia ul li a:hover {
+    .colSocialMedia ul li a:hover
+    {
         text-decoration: underline;
         color: #40444B;
     }
 
-    .goToTop {
+    .goToTop
+    {
         display: flex;
         justify-content: space-around;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
         background-color: #0A4069;
+        font-family: gaultier, sans-serif;
     }
 
-    .goToTop div a {
+    .goToTop div a
+    {
         padding-left: 10px;
         color: #ffffff;
         padding-top: 10px;
     }
 
-    .base {
+    .base
+    {
         background-color: black;
         height: 50px;
         color: #ffffff;
         text-align: center;
         padding-top: 10px;
         letter-spacing: 2px;
+        font-family: gaultier, sans-serif;
     }
+
 }/*@media only screen and (min-width: 1200px) */
 

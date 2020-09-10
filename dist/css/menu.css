@@ -74,7 +74,7 @@ a {
 .list a {
     display: block;
     color: #fff;
-    letter-spacing: .13vw;
+    letter-spacing: .15vw;
 }
 
 
@@ -110,7 +110,7 @@ a {
     font-size: 1vw;
     height: 2vw;
     margin: 0;
-    text-shadow: 1px 1px 2px #000000;
+    /*text-shadow: 1px 1px 2px #000000;*/
     vertical-align: center;
     letter-spacing: 1px;
 }
@@ -146,7 +146,7 @@ a {
 /* Original background color:#E32551 */
 /* Original menu hover color:#d31b46*/
 /*#A4031F*/
-.nigiri dt, .nigiri dd, .nigiri a {  background: #1167A8;font-family: gaultier, sans-serif;}
+.nigiri dt, .nigiri dd, .nigiri a {  background: #1376C2;font-family: gaultier, sans-serif;}
 .nigiri a:hover { background: #1895F5; }
 
 

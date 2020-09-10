@@ -29,7 +29,6 @@
 
     /* Display fields*/
     let dispDestD = document.getElementById("destD");
-
     let dispFliBook = document.getElementById("flightBookingFee");
     let dispFliBookVal = document.getElementById("flightBookingFeeVal");
     let dispOne = document.getElementById("oneWayReturn");
@@ -43,7 +42,6 @@
 
     /* Getting the querystring*/
     let id = getParameterByName('id');
-    console.log(id);
 
 
     /* FUNCTIONS*/
@@ -74,14 +72,12 @@
      */
     function destDisp()
     {
-        console.log("destDisp");
         for(let j=0; j<= destinations.length - 1; j++)
         {
             console.log(j);
             if(id == j+1)
-                dispDestD.innerHTML = destinations[j];
-        }
-
+                dispDestD.innerHTML = destinations[j];/*if*/
+        }/*for*/
     }/*end destDisp*/
 
     /**
@@ -92,17 +88,15 @@
      */
     function initialize()
     {
-        console.log("initialize");
-
         id = destDd.selectedIndex + 1;
         for(let i = 0; i< oneWay.length; i++)
         {
             if(oneWay[i].checked) oneWay[i].checked = false;
-        }
+        }/*for*/
         for(let j = 0; j< room.length; j++)
         {
             if(room[j].checked) room[j].checked = false;
-        }
+        }/*for*/
         dispOne.innerHTML = "";
         dispOneVal.innerHTML = "";
         dispHotelBook.innerHTML = "";
@@ -123,7 +117,6 @@
      */
     function journey()
     {
-        console.log("journey");
         if($(oneWay[0]).prop('checked')){
 
             let oneWayFee = [200, 300, 250, 350, 260, 210];
@@ -139,10 +132,9 @@
                     total = total + y;
                     dispTotal.innerHTML = "Your Total is: ";
                     dispTotalVal.innerHTML = "£" + total;
-                }
-            }
-
-        }
+                }/*if*/
+            }/*for*/
+        }/*if*/
         else
         {
             let returnFee = [400, 600, 500, 700, 520, 420];
@@ -157,10 +149,9 @@
                     total = total + y;
                     dispTotal.innerHTML = "Your Total is: ";
                     dispTotalVal.innerHTML = "£" + total;
-                }
-            }
-
-        }
+                }/*if*/
+            }/*for*/
+        }/*else*/
     }/* end journey*/
 
     /**
@@ -170,7 +161,6 @@
      */
     function single()
     {
-        console.log("single");
         let hotelBookFee = [20, 25, 25, 30, 15, 45];
         if($(room[0]).prop('checked')) {
 
@@ -189,9 +179,9 @@
                     total = total + x;
                     dispTotal.innerHTML = "Your Total is: ";
                     dispTotalVal.innerHTML = "£" + total;
-                }
-            }
-        }
+                }/*if*/
+            }/*for*/
+        }/*if*/
         else {
 
             let doubleRoomFee = [250, 220, 310, 220, 320,270];
@@ -209,10 +199,9 @@
                     total = total + x;
                     dispTotal.innerHTML = "Your Total is: ";
                     dispTotalVal.innerHTML = "£" + total;
-                }
-            }
-
-        }
+                }/*if*/
+            }/*for*/
+        }/*else*/
     }/*end single*/
 
     /**
@@ -223,7 +212,6 @@
      */
     function book()
     {
-        console.log("book");
         window.open("bookingForm.html?id="+ id, "_self");
 
     } /* end book*/
@@ -235,9 +223,7 @@
      */
     function destChanged()
     {
-        console.log("destChanged");
         let flightBookFeeVal = [40, 50, 60, 30, 60,70];
-        console.log("total="+total);
 
         for(let j=0; j< destinations.length - 1; j++)
         {
@@ -249,8 +235,8 @@
                 total = total + flightBookFeeVal[j];
                 dispTotal.innerHTML = "Your Total is: ";
                 dispTotalVal.innerHTML = "£" + total;
-            }
-        }
+            }/*if*/
+        }/*for*/
     }/* end destChanged*/
 
     /**
@@ -259,7 +245,6 @@
      */
     function menu()
     {
-        console.log("menu");
         /* THE LEFT MENU*/
         /* Code taken from https://codepen.io/soulwire/pen/EKmwC*/
         let $nigiri = $( '.nigiri' );
@@ -278,7 +263,6 @@
         $( '.toggle' ).on( 'click', function() {
             $( '.list' ).makisu( 'toggle' );
         });
-
     }/* end menu*/
 
     /**
@@ -286,7 +270,6 @@
      *  @desc Bind fields to event handler
      */
     function bindBtns() {
-        console.log("bindBtns");
         //Checking if button exists on page and then add eventhandler
         if(destDd != null)destDd.addEventListener("change", initialize);
         if(destDd != null)destDd.selectedIndex = id-1;
@@ -296,14 +279,14 @@
         if(oneWay != null) {
             for (let i = 0; i < oneWay.length; i++) {
                 oneWay[i].onclick = journey;
-            }
-        }
+            }/*for*/
+        }/*if*/
         //Reading radio buttons from collection for single/double room and assigning to function
         if(room != null) {
             for (let j = 0; j < room.length; j++) {
                 room[j].onclick = single;
-            }
-        }
+            }/*for*/
+        }/*if*/
     }// end bindBtns
 
     /**
@@ -311,7 +294,6 @@
      * @desc initialising function
      */
     function init() {
-        console.log("init");
         bindBtns();
         menu();
         if(destDd != null)destChanged();

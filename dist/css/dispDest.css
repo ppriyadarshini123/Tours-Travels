@@ -39,7 +39,7 @@ html, body {
         background-repeat: no-repeat;
         padding-bottom: 20px;
         width: 100%;
-        background-color: #0A4069;
+        background-color: #1376C2;
         height: 4.6vw;
         position: relative;
     }
@@ -266,7 +266,7 @@ html, body {
     .headerImage {
         background-repeat: no-repeat;
         width: 100%;
-        background-color: #003399;
+        background-color: #1376C2;
         padding-left: 3vw;
 
     }
@@ -340,6 +340,7 @@ html, body {
         width: 42vw;
         margin-top: .5vw;
 
+
     }
 
     .dest {
@@ -363,12 +364,11 @@ html, body {
     }
 
 
-    /*  #tabs {
-          z-index: 50;
-          height: 528px;
-          background-color: #157ECF;
-          color: #ffffff;
-      }*/
+     #tabs {
+
+          height: 410px;
+
+      }
 
 
     #tabs ul
@@ -379,8 +379,8 @@ html, body {
     }
     #tabs .tab  p
     {
-        color: #ffffff;
-        background-color:#157ECF;
+        color: #1376C2;
+        background-color:#ffffff;
     }
     #tabs-1, #tabs-2, #tabs-3
     {
