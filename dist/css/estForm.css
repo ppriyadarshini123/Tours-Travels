@@ -798,11 +798,10 @@ html, body
     .title
     {
         font-size: 20px;
-        color: #ffffff;
+        color: #176BAA;
         letter-spacing: 1.5px;
         padding-top: 10px;
         padding-bottom: 10px;
-        text-shadow: 2px 2px 4px #000000;
     }
 
     .subTitle
