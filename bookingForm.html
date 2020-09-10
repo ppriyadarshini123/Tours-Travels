@@ -6,17 +6,15 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><!--datepicker-->
     <link rel="stylesheet" type="text/css" href="dist/css/bookForm.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="dist/css/menu.css" media="screen"/>
-
 </head>
 <body>
 
 <header id="top">
     <div class="headerImage">
-        <!-- <img src="dist/images/headernew.png" alt="Header Background Image">-->
         <div class="wrapper">
             <div class="logoHeader">
                 <div  class="zIn">
-                    <a href="index.html">
+                    <a href="#">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-372x157.png">
                             <source media="(min-width: 768px) and (max-width: 1200px)" srcset="dist/images/optimized/logo_initial_with_transparency-192x75.png">
@@ -24,7 +22,6 @@
                         </picture>
                     </a>
                 </div><!--zIn logo-->
-
                 <div class="iconPosition">
                     <div class="phonePosition">
                         <div>
@@ -37,15 +34,15 @@
                     <div class="emailAddress">
                         <div>
                             <img src="./dist/images/optimized/email-icon-25x19.png" class="" alt="Email Address">
-                        </div>
+                        </div><!--Email Icon-->
                         <div>
                             <p class="phDisp">info@goeurope.com</p>
-                        </div>
-                    </div><!--Email Address-->
+                        </div><!--Email address-->
+                    </div><!--emailAddress-->
                 </div><!--iconPosition-->
-            </div><!--Phone number-->
-        </div><!--logo & phone-->
-    </div><!--adding logo and phone to wrapper-->
+            </div><!--logoHeader-->
+        </div><!--wrappere-->
+    </div><!--headerImage-->
 </header>
 <main>
     <div class="wrapper">
@@ -62,9 +59,9 @@
                 </dl>
                 <div class="toggPos">
                     <a href="#" class="toggle">Toggle</a>
-                </div><!--Toggle buttn-->
+                </div><!--toggPos-->
             </section>
-        </div>
+        </div><!--positionMenu-->
         <div class="container">
             <p class="head">Flight Booking form</p>
             <div class="fieldsCollection">
@@ -72,29 +69,29 @@
                     <span class="width">First name :</span>
                     <input title = "fn" type="text" id="fname" class="fields" placeholder="e.g. John">
                     <span id="lblFname" class="validator"></span>
-                </div><!--First name section-->
+                </div><!--fontSpacing First name section-->
                 <div class="fontSpacing">
                     <span class="width">Mobile :</span>
                     <input title = "mob" type="text" id="mobile" class="fields" placeholder="e.g. 07658342654">
                     <span id="lblMobile" class="validator"></span>
-                </div><!--Mobile number-->
+                </div><!--fontSpacing Mobile number-->
                 <div class="fontSpacing">
                     <span class="width">Departure date:</span>
                     <input id="datepicker" title="departuredate" class="fields" type="text" name="departuredate">
                     <span id="lblDate" class="validator"></span>
-                </div><!--destination DatePicker-->
+                </div><!--fontSpacing destination DatePicker-->
                 <div class="fontSpacing">
                     <span class="width">Arrival date:</span>
                     <input id="datepicker2" title="arrivaldate" class="fields" type="text" name="arrivaldate">
-                </div><!--First name section-->
+                </div><!--fontSpacing First name section-->
             </div><!--fieldsCollection-->
             <div class="confirmMessage">
                 <span id="lblConfirm"></span>
-            </div><!--Confirmation message-->
+            </div><!--confirmMessage Confirmation message-->
             <div class="btns">
                 <input id="bookf" type="submit" value="Book now" class="book">
                 <input id="destDetails" type="submit" value="View Destination Details" class="book">
-            </div><!--buttons-->
+            </div><!--btns buttons-->
         </div><!--Container-->
     </div><!--Wrapper-->
 </main>
@@ -111,26 +108,26 @@
                     <li><a class="link" href="#">Things to do</a></li>
                     <li><a class="link" href="#">Last minute deals</a></li>
                 </ul>
-            </div><!--Sitemap first column-->
-        </div><!--Sitemap-->
+            </div><!--widSiteMap Sitemap first column-->
+        </div><!--colSiteMap-->
         <div class="goToTop">
             <div class="widSiteMap">
                 <h3 class="title">Main Office :</h3>
                 <p class="subTitle">25 Osier Close</p>
                 <p class="subTitle">Cambridge</p>
                 <p class="subTitle">CB1 6FG</p>
-            </div>
+            </div><!--widSiteMap-->
             <div class="widSiteMap">
                 <h3 class="title">Find us here:</h3>
                 <a href="#"><img src="./dist/images/optimized/fb-30x30.png" title="Find us on Facebook" alt="Facebook"></a>
                 <a href="#"><img src="./dist/images/optimized/twitterWhite-30x30.png" title="Find us on Twitter" alt="Twitter"></a>
-            </div><!--Social media icons-->
+            </div><!--widSiteMap-->
             <div class="widSiteMap">
                 <a href="#top" class="link" >Go to top</a>
-            </div><!--go to top-->
-        </div><!--Social media icons and go to top-->
-    </div><!-- Footer row-->
-    <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--copyright-->
+            </div><!--widSiteMap-->
+        </div><!--goToTop-->
+    </div><!-- rowSiteMap Footer row-->
+    <div class="base">Copyright &copy; 2018 Go Europe Tours & Travels, Cambridge</div><!--base copyright-->
 </footer>
 
 <!--<script src="dist/js/index.js"> </script>-->

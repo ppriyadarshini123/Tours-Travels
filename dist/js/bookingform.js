@@ -44,7 +44,7 @@
         if (!results) return null;
         if (!results[2]) return '';
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
+    }/*getParameterByName*/
 
     /* Getting id from querystring*/
     let id = getParameterByName('id');
@@ -63,28 +63,30 @@
         if(fName.value === "")
         {
             lblFName.innerHTML = "First name is a required field.";
-        }
+        }/*if*/
         else
         {
             regExpFName =  name();
-        }
+        }/*else*/
+
         /* Required field validation for mobile*/
         if(txtMobile.value === "") {
             lbMobile.innerHTML = "Mobile is a required field.";
-        }
+        }/*if*/
         else
         {
             regExpMob = mobile();
-        }
+        }/*else*/
+
         /* Checks if departure date is earlier than arrival date */
         if($("#datepicker").datepicker("getDate") > $("#datepicker2").datepicker("getDate"))
         {
             lbDate.innerHTML = "Departure date must be earlier than arrival date.";
-        }
+        }/*if*/
         else
         {
             lbDate.innerHTML = "";
-        }
+        }/*else*/
 
         /* Checks regular expression for first name and mobile, also if departure date is earlier than arrival date*/
         let d = $("#datepicker").datepicker("getDate") <= $("#datepicker2").datepicker("getDate");
@@ -125,12 +127,12 @@
         {
             lblFName.innerHTML = "Please enter characters as First Name.";
             return false;
-        }
+        }/*if*/
         else if( n === -1)
         {
             lblFName.innerHTML = "";
             return true;
-        }
+        }/*else if*/
     }/*end name*/
 
     /**
@@ -145,12 +147,12 @@
         if(n === 0) {
             lbMobile.innerHTML = "Please enter numbers as Mobile number.";
             return false;
-        }
+        }/*if*/
         else if(n === -1)
         {
             lbMobile.innerHTML = "";
             return true;
-        }
+        }/*elseif*/
     }/*end mobile*/
 
     /**

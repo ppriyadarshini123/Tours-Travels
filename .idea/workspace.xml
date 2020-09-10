@@ -7,14 +7,11 @@
       <change beforePath="$PROJECT_DIR$/displaydestination.html" beforeDir="false" afterPath="$PROJECT_DIR$/displaydestination.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/bookForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/bookForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/dispDest.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/dispDest.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/estForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/estForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/survey.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/survey.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/bookingform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/bookingform.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/displaydestination.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/displaydestination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/estimateform.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/estimateform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/estimateform.html" beforeDir="false" afterPath="$PROJECT_DIR$/estimateform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/survey.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/survey.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/survey.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +107,7 @@
       <workItem from="1599496051811" duration="4158000" />
       <workItem from="1599566182956" duration="7254000" />
       <workItem from="1599643243915" duration="17473000" />
-      <workItem from="1599724025169" duration="10116000" />
+      <workItem from="1599724025169" duration="13447000" />
     </task>
     <servers />
   </component>

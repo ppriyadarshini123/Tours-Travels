@@ -20,21 +20,22 @@ table { border-collapse: collapse; border-spacing: 0; }
 html, body{width:100%; height: 100%;}
 
 /* GENERAL SECTION*/
-html, body {
+html, body
+{
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+/*@media only screen and (min-width: 768px) and (max-width: 1200px) {
 
 
     .wrapper {
         margin: 0 auto;
-        position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
-        /*width:960px;*/
+        position: relative; !*Added to place the Makisu menu in position, otherwise it becomes sticky*!
+        !*width:960px;*!
     }
 
-    /*HEADER SECTION*/
+    !*HEADER SECTION*!
     .headerImage {
         background-repeat: no-repeat;
         padding-bottom: 20px;
@@ -85,12 +86,12 @@ html, body {
     }
 
 
-    /* MAIN SECTION*/
+    !* MAIN SECTION*!
     main {
         height: 1058px;
     }
 
-    /*.tabPosition
+    !*.tabPosition
     {
        !* background-color: #157ECF;
         margin-top: 10px;*!
@@ -99,11 +100,11 @@ html, body {
         top: 20%;
         !*padding-bottom: 20px;
         width: 850px;*!
-    }*/
+    }*!
     .tabPosition {
         z-index: 50;
-        /*margin-left: auto;
-        margin-right: auto;*/
+        !*margin-left: auto;
+        margin-right: auto;*!
         text-align: center;
         width: 850px;
         margin-top: 10px;
@@ -117,10 +118,10 @@ html, body {
         font-size: 16px;
     }
 
-    /* .id {
+    !* .id {
          width: 860px;
          height: 280px;
-     }*/
+     }*!
 
     .tab {
         font-size: 14px;
@@ -155,7 +156,7 @@ html, body {
         color: #ffffff;
     }
 
-    /*FOOTER SECTION*/
+    !*FOOTER SECTION*!
     .footer {
         padding-top: 20px;
     }
@@ -218,8 +219,8 @@ html, body {
     }
 
 
-    /* SOCIAL MEDIA SECTION*/
-    /*index.html section*/
+    !* SOCIAL MEDIA SECTION*!
+    !*index.html section*!
     .colSocialMedia ul li a {
         text-decoration: none;
     }
@@ -252,12 +253,12 @@ html, body {
         padding-top: 10px;
         letter-spacing: 2px;
     }
-}/*@media only screen and (min-width: 768px) and (max-width: 1200px)*/
+}!*@media only screen and (min-width: 768px) and (max-width: 1200px)*!*/
 
 @media only screen and (min-width: 1200px)
 {
-
-    .wrapper {
+    .wrapper
+    {
         margin: 0 auto;
         position: relative; /*Added to place the Makisu menu in position, otherwise it becomes sticky*/
     }
@@ -268,7 +269,6 @@ html, body {
         width: 100%;
         background-color: #1376C2;
         padding-left: 3vw;
-
     }
 
     .logo
@@ -277,7 +277,8 @@ html, body {
         zoom: .6;
     }
 
-    .zIn {
+    .zIn
+    {
         cursor: pointer;
         margin-right: 48vw;
     }
@@ -291,24 +292,25 @@ html, body {
         justify-content: space-around;
     }
 
-    .phonePosition {
+    .phonePosition
+    {
         display: flex;
         margin-top: 0.8vw;
     }
 
-    .phone {
+    .phone
+    {
         height: 19px;
     }
 
-    .phDisp {
+    .phDisp
+    {
         color: white;
         letter-spacing: .1vw;
         font-size: 1vw;
         padding-left: 1vw;
-        /*text-shadow: 1vw 1vw 1vw #000000;*/
         padding-top: .3vw;
         margin-right: 2vw;
-
     }
 
     .emailAddress
@@ -318,44 +320,27 @@ html, body {
         margin-top: .8vw;
     }
 
-
     /* MAIN SECTION*/
-
-
-    /*.tabPosition
+    .tabPosition
     {
-       !* background-color: #157ECF;
-        margin-top: 10px;*!
-        position: absolute;
-        left: 30%;
-        top: 20%;
-        !*padding-bottom: 20px;
-        width: 850px;*!
-    }*/
-    .tabPosition {
         z-index: 50;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         width: 42vw;
         margin-top: .5vw;
-
-
     }
 
-    .dest {
+    .dest
+    {
         color: black;
         font-weight: bold;
         letter-spacing: 1px;
         font-size: 16px;
     }
 
-    /* .id {
-         width: 860px;
-         height: 280px;
-     }
- */
-    .tab {
+    .tab
+    {
         font-size: 14px;
         letter-spacing: 1px;
         line-height: 16px;
@@ -364,12 +349,10 @@ html, body {
     }
 
 
-     #tabs {
-
+     #tabs
+     {
           height: 410px;
-
-      }
-
+     }
 
     #tabs ul
     {
@@ -388,42 +371,44 @@ html, body {
         height: auto;
     }
 
-    #tabs ul li a:disabled {
+    #tabs ul li a:disabled
+    {
         background-color: #0A4069;
         color: #ffffff;
     }
-
-
     /*FOOTER SECTION*/
-    .footer {
-        padding-top: .5vw;
+    .footer
+    {
+        padding-top: 2vw;
     }
 
-
-    .colSiteMap {
+    .colSiteMap
+    {
         padding-left: 20px;
         padding-right: 20px;
         background-color: #0a0a0c;
-
     }
 
-    .colSiteMap ul {
+    .colSiteMap ul
+    {
         padding-top: 20px;
         display: flex;
         justify-content: space-around;
     }
 
-    .colSiteMap ul li {
+    .colSiteMap ul li
+    {
         padding-bottom: 20px;
-
     }
 
-    .widSiteMap {
+    .widSiteMap
+    {
         z-index: 40;
         padding-right: 40px;
     }
 
-    .title {
+    .title
+    {
         font-size: 20px;
         color: #ffffff;
         letter-spacing: 1.5px;
@@ -432,7 +417,8 @@ html, body {
         text-shadow: 2px 2px 4px #000000;
     }
 
-    .subTitle {
+    .subTitle
+    {
         font-size: 15px;
         color: #ffffff;
         letter-spacing: 1.5px;
@@ -441,16 +427,18 @@ html, body {
     }
 
 
-    .link {
+    .link
+    {
         color: #ffffff;
         font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 1.2;
+        letter-spacing: .12vw;
         text-decoration: none;
         padding-bottom: 20px;
+        font-family: gaultier, sans-serif;
     }
 
-    .link:hover {
+    .link:hover
+    {
         text-decoration: underline;
         color: #ffffff;
         cursor: pointer;
@@ -458,39 +446,46 @@ html, body {
 
 
     /* SOCIAL MEDIA SECTION*/
-    /*index.html section*/
-    .colSocialMedia ul li a {
+    .colSocialMedia ul li a
+    {
         text-decoration: none;
     }
 
-    .colSocialMedia ul li a:hover {
+    .colSocialMedia ul li a:hover
+    {
         text-decoration: underline;
         color: #40444B;
     }
 
-    .goToTop {
+    .goToTop
+    {
         display: flex;
         justify-content: space-around;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
         background-color: #0A4069;
+        font-family: gaultier, sans-serif;
     }
 
-    .goToTop div a {
+    .goToTop div a
+    {
         padding-left: 10px;
         color: #ffffff;
         padding-top: 10px;
     }
 
-    .base {
+    .base
+    {
         background-color: black;
         height: 50px;
         color: #ffffff;
         text-align: center;
         padding-top: 10px;
         letter-spacing: 2px;
+        font-family: gaultier, sans-serif;
     }
+
 }/*@media only screen and (min-width: 1200px)*/
 
 

@@ -23,6 +23,7 @@
     let dispThanks1 = document.getElementById("dispThanks");
 
     //Functions
+
     /**
      * @name okClicked
      * @desc After 'Ok' button is clicked, display Thanks.
@@ -33,11 +34,11 @@
         {
             dispThanks1.innerHTML = "Thanks for your feedback. Have a great trip !";
             plane();
-        }
+        }/*if*/
         else
         {
             dispThanks1.innerHTML = "Please enter your comments. Thanks";
-        }
+        }/*else*/
     }/* end okClicked*/
 
     /**
@@ -47,7 +48,6 @@
     function bindBtns()
     {
         if(btnOK != null) btnOK.addEventListener("click", okClicked);
-
     }/* end bindBtns*/
 
     /**
@@ -56,17 +56,6 @@
      */
     function plane()
     {
-        //Old code
-        /*  $(document).ready(function () {
-              $("#ok").click(function () {
-                  $("#plane").animate({
-                      marginLeft: '+=1300px',
-                      marginTop: '-=500px',
-                      speed: '50',
-                      easing: 'linear'
-                  }).fadeToggle('slow', 'linear');
-              });
-          });*/
         $(document).ready(function () {
             $("#comment").change(function () {
                     //Check if the text area has value and is not empty
@@ -80,10 +69,7 @@
                     }
                 }
             );
-
         });
-
-
     }/* end plane*/
 
     /**
@@ -98,6 +84,5 @@
 
     //onload initialiser
     window.onload = init;
-
 })();/*end iffy*/
 
